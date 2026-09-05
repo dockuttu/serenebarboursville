@@ -16,7 +16,7 @@ POSTS = [{
   "img_alt":"Reception area at Serene Med Spa, a Certified Bi&ouml;te Provider serving Barboursville and Huntington, WV",
   "excerpt":"Tired, foggy, or gaining weight around the middle that won&rsquo;t budge? Those changes often trace back to shifting hormones. Here are the signs to watch for &mdash; and how physician-supervised hormone optimization may help in the Tri-State.",
   "body":'''
-<p>Between work, family, and everything in between, it&rsquo;s easy to explain away feeling run-down. But when the fatigue, the stubborn weight, the restless sleep, and the mental fog all pile up at once, there&rsquo;s often a medical reason underneath &mdash; your hormones. At <strong>Serene Med Spa in Barboursville</strong>, we help men and women across the Tri-State &mdash; Huntington, Cabell County, and the surrounding West Virginia, Ohio, and Kentucky communities &mdash; understand what&rsquo;s really going on and, when it&rsquo;s appropriate, restore balance through <strong>physician-supervised hormone optimization</strong>. As a <strong>Certified Bi&ouml;te Provider</strong>, we start with a simple lab test, not guesswork.</p>
+<p>Between work, family, and everything in between, it&rsquo;s easy to explain away feeling run-down. But when the fatigue, the stubborn weight, the restless sleep, and the mental fog all pile up at once, there&rsquo;s often a medical reason underneath &mdash; your hormones. At <strong>Serene Med Spa in Barboursville</strong>, we help men and women across the Tri-State &mdash; Huntington, Cabell County, and the surrounding West Virginia, West Virginia, and Kentucky communities &mdash; understand what&rsquo;s really going on and, when it&rsquo;s appropriate, restore balance through <strong>physician-supervised hormone optimization</strong>. As a <strong>Certified Bi&ouml;te Provider</strong>, we start with a simple lab test, not guesswork.</p>
 <h2>Why so many adults feel &ldquo;off&rdquo;</h2>
 <p>Hormones are chemical messengers that quietly run your energy, sleep, mood, metabolism, focus, and libido. As we age &mdash; and with the everyday stress of busy Tri-State life &mdash; those levels can drift out of their healthy range. The result is a cluster of symptoms that are easy to dismiss one at a time, but add up to a real quality-of-life problem. The good news: it&rsquo;s measurable, and often manageable.</p>
 <h2>Signs your hormones may be out of balance</h2>
@@ -72,7 +72,7 @@ for p in POSTS:
 <meta name="description" content="{p["desc"]}">
 <link rel="canonical" href="{url}">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="geo.region" content="US-OH"><meta name="geo.placename" content="Hudson, Ohio">
+<meta name="geo.region" content="US-WV"><meta name="geo.placename" content="Barboursville, West Virginia">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{p["title"]}">
 <meta property="og:description" content="{p["desc"]}">
@@ -140,13 +140,13 @@ IDX=f'''<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog &mdash; Serene Med Spa, Hudson OH</title>
-<meta name="description" content="Aesthetic insights, treatment techniques, and patient case studies from the physician-led team at Serene Med Spa in Hudson, OH and Barboursville, WV.">
+<title>Blog &mdash; Serene Med Spa, Barboursville WV</title>
+<meta name="description" content="Aesthetic insights, treatment techniques, and patient case studies from the physician-led team at Serene Med Spa in Barboursville and Huntington, WV.">
 <link rel="canonical" href="{idx_url}">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="geo.region" content="US-OH"><meta name="geo.placename" content="Hudson, Ohio">
+<meta name="geo.region" content="US-WV"><meta name="geo.placename" content="Barboursville, West Virginia">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Blog &mdash; Serene Med Spa, Hudson OH">
+<meta property="og:title" content="Blog &mdash; Serene Med Spa, Barboursville WV">
 <meta property="og:description" content="Aesthetic insights &amp; case studies from our physician-led team.">
 <meta property="og:url" content="{idx_url}">
 <meta property="og:image" content="{LOGO}">
@@ -170,7 +170,7 @@ IDX=f'''<!DOCTYPE html>
     <div class="svc-hero-txt" style="max-width:720px">
       <div class="eyebrow">Aesthetic Insights</div>
       <h1>The Serene Blog</h1>
-      <p>Technique breakdowns, patient case studies, and honest guidance from our physician-led team &mdash; serving Hudson, Ohio and Barboursville, West Virginia.</p>
+      <p>Technique breakdowns, patient case studies, and honest guidance from our physician-led team &mdash; serving Barboursville, West Virginia and Barboursville, West Virginia.</p>
     </div>
   </div>
 </section>

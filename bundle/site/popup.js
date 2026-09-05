@@ -10,7 +10,7 @@
   }
 
   var CFG = {
-    book: "https://booking.mangomint.com/585660",
+    book: "tel:+13045200461",
     hs: { region: "na2", portal: "242695075", form: "16625e0e-6a46-4664-98c6-2cbf264da060" },
     image: "/img/lobby.jpg",
     dismissDays: 7,      // don't re-show for this many days after close
@@ -96,14 +96,14 @@
         '<div class="np-body">' +
           '<div class="np-ey">New Client Special</div>' +
           '<h2 class="np-h">Free Consultation <b>+ 20% Off</b><br>Your First Treatment</h2>' +
-          '<p class="np-sub">Physician-led care in Hudson, OH. Tell us where to send your offer.</p>' +
+          '<p class="np-sub">Physician-led care in Barboursville, WV. Tell us where to send your offer.</p>' +
           '<div class="np-exp">Offer expires: ' + endOfMonth() + '</div>' +
           '<div class="np-form"><div class="hs-form-frame" data-region="' + CFG.hs.region +
             '" data-form-id="' + CFG.hs.form + '" data-portal-id="' + CFG.hs.portal + '"></div></div>' +
           '<a class="np-btn" href="' + CFG.book + '" target="_blank" rel="noopener">Continue to Booking &rsaquo;</a>' +
           '<span class="np-exist">Existing client? <a href="' + CFG.book + '" target="_blank" rel="noopener">Book now</a></span>' +
           '<div class="np-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>' +
-          '<div class="np-rev">Loved by our Hudson patients</div>' +
+          '<div class="np-rev">Loved by our Tri-State patients</div>' +
           '<p class="np-consent">By submitting, you agree to be contacted by Serene Med Spa by phone, text, or email about your inquiry and offers. Message/data rates may apply; reply STOP to opt out.</p>' +
         '</div>' +
       '</div>';
