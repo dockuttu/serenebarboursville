@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Serene Med Spa &#8212; Barboursville Blog</title>
+  <link>https://barboursville.serenemedspas.com/blog/</link>
+  <description>Physician-led aesthetics, wellness and hormone insights from Serene Med Spa.</description>
+  <language>en-us</language>
+  <atom:link href="https://barboursville.serenemedspas.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Hormone Imbalance in Barboursville &amp; Huntington: The Signs</title>
+    <link>https://barboursville.serenemedspas.com/blog/hormone-optimization-barboursville-wv/</link>
+    <guid isPermaLink="true">https://barboursville.serenemedspas.com/blog/hormone-optimization-barboursville-wv/</guid>
+    <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+    <description>Tired, foggy, or gaining weight around the middle that won’t budge? Those changes often trace back to shifting hormones. Here are the signs to watch for — and how physician-supervised hormone optimization may help in the Tri-State.</description>
+  </item>
+</channel>
+</rss>

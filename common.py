@@ -73,5 +73,6 @@ SCRIPTS = '''<script>
   var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 </script>
-<script src="/popup.js" defer></script>'''
+<script src="/popup.js" defer></script>
+<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"1b170ac2814a470a9b94ea34c6f6d045"})});</script>'''
 print("common loaded (Barboursville)")
