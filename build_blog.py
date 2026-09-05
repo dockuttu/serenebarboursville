@@ -9,14 +9,14 @@ POSTS = [{
   "title":"Hormone Imbalance in Barboursville &amp; Huntington: The Signs",
   "seo_title":"Hormone Optimization &amp; BHRT in Barboursville, WV",
   "h1":"Hormone Imbalance in Barboursville &amp; Huntington: Signs &amp; How BHRT Can Help",
-  "desc":"Serving Barboursville, Huntington &amp; the Tri-State: the signs of hormone imbalance in men &amp; women and how physician-supervised BHRT and Bi&ouml;te pellets may help.",
+  "desc":"Barboursville, Huntington &amp; the Tri-State: signs of hormone imbalance in men &amp; women and how physician-supervised BHRT &amp; Bi&ouml;te pellets may help.",
   "date":"2026-09-05","date_h":"September 5, 2026",
   "cat":"Hormone Optimization","cat_link":"/#services",
   "img":"/img/serene-front-desk.jpg",
   "img_alt":"Reception area at Serene Med Spa, a Certified Bi&ouml;te Provider serving Barboursville and Huntington, WV",
   "excerpt":"Tired, foggy, or gaining weight around the middle that won&rsquo;t budge? Those changes often trace back to shifting hormones. Here are the signs to watch for &mdash; and how physician-supervised hormone optimization may help in the Tri-State.",
   "body":'''
-<p>Between work, family, and everything in between, it&rsquo;s easy to explain away feeling run-down. But when the fatigue, the stubborn weight, the restless sleep, and the mental fog all pile up at once, there&rsquo;s often a medical reason underneath &mdash; your hormones. At <strong>Serene Med Spa in Barboursville</strong>, we help men and women across the Tri-State &mdash; Huntington, Cabell County, and the surrounding West Virginia, West Virginia, and Kentucky communities &mdash; understand what&rsquo;s really going on and, when it&rsquo;s appropriate, restore balance through <strong>physician-supervised hormone optimization</strong>. As a <strong>Certified Bi&ouml;te Provider</strong>, we start with a simple lab test, not guesswork.</p>
+<p>Between work, family, and everything in between, it&rsquo;s easy to explain away feeling run-down. But when the fatigue, the stubborn weight, the restless sleep, and the mental fog all pile up at once, there&rsquo;s often a medical reason underneath &mdash; your hormones. At <strong>Serene Med Spa in Barboursville</strong>, we help men and women across the Tri-State &mdash; Huntington, Cabell County, and the surrounding West Virginia, Ohio, and Kentucky communities &mdash; understand what&rsquo;s really going on and, when it&rsquo;s appropriate, restore balance through <strong>physician-supervised hormone optimization</strong>. As a <strong>Certified Bi&ouml;te Provider</strong>, we start with a simple lab test, not guesswork.</p>
 <h2>Why so many adults feel &ldquo;off&rdquo;</h2>
 <p>Hormones are chemical messengers that quietly run your energy, sleep, mood, metabolism, focus, and libido. As we age &mdash; and with the everyday stress of busy Tri-State life &mdash; those levels can drift out of their healthy range. The result is a cluster of symptoms that are easy to dismiss one at a time, but add up to a real quality-of-life problem. The good news: it&rsquo;s measurable, and often manageable.</p>
 <h2>Signs your hormones may be out of balance</h2>

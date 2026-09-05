@@ -3,7 +3,7 @@
 LOGO = "https://serenemedspas.com/wp-content/uploads/2024/11/Serene_Logo-1024x574.png"
 BOOK = "tel:+13045200461"
 PHONE_DISPLAY = "(304) 520-0461"
-AREA_TOWNS = ["Barboursville","Huntington","Milton","Hurricane","Teays Valley","Ona","Ceredo","Kenova","Proctorville, OH","Ashland, KY"]
+AREA_TOWNS = ["Barboursville", "Proctorville, OH", "Ona", "Salt Rock", "Huntington", "Chesapeake, OH", "Milton", "Culloden", "Burlington, OH", "Ceredo", "Hurricane", "Kenova", "Wayne", "South Point, OH", "Catlettsburg, KY", "Ashland, KY", "Teays Valley", "Coal Grove, OH", "Ironton, OH", "Russell, KY"]
 AREA_SERVED = (
   [{"@type":"AdministrativeArea","name":n} for n in ["Cabell County, WV","Wayne County, WV","Putnam County, WV"]] +
   [{"@type":"City","name":t+", WV"} for t in ["Barboursville","Huntington","Milton","Hurricane","Ona"]]
