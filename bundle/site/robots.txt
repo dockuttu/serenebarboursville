@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://hudson.serenemedspas.com/sitemap.xml
+Sitemap: https://barboursville.serenemedspas.com/sitemap.xml
