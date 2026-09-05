@@ -28,6 +28,7 @@ echo "    now at: $(git rev-parse --short HEAD) — $(git log -1 --pretty=%s)"
 echo "==> Building"
 ./build.sh
 
+mkdir -p "$LIVE"
 echo "==> Promoting to live ($LIVE/site) atomically"
 rm -rf "$LIVE/site.new"
 cp -a bundle/site "$LIVE/site.new"
