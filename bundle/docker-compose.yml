@@ -1,0 +1,19 @@
+services:
+  barboursville:
+    image: nginx:alpine
+    container_name: barboursville-site
+    restart: always
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+    networks:
+      - root_default
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.barboursville.rule=Host(`barboursville.serenemedspas.com`)"
+      - "traefik.http.routers.barboursville.entrypoints=web,websecure"
+      - "traefik.http.routers.barboursville.tls=true"
+      - "traefik.http.routers.barboursville.tls.certresolver=mytlschallenge"
+      - "traefik.http.services.barboursville.loadbalancer.server.port=80"
+networks:
+  root_default:
+    external: true
