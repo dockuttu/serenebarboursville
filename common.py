@@ -38,6 +38,7 @@ FOOTER = '''<footer>
         <ul>
           <li><a href="/#services">Treatments</a></li>
           <li><a href="/blog/">Blog</a></li>
+          <li><a href="/xperience-rewards/">Xperience+ Rewards</a></li>
           <li><a href="https://hudson.serenemedspas.com/">Hudson, OH location</a></li>
           <li><a href="/#consult">Contact</a></li>
         </ul>
@@ -59,6 +60,11 @@ FOOTER = '''<footer>
 def areas_section(treatment="care"):
     tags = "".join('<span>%s</span>' % t for t in AREA_TOWNS)
     return '<section class="areas"><div class="wrap reveal" style="text-align:center"><div class="eyebrow" style="justify-content:center">Proudly Serving</div><h2>Barboursville, Huntington &amp; the Tri-State</h2><div class="area-tags">%s</div></div></section>' % tags
+PARTNER_BADGES = '''<div class="partners reveal">
+      <a href="/ultherapy/" title="Ultherapy PRIME provider"><img src="/img/badges/ultherapy-prime.png" alt="Ultherapy PRIME provider" class="badge-wide" loading="lazy"></a>
+      <span title="Merz Aesthetics Bronze Preferred Partner"><img src="/img/badges/merz-bronze-preferred.png" alt="Merz Aesthetics Bronze Preferred Partner" class="badge-round" loading="lazy"></span>
+      <a href="/xperience-rewards/" title="Xperience+ Rewards Program"><img src="/img/badges/xperience-plus.png" alt="Xperience+ Rewards Program by Merz Aesthetics" class="badge-xp" loading="lazy"></a>
+    </div>'''
 STICKY_BAR = '<div class="mbar"><a class="mbar-call" href="tel:+13045200461">&#9742;&nbsp; Call</a><a class="mbar-book" href="tel:+13045200461">Book Now</a></div>'
 CONSULT_SECTION = '''<section class="consult" id="consult">
   <div class="wrap">
@@ -72,6 +78,7 @@ CONSULT_SECTION = '''<section class="consult" id="consult">
 SCRIPTS = '''<script>
   var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
   document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+  document.querySelectorAll('.faq button').forEach(function(b){b.addEventListener('click',function(){var f=b.parentElement,ans=f.querySelector('.ans'),open=f.classList.contains('open');document.querySelectorAll('.faq').forEach(function(x){x.classList.remove('open');x.querySelector('.ans').style.maxHeight=null;});if(!open){f.classList.add('open');ans.style.maxHeight=ans.scrollHeight+'px';}});});
 </script>
 <script src="/popup.js" defer></script>
 <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"1b170ac2814a470a9b94ea34c6f6d045"})});</script>'''

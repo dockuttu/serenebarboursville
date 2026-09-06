@@ -6,6 +6,8 @@ echo "==> Building blog"
 python3 build_blog.py
 echo "==> Building Ultherapy service page"
 python3 build_ultherapy.py
+echo "==> Building Xperience+ rewards page"
+python3 build_rewards.py
 echo "==> Generating sitemap.xml"
 python3 build_sitemap.py
 echo "==> Cache-bust styles.css"
