@@ -3,7 +3,7 @@
 import json, os
 ns={}
 exec(open("common.py",encoding="utf-8").read(), ns)
-LOGO=ns["LOGO"]; BOOK=ns["BOOK"]; NAV=ns["NAV"]; FOOTER=ns["FOOTER"]; SCRIPTS=ns["SCRIPTS"]
+LOGO=ns["LOGO"]; BOOK=ns["book_for"]("ultherapy"); NAV=ns["NAV"]; FOOTER=ns["FOOTER"]; SCRIPTS=ns["SCRIPTS"]
 CONSULT=ns["CONSULT_SECTION"]; STICKY=ns.get("STICKY_BAR",""); areas_section=ns["areas_section"]
 AREA_SERVED=ns.get("AREA_SERVED", [])
 SITE="https://barboursville.serenemedspas.com"; URL=SITE+"/ultherapy/"

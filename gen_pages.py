@@ -1,0 +1,252 @@
+# -*- coding: utf-8 -*-
+import os, json
+exec(open("common.py").read())  # LOGO, BOOK, book_for, NAV, FOOTER, SCRIPTS, areas_section, AREA_SERVED
+from bv_localize import localize, BV_SKIP, BV_OVERRIDES
+
+SITE = "bundle/site"
+
+IMG = {
+ "botox":"/img/botox-inject.jpg",
+ "fillers":"/img/filler-inject.jpg",
+ "morpheus8":"/img/morpheus8.jpg",
+ "weight-loss":"/img/skin-analysis.jpg",
+}
+RELATED_META = {
+ "botox":("Botox","Smooth lines with a natural finish."),
+ "fillers":("Dermal Fillers","Restore volume and definition."),
+ "morpheus8":("Morpheus8","Tighten and resurface skin."),
+ "weight-loss":("Medical Weight Loss","Physician-supervised programs."),
+}
+
+def cards_html(cards):
+    return "\n".join('      <div class="card reveal"><div class="ico">&#10022;</div><h3>%s</h3><p>%s</p></div>' % (h,p) for h,p in cards)
+def steps_html(steps):
+    return "\n".join('      <div class="step reveal"><div class="num"></div><div><h3>%s</h3><p>%s</p></div></div>' % (h,p) for h,p in steps)
+def faq_visible(faqs):
+    return "\n".join('      <div class="faq reveal"><button>%s<span class="plus">+</span></button><div class="ans"><p>%s</p></div></div>' % (q,a) for q,a in faqs)
+def faq_schema(faqs):
+    return {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in faqs]}
+def related_html(keys):
+    out=[]
+    HIDE={"peptide-therapy","peptides"}|BV_SKIP  # hidden until LegitScript / not offered at Barboursville
+    for k in keys:
+        if k in HIDE: continue
+        t,d=RELATED_META[k]
+        out.append('      <a class="feat reveal" href="/%s/"><img src="%s" alt="%s in Barboursville, WV"><div class="ov"></div><div class="txt"><h3>%s</h3><p>%s</p><span class="lnk">Learn More &#8594;</span></div></a>' % (k,IMG[k],t,t,d))
+    return "\n".join(out)
+
+TEMPLATE = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{title}</title>
+<meta name="description" content="{desc}">
+<link rel="canonical" href="{url}">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="US-WV"><meta name="geo.placename" content="Barboursville, West Virginia"><meta name="geo.position" content="38.4109;-82.2926"><meta name="ICBM" content="38.4109, -82.2926">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{ogtitle}">
+<meta property="og:description" content="{ogdesc}">
+<meta property="og:url" content="{url}">
+<meta property="og:image" content="{logo}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">
+{proc}
+</script>
+<script type="application/ld+json">
+{crumbjson}
+</script>
+<script type="application/ld+json">
+{faq}
+</script>
+</head>
+<body>
+
+<div class="promo">&#10024; <strong>New to Serene?</strong> Ask about our current first-visit specials &mdash; <a href="{book}" target="_blank" rel="noopener">book a consultation</a> today &#10024;</div>
+
+{nav}
+
+<section class="svc-hero">
+  <div class="wrap">
+    <div class="crumbs"><a href="/">Home</a> &nbsp;&#8250;&nbsp; {crumbtext}</div>
+    <div class="svc-hero-grid">
+      <div class="svc-hero-txt">
+        <div class="eyebrow">{eyebrow}</div>
+        <h1>{h1}</h1>
+        <p>{hero}</p>
+        <a class="btn" href="{book}" target="_blank" rel="noopener">Book Your Consultation</a>
+        <a class="btn btn-outline" href="{tel}">Call {phone}</a>
+      </div>
+      <div class="svc-hero-media"><img src="/img/{hero_img}.jpg" alt="{h1} at Serene Med Spa in Barboursville, West Virginia" width="800" height="800"></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="item"><b>&#10022;</b> {t1}</div>
+    <div class="item"><b>&#10022;</b> {t2}</div>
+    <div class="item"><b>&#10022;</b> {t3}</div>
+    <div class="item"><b>&#10022;</b> {t4}</div>
+  </div>
+</div>
+
+{stats}
+
+<section>
+  <div class="wrap prose reveal">
+    <h2>{introh2}</h2>
+    <p class="lead">{introlead}</p>
+    <p>{intropara}</p>
+  </div>
+</section>
+
+<section class="tint-blush">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">{treyebrow}</div>
+      <h2>{treh2}</h2>
+    </div>
+    <div class="grid">
+{cards}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">The Experience</div>
+      <h2>What to Expect</h2>
+    </div>
+    <div class="steps">
+{steps}
+    </div>
+  </div>
+</section>
+
+<section class="tint-mint">
+  <div class="wrap prose reveal" style="text-align:center">
+    <div class="eyebrow" style="justify-content:center">Physician-Led</div>
+    <h2>{whyh2}</h2>
+    <p>{whypara}</p>
+    <a class="btn" href="{book}" target="_blank" rel="noopener">Book a Consultation</a>
+  </div>
+</section>
+
+{pricing}
+
+{aftercare}
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Good to Know</div><h2>{faqh2}</h2></div>
+    <div class="faq-list">
+{faqvis}
+    </div>
+  </div>
+</section>
+
+<section class="tint-blush">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Explore More</div><h2>Related Treatments</h2></div>
+    <div class="feat-grid">
+{related}
+    </div>
+  </div>
+</section>
+
+{reviews}
+
+{results}
+
+{areas}
+
+<section class="location" id="location">
+  <div class="wrap loc-grid">
+    <div class="loc-info reveal">
+      <div class="eyebrow" style="-webkit-text-fill-color:initial;color:var(--gold);background:none">Visit Us</div>
+      <h2 style="font-size:clamp(2.1rem,4.4vw,3rem);margin-bottom:20px">Serene Med Spa &mdash; Barboursville</h2>
+      <div class="row"><strong>Address</strong><span>1 Chateau Grove Ln<br>Barboursville, WV 25504</span></div>
+      <div class="row"><strong>Call</strong><span><a href="{tel}">{phone}</a></span></div>
+      <div class="row"><strong>Text</strong><span><a href="sms:+13045200461">{phone}</a></span></div>
+      <div class="row"><strong>Hours</strong><span>Mon&ndash;Fri: 9 AM &ndash; 5 PM<br>Sat&ndash;Sun: By appointment</span></div>
+      <div style="margin-top:28px"><a class="btn" href="{book}" target="_blank" rel="noopener">Book Online</a></div>
+    </div>
+    <iframe class="map reveal" loading="lazy" title="Map to Serene Med Spa Barboursville" src="https://www.google.com/maps?q=1+Chateau+Grove+Ln+Barboursville+WV+25504&output=embed"></iframe>
+  </div>
+</section>
+
+{finance}
+
+<section class="cta">
+  <div class="wrap reveal">
+    <h2>{ctah2}</h2>
+    <p>{ctapara}</p>
+    <a class="btn" href="{book}" target="_blank" rel="noopener">Book Your Visit</a>
+  </div>
+</section>
+
+{consult}
+
+{footer}
+
+{sticky}
+
+{scripts}
+</body>
+</html>
+'''
+
+def build_page(p):
+    url = SITE_URL + "/%s/" % p["slug"]
+    proc = {"@context":"https://schema.org","@type":"MedicalProcedure","name":p["proc_name"],
+        "alternateName":p["proc_alt"],"procedureType":"https://schema.org/NoninvasiveProcedure",
+        "howPerformed":p["how"],"bodyLocation":p["body"],"url":url,
+        "provider":{"@type":"MedicalBusiness","name":"Serene Med Spa — Barboursville","telephone":"+1-304-520-0461",
+        "address":{"@type":"PostalAddress","streetAddress":"1 Chateau Grove Ln","addressLocality":"Barboursville","addressRegion":"WV","postalCode":"25504","addressCountry":"US"},
+        "areaServed":AREA_SERVED}}
+    crumb = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":SITE_URL+"/"},
+        {"@type":"ListItem","position":2,"name":p["crumb"],"item":url}]}
+    return TEMPLATE.format(
+        title=p["title"],desc=p["desc"],url=url,ogtitle=p["ogtitle"],ogdesc=p["ogdesc"],logo=LOGO,
+        proc=json.dumps(proc,ensure_ascii=False),crumbjson=json.dumps(crumb,ensure_ascii=False),
+        faq=json.dumps(faq_schema(p["faqs"]),ensure_ascii=False),book=book_for(p["slug"]),nav=NAV,tel=PHONE_TEL,phone=PHONE_DISPLAY,
+        crumbtext=p["crumb"],eyebrow=p["eyebrow"],h1=p["h1"],hero=p["hero"],
+        t1=p["trust"][0],t2=p["trust"][1],t3=p["trust"][2],t4=p["trust"][3],
+        introh2=p["introh2"],introlead=p["introlead"],intropara=p["intropara"],
+        treyebrow=p["treyebrow"],treh2=p["treh2"],cards=cards_html(p["cards"]),
+        steps=steps_html(p["steps"]),whyh2=p["whyh2"],whypara=p["whypara"],
+        faqh2=p["faqh2"],faqvis=faq_visible(p["faqs"]),related=related_html(p["related"]),
+        areas=areas_section(p.get("area_kw","care")),
+        stats=STATS_BRANDS,reviews=REVIEWS_SECTION,results=RESULTS_SECTION,finance=FINANCE_BAND,sticky=STICKY_BAR,
+        hero_img=hero_for(p["slug"]),aftercare=aftercare_html(p["slug"]),pricing=p.get("pricing_html",""),consult=CONSULT_SECTION,
+        ctah2=p["ctah2"],ctapara=p["ctapara"],footer=FOOTER,scripts=SCRIPTS)
+
+exec(open("pages_data.py").read())
+PAGES2=[]; PAGES3=[]
+exec(open("pages_data_new.py").read())
+exec(open("pages_data_new2.py").read())
+byslug={}
+for p in PAGES+PAGES2+PAGES3:  # later definitions override earlier by slug
+    byslug[p["slug"]]=p
+ALL=[]
+for s,p in byslug.items():
+    if s in BV_SKIP: continue
+    q=localize(p)                       # Hudson copy -> Barboursville copy
+    if s in BV_OVERRIDES: q=BV_OVERRIDES[s](q)   # device/location-specific rewrites
+    ALL.append(q)
+for p in ALL:
+    d = os.path.join(SITE, p["slug"]); os.makedirs(d, exist_ok=True)
+    open(os.path.join(d,"index.html"),"w").write(build_page(p))
+print("generated", len(ALL), "pages")

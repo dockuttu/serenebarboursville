@@ -13,27 +13,38 @@ exec(open("pages_data.py").read(), ns)
 ns['PAGES2']=[]; ns['PAGES3']=[]
 exec(open("pages_data_new.py").read(), ns)
 exec(open("pages_data_new2.py").read(), ns)
+from bv_localize import localize, BV_OVERRIDES
 ORIG_DESC={}
 for p in ns['PAGES']+ns['PAGES2']+ns['PAGES3']:
-    ORIG_DESC[p['slug']]=p['desc']
+    q=BV_OVERRIDES[p['slug']](localize(p))
+    ORIG_DESC[p['slug']]=q['desc']
 
 SPECIAL_TITLES={
- "index.html":"Serene Med Spa &mdash; Hudson, OH | Botox, Fillers &amp; More",
- "training/index.html":"Provider Training &mdash; Serene Aesthetics Academy | Hudson",
- "pricing/index.html":"Menu &amp; Pricing &mdash; Serene Med Spa, Hudson, OH",
- "botox/index.html":"Botox in Hudson, OH | Serene Med Spa",
- "hyperpigmentation/index.html":"Hyperpigmentation Treatment in Hudson, OH | Serene Med Spa",
- "peptide-therapy/index.html":"Peptide Therapy in Hudson, OH | Serene Med Spa",
+ "index.html":"Serene Med Spa &mdash; Barboursville, WV | Botox, Fillers &amp; More",
+ "pricing/index.html":"Menu &amp; Pricing &mdash; Serene Med Spa, Barboursville WV",
+ "botox/index.html":"Botox in Barboursville, WV | Serene Med Spa",
+ "fillers/index.html":"Dermal Fillers in Barboursville, WV | Serene Med Spa",
+ "morpheus8/index.html":"Morpheus8 in Barboursville, WV | Serene Med Spa",
+ "weight-loss/index.html":"Medical Weight Loss in Barboursville, WV | Serene Med Spa",
+ "hyperpigmentation/index.html":"Hyperpigmentation Treatment in Barboursville, WV | Serene",
+ "womens-sexual-wellness/index.html":"Women's Sexual Wellness in Barboursville, WV | Serene",
+ "mens-sexual-wellness/index.html":"Men's Sexual Wellness in Barboursville, WV | Serene Med Spa",
+ "laser-nail-fungus/index.html":"Laser Nail Fungus Treatment in Barboursville, WV | Serene",
+ "medical-facials/index.html":"Facials &amp; Microdermabrasion in Barboursville, WV | Serene",
+ "laser-skin/index.html":"Laser Skin Resurfacing in Barboursville, WV | Serene Med Spa",
+ "photofacial/index.html":"BBL &amp; IPL Photofacial in Barboursville, WV | Serene Med Spa",
 }
 # Clean, hand-written descriptions for hand-built pages whose original long
 # text is not in the data files (so they can't be sourced/re-trimmed).
 SPECIAL_DESCS={
- "index.html":"Physician-led medical spa in Hudson, Ohio — Botox, fillers, Morpheus8, EMSCULPT NEO, laser, HydraFacial, weight loss & IV wellness. Book online today.",
- "fillers/index.html":"Physician-injected dermal fillers in Hudson, Ohio — lip, cheek, jawline & under-eye filler for natural volume and definition. Book your consultation.",
- "morpheus8/index.html":"Morpheus8 RF microneedling in Hudson, Ohio at Serene Med Spa — tighten, smooth, and resurface skin on the face and body. Physician-led. Book today.",
- "weight-loss/index.html":"Physician-supervised medical weight loss in Hudson, Ohio — personalized GLP-1 programs guided by board-certified providers. Book a consultation.",
- "pricing/index.html":"Serene Med Spa Hudson pricing — Botox from $11/unit, fillers, Morpheus8, laser hair removal packages, HydraFacial, weight loss & IV infusions.",
- "emsculpt-neo/index.html":"Non-invasive EMSCULPT NEO body sculpting in Hudson, Ohio — build muscle and reduce fat with no surgery and no downtime. Physician-led care.",
+ "index.html":"Physician-led medical spa in Barboursville, WV — Botox, fillers, Morpheus8, Ultherapy, laser, HydraFacial, weight loss & IV wellness. Book online today.",
+ "botox/index.html":"Botox, Dysport & Xeomin in Barboursville, WV — physician-led wrinkle relaxers for natural, refreshed results. From $11/unit. Book online today.",
+ "fillers/index.html":"Physician-injected dermal fillers in Barboursville, WV — lip, cheek, jawline & under-eye filler for natural volume and definition. Book your consultation.",
+ "morpheus8/index.html":"Morpheus8 RF microneedling in Barboursville, WV at Serene Med Spa — tighten, smooth, and resurface skin on the face and body. Physician-led. Book today.",
+ "weight-loss/index.html":"Physician-supervised medical weight loss in Barboursville, WV — personalized GLP-1 programs guided by board-certified providers. Book a consultation.",
+ "pricing/index.html":"Serene Med Spa Barboursville pricing — Botox from $11/unit, fillers, Morpheus8, Ultherapy, laser hair removal packages, HydraFacial, weight loss & IV.",
+ "womens-sexual-wellness/index.html":"Physician-led women's sexual wellness in Barboursville, WV — discreet, non-surgical care including the O-Shot (PRP), VTone, FormaV & Morpheus8 V. Book today.",
+ "mens-sexual-wellness/index.html":"Physician-led men's sexual wellness in Barboursville, WV — discreet, non-surgical care including Alma Duo acoustic wave therapy & the P-Shot (PRP). Book today.",
 }
 
 def dlen(x): return len(unescape(x))
@@ -45,6 +56,8 @@ def short_title(raw):
         return parts[0]+" | "+parts[-1]          # drop middle descriptor
     if len(parts)==2 and "&mdash;" in parts[1]:
         return parts[0]+" | "+parts[1].split("&mdash;")[0].strip()  # drop tagline
+    if len(parts)>=2 and dlen(parts[0]+" | Serene")<=60:
+        return parts[0]+" | Serene"
     return raw
 
 WEAK={'a','an','the','and','with','for','to','of','in','on','at','without','that','or','your',
