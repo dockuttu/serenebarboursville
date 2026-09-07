@@ -57,7 +57,7 @@ def photofacial(p):
     return p
 
 def laser_hair_removal(p):
-    p["intropara"] = p["intropara"] + (" Our Barboursville location uses the Alma Soprano &mdash; a virtually painless diode laser safe for all skin types &mdash; with Diolaze XL and Alma Harmony available for specific areas.")
+    p["intropara"] = p["intropara"] + (" Our Barboursville location uses the Alma Soprano &mdash; a virtually painless diode laser safe for all skin types &mdash; with Diolaze XL and Alma Harmony available for specific areas. Sessions start at $49, and every 6-session package includes the sixth session free.")
     return p
 
 def laser_nail_fungus(p):
