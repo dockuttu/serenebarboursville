@@ -24,13 +24,15 @@ CATS=[]
 CATS.append(("Injectables", sub("Dermal Fillers &mdash; Juv&eacute;derm") +
   row("Lip Filler","$500","/syringe")+row("Mini Pout","$300")+row("Cheek Filler","$500","/syringe")+
   row("Under-Eye Filler","$500","/syringe")+row("Jawline Filler","$500","/syringe")+row("Hand Filler","$500","/syringe")+
-  row("Radiesse","$500","/syringe")+row("3 Juv&eacute;derm Fillers","$1,400")+
+  row("Radiesse","$500","/syringe")+row("3 Juv&eacute;derm Fillers (bundle)","$1,300")+
   sub("Neurotoxins")+
-  row("Botox","$11","/unit")+row("Xeomin","$11","/unit")+row("Dysport","$3.99","/unit")+row("Daxxify","$11","/unit")+
-  row("Shoulder Slimming Botox","$11","/unit")+row("Baby Botox","$220","/ 20 units")+
+  row("Botox","$10","/unit")+row("Xeomin","$10","/unit")+row("Dysport","$3.99","/unit")+row("Daxxify","$10","/unit")+
+  row("Shoulder Slimming Botox","$10","/unit")+row("Baby Botox","$200","/ 20 units")+row("Lip Flip","$80","/ 8 units")+
   sub("Collagen &amp; Biostimulators")+
-  row("Sculptra","$750","/vial")+row("Skinvive","$400","/syringe")+row("Under-Eye PRP","$400")+row("Under-Eye PRF","$600")+
-  row("Kybella Fat Dissolver","$600","/vial")+row("Filler Reversal","$150+")))
+  row("Sculptra","$600","/vial")+row("Skinvive","$400","/syringe")+row("Under-Eye PRP","$400")+row("Under-Eye PRF","$600")+
+  row("Kybella Fat Dissolver","$600","/vial")+row("Filler Reversal","$150+")+row("Kenalog Steroid Injection (scar / cyst)","$75")+
+  sub("PDO Threads &amp; Veins")+row("PDO Smooth Threads (collagen)","$275","/area")+row("PDO Lifting Threads &mdash; Small Area","$300")+row("PDO Lifting Threads &mdash; Large Area","$600")+row("Spider Vein Sclerotherapy","$300","/session")+
+  '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)"><strong>Tri-State price match.</strong> Bring us any published local price on the same injectable treatment and we&rsquo;ll match it.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
 CATS.append(("Weight Loss &amp; Wellness",
   row("Medical Weight Loss Visit","$149","/month")+
@@ -42,7 +44,7 @@ CATS.append(("Weight Loss &amp; Wellness",
 
 CATS.append(("Laser &amp; Skin",
   row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
-  row("VI Chemical Peels","$250+")+row("PDO Thread Face Lift","$500+")+row("Sciton BBL Heroic","$400")+
+  row("VI Chemical Peels","$250+")+row("Sciton BBL Heroic","$400")+
   row("Sciton Moxi","$500")+row("Alma Hybrid Laser Resurfacing","Quote")+row("Opus Plasma","$400")+row("PICO Fractional Resurfacing","Quote")+row("Clear Lift","Quote")+sub("Ultherapy PRIME &mdash; Barboursville")+row("Full Face + Neck","$2,900")+row("Full Face","$2,200")+row("Lower Face + Neck","$2,400")+row("Lower Face (Jowls)","$1,650")+row("Neck / Under-Chin","$1,400")+row("Brow Lift","$850")+row("D&eacute;collet&eacute; add-on","$500")+
   '<div class="sub">Laser Hair Removal &mdash; per session / package of 6 (save 10%)</div>'+
   '''<table class="lhr-table"><thead><tr><th>Area</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
@@ -69,7 +71,7 @@ CATS.append(("Hair, Face &amp; Body", sub("Hair Restoration")+
   sub("Facials")+row("HydraFacial","$150")+row("Microdermabrasion","Quote")+row("Facials &amp; Dermaplaning","$100+")+
   sub("Body Treatments")+row("Microneedling","$200")+row("Microneedling with PRP","$500")+
   row("Morpheus8 RF","$800","/tx")+row("Morpheus8 RF &mdash; Series of 3","$2,100")+
-  row("Spider Vein","$300+","/session")+row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$250","/tx")))
+  row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$250","/tx")))
 
 CATS.append(("Sexual Wellness", sub("Female Wellness")+
   rowaka("V-Renew PRP","O-Shot&reg;","$800")+row("VTone (Muscle Strengthening)","$350","/tx")+
@@ -96,7 +98,7 @@ cats_html="\n".join('<div class="price-cat reveal" id="%s"><h3>%s</h3>%s</div>'%
 jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slug(t),t) for t,_ in CATS)+'</div>'
 
 # Offer schema (headline priced services)
-OFFERS=[("Botox",11),("Dermal Fillers",500),("Lip Filler",500),("Sculptra",700),("Kybella",600),
+OFFERS=[("Botox",10),("Dermal Fillers",500),("Lip Filler",500),("Sculptra",600),("Kybella",600),("PDO Thread Lift",300),("Kenalog Injection",75),
  ("Morpheus8 RF",800),("HydraFacial",150),("Ultherapy PRIME",850),("Microneedling with PRP",500),
  ("Laser Hair Removal",60),("EvolveX",250),("IV Vitamin Infusion",149),
  ("Medical Weight Loss Visit",149),("PRP Hair Restoration",800)]
@@ -113,7 +115,7 @@ HTML=f'''<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pricing &amp; Menu | Serene Med Spa, Barboursville WV</title>
-<meta name="description" content="Serene Med Spa Barboursville pricing: Botox from $11/unit, dermal fillers, Morpheus8, laser, HydraFacial, weight loss, IV infusions &amp; more. Physician-led care in Barboursville, WV.">
+<meta name="description" content="Serene Med Spa Barboursville pricing: Botox from $10/unit, dermal fillers, Morpheus8, laser, HydraFacial, weight loss, IV infusions &amp; more. Physician-led care in Barboursville, WV.">
 <link rel="canonical" href="{URL}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="geo.region" content="US-WV"><meta name="geo.placename" content="Barboursville, West Virginia">

@@ -38,11 +38,11 @@ SPECIAL_TITLES={
 # text is not in the data files (so they can't be sourced/re-trimmed).
 SPECIAL_DESCS={
  "index.html":"Physician-led medical spa in Barboursville, WV — Botox, fillers, Morpheus8, Ultherapy, laser, HydraFacial, weight loss & IV wellness. Book online today.",
- "botox/index.html":"Botox, Dysport & Xeomin in Barboursville, WV — physician-led wrinkle relaxers for natural, refreshed results. From $11/unit. Book online today.",
+ "botox/index.html":"Botox, Dysport & Xeomin in Barboursville, WV — physician-led wrinkle relaxers for natural, refreshed results. From $10/unit. Book online today.",
  "fillers/index.html":"Physician-injected dermal fillers in Barboursville, WV — lip, cheek, jawline & under-eye filler for natural volume and definition. Book your consultation.",
  "morpheus8/index.html":"Morpheus8 RF microneedling in Barboursville, WV at Serene Med Spa — tighten, smooth, and resurface skin on the face and body. Physician-led. Book today.",
  "weight-loss/index.html":"Physician-supervised medical weight loss in Barboursville, WV — personalized GLP-1 programs guided by board-certified providers. Book a consultation.",
- "pricing/index.html":"Serene Med Spa Barboursville pricing — Botox from $11/unit, fillers, Morpheus8, Ultherapy, laser hair removal packages, HydraFacial, weight loss & IV.",
+ "pricing/index.html":"Serene Med Spa Barboursville pricing — Botox from $10/unit, fillers, Morpheus8, Ultherapy, laser hair removal packages, HydraFacial, weight loss & IV.",
  "womens-sexual-wellness/index.html":"Physician-led women's sexual wellness in Barboursville, WV — discreet, non-surgical care including the O-Shot (PRP), VTone, FormaV & Morpheus8 V. Book today.",
  "mens-sexual-wellness/index.html":"Physician-led men's sexual wellness in Barboursville, WV — discreet, non-surgical care including Alma Duo acoustic wave therapy & the P-Shot (PRP). Book today.",
 }
