@@ -10,12 +10,12 @@ BASE="bundle/site"
 ns={}
 exec(open("common.py").read(), ns)
 exec(open("pages_data.py").read(), ns)
-ns['PAGES2']=[]; ns['PAGES3']=[]
-exec(open("pages_data_new.py").read(), ns)
-exec(open("pages_data_new2.py").read(), ns)
+for _k in ('PAGES2','PAGES3','PAGES4','PAGES5','PAGES6'): ns[_k]=[]
+import glob as _glob
+for _f in sorted(_glob.glob('pages_data_new*.py')): exec(open(_f).read(), ns)
 from bv_localize import localize, BV_OVERRIDES
 ORIG_DESC={}
-for p in ns['PAGES']+ns['PAGES2']+ns['PAGES3']:
+for p in ns['PAGES']+ns['PAGES2']+ns['PAGES3']+ns['PAGES4']+ns['PAGES5']+ns['PAGES6']:
     q=BV_OVERRIDES[p['slug']](localize(p))
     ORIG_DESC[p['slug']]=q['desc']
 

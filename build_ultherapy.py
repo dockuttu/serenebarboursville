@@ -176,5 +176,6 @@ HTML=f'''<!DOCTYPE html>
 </html>
 '''
 os.makedirs("bundle/site/ultherapy", exist_ok=True)
+HTML=HTML.replace(ns["PRICE_MATCH_RIBBON"],"",1)  # Ultherapy page keeps its own launch ribbon
 open("bundle/site/ultherapy/index.html","w",encoding="utf-8").write(HTML)
 print("build_ultherapy: wrote ultherapy/index.html (%d bytes)"%len(HTML))

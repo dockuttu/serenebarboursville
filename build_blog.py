@@ -160,7 +160,6 @@ IDX=f'''<!DOCTYPE html>
 </head>
 <body>
 
-<div class="promo">&#10024; <strong>From Our Team</strong> &mdash; techniques, results &amp; aesthetic insights. <a href="{BOOK}" target="_blank" rel="noopener">Book a consultation</a> &#10024;</div>
 
 {NAV}
 

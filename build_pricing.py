@@ -142,7 +142,6 @@ HTML=f'''<!DOCTYPE html>
 </head>
 <body>
 
-<div class="promo">&#10024; <strong>Menu &amp; Pricing</strong> &mdash; ask about current specials, memberships &amp; package savings. <a href="{BOOK}" target="_blank" rel="noopener">Book a consultation</a> &#10024;</div>
 
 {NAV}
 
@@ -153,7 +152,7 @@ HTML=f'''<!DOCTYPE html>
       <div class="svc-hero-txt">
         <div class="eyebrow">Transparent, Physician-Led</div>
         <h1>Menu &amp; Pricing</h1>
-        <p>Our full treatment menu at the Barboursville location. Prices are a starting point &mdash; your exact plan and final pricing are confirmed during your consultation. Package &amp; membership savings available.</p>
+        <p>Our full treatment menu at the Barboursville location. Prices are a starting point &mdash; your exact plan and final pricing are confirmed during your consultation. Package &amp; membership savings available. <strong>Tri-State price match on all injectables.</strong></p>
         <a class="btn" href="{BOOK}" target="_blank" rel="noopener">Book a Consultation</a>
         <a class="btn btn-outline" href="tel:+13045200461">Call (304) 520-0461</a>
       </div>
@@ -162,6 +161,7 @@ HTML=f'''<!DOCTYPE html>
   </div>
 </section>
 
+{PRICE_MATCH_BAND}
 <section class="tint-blush">
   <div class="wrap">
     {jump_html}

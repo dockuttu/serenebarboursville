@@ -71,7 +71,6 @@ TEMPLATE = '''<!DOCTYPE html>
 </head>
 <body>
 
-<div class="promo">&#10024; <strong>New to Serene?</strong> Ask about our current first-visit specials &mdash; <a href="{book}" target="_blank" rel="noopener">book a consultation</a> today &#10024;</div>
 
 {nav}
 
@@ -101,6 +100,7 @@ TEMPLATE = '''<!DOCTYPE html>
 </div>
 
 {stats}
+{pmatch}
 
 <section>
   <div class="wrap prose reveal">
@@ -229,16 +229,16 @@ def build_page(p):
         steps=steps_html(p["steps"]),whyh2=p["whyh2"],whypara=p["whypara"],
         faqh2=p["faqh2"],faqvis=faq_visible(p["faqs"]),related=related_html(p["related"]),
         areas=areas_section(p.get("area_kw","care")),
-        stats=STATS_BRANDS,reviews=REVIEWS_SECTION,results=RESULTS_SECTION,finance=FINANCE_BAND,sticky=STICKY_BAR,
+        stats=STATS_BRANDS,pmatch=(PRICE_MATCH_BAND if p["slug"] in PM_SLUGS else ""),reviews=REVIEWS_SECTION,results=RESULTS_SECTION,finance=FINANCE_BAND,sticky=STICKY_BAR,
         hero_img=hero_for(p["slug"]),aftercare=aftercare_html(p["slug"]),pricing=p.get("pricing_html",""),consult=CONSULT_SECTION,
         ctah2=p["ctah2"],ctapara=p["ctapara"],footer=FOOTER,scripts=SCRIPTS)
 
 exec(open("pages_data.py").read())
-PAGES2=[]; PAGES3=[]
-exec(open("pages_data_new.py").read())
-exec(open("pages_data_new2.py").read())
+PAGES2=[]; PAGES3=[]; PAGES4=[]; PAGES5=[]; PAGES6=[]
+import glob as _glob
+for _f in sorted(_glob.glob("pages_data_new*.py")): exec(open(_f).read())   # auto-load every pages_data_new*.py
 byslug={}
-for p in PAGES+PAGES2+PAGES3:  # later definitions override earlier by slug
+for p in PAGES+PAGES2+PAGES3+PAGES4+PAGES5+PAGES6:  # later definitions override earlier by slug
     byslug[p["slug"]]=p
 ALL=[]
 for s,p in byslug.items():

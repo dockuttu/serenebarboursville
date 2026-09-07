@@ -29,9 +29,35 @@ BOOK_MAP = {                          # slug -> consultation that page should op
  "sculptra": MM % 331,               # Sculptra
  "kybella": MM % 332,                # Kybella (per vial)
  "thread-lift": MM % 337,            # PDO Thread Lift
- "spider-veins": MM % 338,           # Spider Vein Sclerotherapy
+ "spider-veins": MM % 338, "under-eye-prp": MM % 333, "kenalog": MM % 334,           # Spider Vein Sclerotherapy
 }
 def book_for(slug): return BOOK_MAP.get(slug, BOOK)
+
+# ---- Barboursville Price Match Guarantee (site-wide highlight) ----
+PM_SLUGS = {"botox","fillers","lip-filler","cheek-filler","under-eye-filler","jawline-filler","chin-filler",
+            "skinvive","kybella","sculptra","under-eye-prp","kenalog","thread-lift","spider-veins","sculptra-bbl"}
+PRICE_MATCH_RIBBON = '''<div class="promo">&#10022; <strong>Tri-State Price Match:</strong> Botox $10/unit &amp; we&rsquo;ll match any published local price on injectables &mdash; <a href="/#price-match">see the guarantee</a></div>
+'''
+PRICE_MATCH_BAND = '''<section class="pmatch reveal" id="price-match">
+  <div class="wrap">
+    <div class="pm-grid">
+      <div class="pm-txt">
+        <div class="eyebrow">Barboursville Price Match Guarantee</div>
+        <h2>We&rsquo;ll match any published Tri-State price on injectables</h2>
+        <p>Botox, Dysport, Xeomin &amp; Daxxify from <strong>$10/unit</strong>. Dermal filler from <strong>$500/syringe</strong>. Sculptra <strong>$600/vial</strong>. Every treatment performed by our physician-led team &mdash; and if you find a lower published price on the same treatment anywhere in the Tri-State, bring it in and we&rsquo;ll match it.</p>
+        <div class="pm-cta"><a class="btn" href="%s" target="_blank" rel="noopener">Book Botox &mdash; $10/unit</a><a class="btn btn-ghost" href="/pricing/#injectables">See Full Pricing</a></div>
+        <p class="pm-fine">Match applies to the same product, treatment and quantity at a licensed medical provider within 30 miles of Barboursville, WV. Price must be currently published (website or printed menu). Not combinable with other offers or rewards.</p>
+      </div>
+      <div class="pm-stats">
+        <div><b>$10</b><span>Botox / unit</span></div>
+        <div><b>$500</b><span>Filler / syringe</span></div>
+        <div><b>$600</b><span>Sculptra / vial</span></div>
+        <div><b>$300</b><span>PDO threads from</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+''' % (MM % 328)
 
 # ---- Barboursville service catalogue (drives nav, footer, sitemap) ----
 CATEGORIES = [
@@ -40,6 +66,7 @@ CATEGORIES = [
    ("cheek-filler","Cheek Filler"), ("under-eye-filler","Under-Eye Filler"),
    ("jawline-filler","Jawline Filler"), ("chin-filler","Chin Filler"),
    ("skinvive","Skinvive"), ("kybella","Kybella"), ("sculptra","Sculptra"),
+   ("under-eye-prp","Under-Eye PRP / PRF"), ("kenalog","Kenalog Injections"),
  ]),
  ("Skin &amp; Facials", [
    ("morpheus8","Morpheus8"), ("ultherapy","Ultherapy"), ("laser-facial","Laser Facial"), ("chemical-peels","Chemical Peels"),
@@ -54,7 +81,7 @@ CATEGORIES = [
  ("Body &amp; Contouring", [
    ("evolve-x","Evolve X"), ("bodytite","BodyTite"), ("facetite","FaceTite"),
    ("forma","Forma Skin Tightening"), ("liposuction","Liposuction &amp; Fat Transfer"),
-   ("weight-loss","Medical Weight Loss"),
+   ("weight-loss","Medical Weight Loss"), ("sculptra-bbl","Sculptra BBL"),
  ]),
  ("Regenerative &amp; Hair", [
    ("microneedling","Microneedling &amp; PRP"), ("thread-lift","PDO Thread Lift"),
@@ -95,7 +122,7 @@ def _mega():
         cols.append('<div class="mcol"><h5>%s</h5>%s</div>' % (cat, links))
     return '<div class="mega">%s</div>' % "".join(cols)
 
-NAV = '''<header>
+NAV = PRICE_MATCH_RIBBON + '''<header>
   <div class="wrap nav">
     <a href="/"><img src="%s" alt="Serene Med Spa — Barboursville, WV"></a>
     <ul>
@@ -234,7 +261,7 @@ HERO_MAP = {
  "laser-skin":"laser","photofacial":"laser","laser-hair-removal":"laser","laser-tattoo-removal":"laser",
  "laser-nail-fungus":"laser","evolve-x":"morpheus8","bodytite":"morpheus8",
  "facetite":"morpheus8","forma":"morpheus8","liposuction":"dr-arora","weight-loss":"dr-arora",
- "microneedling":"morpheus8","thread-lift":"filler-inject","prp-hair-restoration":"hair-ted",
+ "microneedling":"morpheus8","thread-lift":"filler-inject","under-eye-prp":"filler-inject","kenalog":"botox-inject","sculptra-bbl":"dr-arora","prp-hair-restoration":"hair-ted",
  "iv-therapy":"facial-room","hormone-optimization":"dr-arora",
  "mens-sexual-wellness":"dr-arora","womens-sexual-wellness":"dr-arora","spider-veins":"laser",
 }

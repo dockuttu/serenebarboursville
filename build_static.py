@@ -37,6 +37,7 @@ for slug in ["botox","fillers","morpheus8","weight-loss"]:
     s=block(s,"<header>","</header>",NAV)
     s=block(s,"<footer>","</footer>",FOOTER)
     s=block(s,'<section class="stats">',"</section>",STATS_BRANDS)
+    if slug in PM_SLUGS: s=s.replace(STATS_BRANDS, STATS_BRANDS+"\n"+PRICE_MATCH_BAND, 1)
     s=block(s,'<section class="tint-blush" id="reviews">',"</section>",REVIEWS_SECTION)
     s=block(s,'<section class="results" id="results">',"</section>",RESULTS_SECTION)
     s=block(s,'<section class="areas">',"</section>","%AREAS%")
