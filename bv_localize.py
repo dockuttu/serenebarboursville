@@ -18,6 +18,7 @@ _SUBS = [
  ("(330) 460-5915", "(304) 520-0461"), ("(330)&nbsp;460-5915", "(304)&nbsp;520-0461"), ("330-460-5915", "304-520-0461"), ("+13304605915", "+13045200461"),
  ("50 W Streetsboro St, Suite 2", "1 Chateau Grove Ln"), ("44236", "25504"),
  ("hudson.serenemedspas.com", "barboursville.serenemedspas.com"),
+ ("/hydration-bar/", "/iv-therapy/"),   # Hudson-only page
 ]
 _OH = re.compile(r"\bOH\b")
 
