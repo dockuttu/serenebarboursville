@@ -7,7 +7,8 @@ echo "==> Service pages";       python3 gen_pages.py
 echo "==> Hand-built pages";    python3 build_static.py
 echo "==> Pricing";             python3 build_pricing.py
 # blog moved to blog.serenemedspas.com (repo sereneblog); old /blog/ URLs 301 via bundle/nginx.conf
-rm -rf bundle/site/blog
+rm -rf bundle/site/blog 2>/dev/null || true
+python3 fix_blog_links.py
 echo "==> Ultherapy";           python3 build_ultherapy.py
 echo "==> Xperience+ rewards";  python3 build_rewards.py
 echo "==> SEO trim";            python3 seo_trim.py
