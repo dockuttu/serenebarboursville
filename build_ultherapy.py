@@ -134,7 +134,8 @@ HTML=f'''<!DOCTYPE html>
 {price_html(PRICES)}
   </div>
   <div class="prose reveal" style="text-align:center;max-width:680px;margin:32px auto 0">
-    <p>&#10024; <strong>Founding Patient offer:</strong> Full Face + Neck for <strong>$2,299</strong> for our first 20 Ultherapy patients &mdash; limited time. Ask about monthly financing to spread the cost.</p>
+    <p>&#10024; <strong>Founding Patient offer:</strong> Full Face + Neck for <strong>$2,299</strong> for our first 20 Ultherapy patients &mdash; limited time. Use code <strong>ULTFOUNDER-BV</strong> when you book online, or mention it at your visit. Ask about monthly financing to spread the cost.</p>
+    <p style="margin-top:18px"><a class="btn" href="https://booking.mangomint.com/serenemedspa?serviceId=341" target="_blank" rel="noopener">Book Ultherapy PRIME &mdash; $250 deposit</a> <a class="btn btn-outline" href="https://booking.mangomint.com/serenemedspa?serviceId=322" target="_blank" rel="noopener">Book a Free Consultation</a></p>
   </div>
 </div></section>
 
