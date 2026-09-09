@@ -130,7 +130,7 @@ NAV = PRICE_MATCH_RIBBON + '''<header>
         %s
       </li>
       <li><a href="/pricing/">Pricing</a></li>
-      <li><a href="/blog/">Blog</a></li>
+      <li><a href="https://blog.serenemedspas.com/">Blog</a></li>
       <li class="has-drop"><a href="#" onclick="return false">Locations &#9662;</a>
         <div class="mega loc-mini">
           <a href="https://hudson.serenemedspas.com/">Hudson, OH</a>
@@ -172,7 +172,7 @@ FOOTER = '''<footer>
           <li><a href="%s">%s</a></li>
           <li><a href="%s" target="_blank" rel="noopener">Book Online</a></li>
           <li><a href="/xperience-rewards/">Xperience+ Rewards</a></li>
-          <li><a href="/blog/">Blog</a></li>
+          <li><a href="https://blog.serenemedspas.com/">Blog</a></li>
           <li style="margin-top:10px;font-weight:600">Also in Hudson, OH</li>
           <li><a href="https://hudson.serenemedspas.com/">Visit our OH location &rsaquo;</a></li>
         </ul>
