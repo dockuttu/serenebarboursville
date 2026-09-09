@@ -97,9 +97,20 @@ def body_generic(p):
     p["faqs"] = [(fix(q), fix(a)) for q,a in p["faqs"]]
     return p
 
+def harmony_bio_boost(p):
+    # Barboursville maps skin with VISIA (no Alma IQ there)
+    def fix(t): return t.replace("Alma IQ skin analysis","VISIA skin analysis").replace("Alma IQ","VISIA")
+    for k in ("desc","ogdesc","hero","introlead","intropara","whypara","ctapara","pricing_html","how"):
+        if k in p: p[k]=fix(p[k])
+    p["cards"]=[(fix(h),fix(d)) for h,d in p["cards"]]
+    p["steps"]=[(fix(h),fix(d)) for h,d in p["steps"]]
+    p["faqs"]=[(fix(q),fix(a)) for q,a in p["faqs"]]
+    return p
+
 BV_OVERRIDES = {
- "laser-skin": lambda p: _related(laser_skin(body_generic(p)), ["morpheus8","photofacial","fillers"]),
- "photofacial": lambda p: _related(photofacial(body_generic(p)), ["laser-skin","hyperpigmentation","botox"]),
+ "harmony-bio-boost": lambda p: _related(harmony_bio_boost(body_generic(p)), ["morpheus8","photofacial","botox"]),
+ "laser-skin": lambda p: _related(laser_skin(body_generic(p)), ["harmony-bio-boost","morpheus8","photofacial"]),
+ "photofacial": lambda p: _related(photofacial(body_generic(p)), ["harmony-bio-boost","laser-skin","hyperpigmentation"]),
  "laser-hair-removal": lambda p: _related(laser_hair_removal(body_generic(p)), ["photofacial","botox","fillers"]),
  "laser-nail-fungus": lambda p: _related(laser_nail_fungus(body_generic(p)), ["laser-hair-removal","botox","fillers"]),
  "laser-tattoo-removal": lambda p: _related(laser_tattoo(body_generic(p)), ["laser-skin","botox","fillers"]),
