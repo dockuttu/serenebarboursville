@@ -74,7 +74,7 @@ CATEGORIES = [
    ("hyperpigmentation","Hyperpigmentation &amp; Melasma"),
  ]),
  ("Laser", [
-   ("laser-skin","Laser Skin Resurfacing"), ("alma-hybrid","Alma Hybrid"), ("harmony-bio-boost","Harmony Bio-Boost"), ("photofacial","Photofacial (BBL &amp; IPL)"),
+   ("laser-skin","Laser Skin Resurfacing"), ("opus-plasma","Opus Plasma"), ("alma-hybrid","Alma Hybrid"), ("harmony-bio-boost","Harmony Bio-Boost"), ("photofacial","Photofacial (BBL &amp; IPL)"),
    ("laser-hair-removal","Laser Hair Removal"), ("laser-tattoo-removal","Laser Tattoo Removal"),
    ("laser-nail-fungus","Laser Nail Fungus"),
  ]),
@@ -85,7 +85,7 @@ CATEGORIES = [
  ]),
  ("Regenerative &amp; Hair", [
    ("microneedling","Microneedling &amp; PRP"), ("thread-lift","PDO Thread Lift"),
-   ("prp-hair-restoration","Hair Restoration"),
+   ("prp-hair-restoration","Hair Restoration"), ("alma-ted","Alma TED Hair Restoration"),
  ]),
  ("Wellness", [
    ("iv-therapy","IV Therapy"), ("hormone-optimization","Hormone Optimization"),
@@ -258,10 +258,10 @@ HERO_MAP = {
  "chin-filler":"filler-inject","skinvive":"filler-inject","kybella":"filler-inject","sculptra":"filler-inject",
  "morpheus8":"morpheus8","ultherapy":"morpheus8","laser-facial":"laser","chemical-peels":"facial-2","hydrafacial":"hydrafacial",
  "medical-facials":"facial-room","hyperpigmentation":"skin-analysis",
- "laser-skin":"laser","harmony-bio-boost":"laser","alma-hybrid":"laser","photofacial":"laser","laser-hair-removal":"laser","laser-tattoo-removal":"laser",
+ "laser-skin":"laser","harmony-bio-boost":"laser","opus-plasma":"laser","alma-hybrid":"laser","photofacial":"laser","laser-hair-removal":"laser","laser-tattoo-removal":"laser",
  "laser-nail-fungus":"laser","evolve-x":"morpheus8","bodytite":"morpheus8",
  "facetite":"morpheus8","forma":"morpheus8","liposuction":"dr-arora","weight-loss":"dr-arora",
- "microneedling":"morpheus8","thread-lift":"filler-inject","under-eye-prp":"filler-inject","kenalog":"botox-inject","sculptra-bbl":"dr-arora","prp-hair-restoration":"hair-ted",
+ "microneedling":"morpheus8","thread-lift":"filler-inject","under-eye-prp":"filler-inject","kenalog":"botox-inject","sculptra-bbl":"dr-arora","prp-hair-restoration":"hair-ted","alma-ted":"hair-ted",
  "iv-therapy":"facial-room","hormone-optimization":"dr-arora",
  "mens-sexual-wellness":"dr-arora","womens-sexual-wellness":"dr-arora","spider-veins":"laser",
 }

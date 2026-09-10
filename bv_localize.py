@@ -107,7 +107,7 @@ def harmony_bio_boost(p):
 
 BV_OVERRIDES = {
  "harmony-bio-boost": lambda p: _related(harmony_bio_boost(body_generic(p)), ["alma-hybrid","morpheus8","photofacial"]),
- "laser-skin": lambda p: _related(laser_skin(body_generic(p)), ["alma-hybrid","harmony-bio-boost","morpheus8"]),
+ "laser-skin": lambda p: _related(laser_skin(body_generic(p)), ["alma-hybrid","opus-plasma","harmony-bio-boost"]),
  "photofacial": lambda p: _related(photofacial(body_generic(p)), ["harmony-bio-boost","laser-skin","hyperpigmentation"]),
  "laser-hair-removal": lambda p: _related(laser_hair_removal(body_generic(p)), ["photofacial","botox","fillers"]),
  "laser-nail-fungus": lambda p: _related(laser_nail_fungus(body_generic(p)), ["laser-hair-removal","botox","fillers"]),
