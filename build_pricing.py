@@ -76,7 +76,7 @@ CATS.append(("Acne Clinic",
 
 CATS.append(("Hair, Face &amp; Body", sub("Hair Restoration")+
   row("PRP Hair Restoration","$800","/tx")+row("Alma TED","$850","/tx")+
-  sub("Facials")+row("HydraFacial","$150")+row("Microdermabrasion","Quote")+row("Facials &amp; Dermaplaning","$100+")+
+  sub("Facials")+row("HydraFacial","$150")+row("SKNLAB Facial","$150")+row("Microdermabrasion","Quote")+row("Facials &amp; Dermaplaning","$100+")+
   sub("Body Treatments")+row("Microneedling","$200")+row("Microneedling with PRP","$500")+
   row("Morpheus8 RF","$800","/tx")+row("Morpheus8 RF &mdash; Series of 3","$2,100")+
   row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$250","/tx")))
@@ -107,7 +107,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 
 # Offer schema (headline priced services)
 OFFERS=[("Botox",10),("Dermal Fillers",500),("Lip Filler",500),("Sculptra",600),("Kybella",600),("PDO Thread Lift",300),("Kenalog Injection",75),
- ("Morpheus8 RF",800),("HydraFacial",150),("Ultherapy PRIME",850),("Microneedling with PRP",500),
+ ("Morpheus8 RF",800),("HydraFacial",150),("SKNLAB Facial",150),("Ultherapy PRIME",850),("Microneedling with PRP",500),
  ("Laser Hair Removal",49),("EvolveX",250),("IV Vitamin Infusion",149),
  ("Medical Weight Loss Visit",149),("PRP Hair Restoration",800)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Barboursville — Menu & Pricing","url":URL,

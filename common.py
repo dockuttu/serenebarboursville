@@ -71,7 +71,7 @@ CATEGORIES = [
  ]),
  ("Skin &amp; Facials", [
    ("morpheus8","Morpheus8"), ("ultherapy","Ultherapy"), ("laser-facial","Laser Facial"), ("chemical-peels","Chemical Peels"),
-   ("hydrafacial","HydraFacial"), ("medical-facials","Medical Facials &amp; Microdermabrasion"),
+   ("hydrafacial","HydraFacial"), ("sknlab","SKNLAB Facial"), ("medical-facials","Medical Facials &amp; Microdermabrasion"),
    ("hyperpigmentation","Hyperpigmentation &amp; Melasma"),
  ]),
  ("Laser", [
@@ -190,7 +190,7 @@ STICKY_BAR = '''<div class="mbar">
 </div>''' % (PHONE_TEL, BOOK)
 
 exec(open("tech_logos.py").read())  # Alma device logos (tech_strip / device_badge / TECH_CSS)
-TECH_STRIP = tech_strip(["alma","harmony-bio-boost","alma-hybrid","soprano-ice-platinum","opus-plasma","alma-ted","alma-duo"])
+TECH_STRIP = tech_strip(["alma","harmony-bio-boost","alma-hybrid","soprano-ice-platinum","opus-plasma","alma-ted","alma-duo","sknlab"])
 
 PARTNER_BADGES = '''<div class="partners reveal">
       <a href="/ultherapy/" title="Ultherapy PRIME provider"><img src="/img/badges/ultherapy-prime.png" alt="Ultherapy PRIME provider" class="badge-wide" loading="lazy"></a>
@@ -261,7 +261,7 @@ HERO_MAP = {
  "botox":"botox-inject","fillers":"filler-inject","lip-filler":"lip-inject",
  "cheek-filler":"filler-inject","under-eye-filler":"filler-inject","jawline-filler":"filler-inject",
  "chin-filler":"filler-inject","skinvive":"filler-inject","kybella":"filler-inject","sculptra":"filler-inject",
- "morpheus8":"morpheus8","ultherapy":"morpheus8","laser-facial":"laser","chemical-peels":"facial-2","hydrafacial":"hydrafacial",
+ "morpheus8":"morpheus8","ultherapy":"morpheus8","laser-facial":"laser","chemical-peels":"facial-2","hydrafacial":"hydrafacial","sknlab":"sknlab",
  "medical-facials":"facial-room","hyperpigmentation":"skin-analysis",
  "laser-skin":"laser","harmony-bio-boost":"laser","opus-plasma":"laser","alma-hybrid":"laser","photofacial":"laser","laser-hair-removal":"laser","laser-tattoo-removal":"laser",
  "laser-nail-fungus":"laser","evolve-x":"morpheus8","bodytite":"morpheus8",

@@ -113,8 +113,8 @@ BV_OVERRIDES = {
  "laser-nail-fungus": lambda p: _related(laser_nail_fungus(body_generic(p)), ["laser-hair-removal","botox","fillers"]),
  "laser-tattoo-removal": lambda p: _related(laser_tattoo(body_generic(p)), ["laser-skin","botox","fillers"]),
  "microneedling": lambda p: _related(microneedling(body_generic(p)), ["morpheus8","fillers","botox"]),
- "medical-facials": lambda p: _related(medical_facials(body_generic(p)), ["hydrafacial","chemical-peels","botox"]),
- "hydrafacial": lambda p: _related(hydrafacial(body_generic(p)), ["medical-facials","botox","fillers"]),
+ "medical-facials": lambda p: _related(medical_facials(body_generic(p)), ["sknlab","hydrafacial","chemical-peels"]),
+ "hydrafacial": lambda p: _related(hydrafacial(body_generic(p)), ["sknlab","medical-facials","botox"]),
 }
 # every other page still gets the generic clean-up + related-list filter
 def _default(p): return _related(body_generic(p), ["botox","fillers","morpheus8"])
