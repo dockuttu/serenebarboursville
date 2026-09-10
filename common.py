@@ -20,6 +20,7 @@ BOOK_MAP = {                          # slug -> consultation that page should op
  "mens-sexual-wellness": MM % 325,   # Sexual Wellness Consultation
  "womens-sexual-wellness": MM % 325,
  "weight-loss":          MM % 326,   # Weight Loss Consultation
+ "alma-duo": MM % 325,   # Sexual Wellness Consultation
  "hormone-optimization": MM % 327,   # Hormone (Biöte) Consultation
  # ---- treatment services (book the treatment directly) ----
  "botox": MM % 328,                  # Wrinkle Relaxer (Botox · Dysport · Xeomin · Daxxify)
@@ -89,7 +90,7 @@ CATEGORIES = [
  ]),
  ("Wellness", [
    ("iv-therapy","IV Therapy"), ("hormone-optimization","Hormone Optimization"),
-   ("mens-sexual-wellness","Men's Sexual Wellness"), ("womens-sexual-wellness","Women's Sexual Wellness"),
+   ("alma-duo","Alma Duo Shockwave"), ("mens-sexual-wellness","Men's Sexual Wellness"), ("womens-sexual-wellness","Women's Sexual Wellness"),
    ("spider-veins","Spider Vein Treatment"), ("xperience-rewards","Xperience+ Rewards"),
  ]),
 ]
@@ -263,7 +264,7 @@ HERO_MAP = {
  "facetite":"morpheus8","forma":"morpheus8","liposuction":"dr-arora","weight-loss":"dr-arora",
  "microneedling":"morpheus8","thread-lift":"filler-inject","under-eye-prp":"filler-inject","kenalog":"botox-inject","sculptra-bbl":"dr-arora","prp-hair-restoration":"hair-ted","alma-ted":"hair-ted",
  "iv-therapy":"facial-room","hormone-optimization":"dr-arora",
- "mens-sexual-wellness":"dr-arora","womens-sexual-wellness":"dr-arora","spider-veins":"laser",
+ "mens-sexual-wellness":"dr-arora","alma-duo":"dr-arora","womens-sexual-wellness":"dr-arora","spider-veins":"laser",
 }
 def hero_for(slug): return HERO_MAP.get(slug, "facial-3")
 
