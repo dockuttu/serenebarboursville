@@ -14,6 +14,7 @@ IMG = {
  "morpheus8":"/img/morpheus8.jpg",
  "weight-loss":"/img/skin-analysis.jpg",
  "harmony-bio-boost":"/img/bio-boost-card.jpg",
+ "alma-hybrid":"/img/hybrid-card.jpg",
 }
 RELATED_META = {
  "botox":("Botox","Smooth lines with a natural finish."),
@@ -21,6 +22,7 @@ RELATED_META = {
  "morpheus8":("Morpheus8","Tighten and resurface skin."),
  "weight-loss":("Medical Weight Loss","Physician-supervised programs."),
  "harmony-bio-boost":("Harmony Bio-Boost","Collagen-stimulating laser rejuvenation."),
+ "alma-hybrid":("Alma Hybrid","CO2 + 1570 nm resurfacing, half the downtime."),
 }
 
 def cards_html(cards):
