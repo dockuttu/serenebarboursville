@@ -57,9 +57,7 @@ def photofacial(p):
     p["intropara"] = p["intropara"] + (" In Barboursville we treat with Sciton BBL, Lumecca and Alma Harmony IPL, choosing the platform that best fits your skin tone and concern.")
     return p
 
-def laser_hair_removal(p):
-    p["intropara"] = p["intropara"] + (" Our Barboursville location uses the Alma Soprano &mdash; a virtually painless diode laser safe for all skin types &mdash; with Diolaze XL and Alma Harmony available for specific areas. Sessions start at $49, and every 6-session package includes the sixth session free.")
-    return p
+from soprano_override import laser_hair_removal   # full Soprano ICE Platinum rewrite (soprano_override.py)
 
 def laser_nail_fungus(p):
     p["intropara"] = p["intropara"] + " Treatments in Barboursville are performed on the Alma Harmony platform."
