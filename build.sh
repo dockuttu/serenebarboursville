@@ -4,6 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 echo "==> Homepage";            python3 build_home.py
 echo "==> Service pages";       python3 gen_pages.py
+python3 build_cities.py
 echo "==> Hand-built pages";    python3 build_static.py
 echo "==> Pricing";             python3 build_pricing.py
 # blog moved to blog.serenemedspas.com (repo sereneblog); old /blog/ URLs 301 via bundle/nginx.conf

@@ -97,7 +97,10 @@ CATEGORIES = [
 ALL_SLUGS = [s for _,items in CATEGORIES for s,_ in items]
 
 # ---- local SEO: 30-mile radius around 1 Chateau Grove Ln, Barboursville ----
-AREA_TOWNS = ["Barboursville", "Proctorville, OH", "Ona", "Salt Rock", "Huntington", "Chesapeake, OH", "Milton", "Culloden", "Burlington, OH", "Ceredo", "Hurricane", "Kenova", "Wayne", "South Point, OH", "Catlettsburg, KY", "Ashland, KY", "Teays Valley", "Coal Grove, OH", "Ironton, OH", "Russell, KY"]
+AREA_TOWNS = ["Barboursville", "Proctorville, OH", "Ona", "Salt Rock", "Huntington", "Chesapeake, OH", "Milton", "Culloden", "Burlington, OH", "Ceredo", "Hurricane", "Kenova", "Wayne", "South Point, OH", "Catlettsburg, KY", "Ashland, KY", "Teays Valley", "Coal Grove, OH", "Ironton, OH", "Russell, KY", "Charleston"]
+CITY_LINKS = {"Huntington":"/med-spa-huntington-wv/", "Ashland, KY":"/med-spa-ashland-ky/", "Ironton, OH":"/med-spa-ironton-oh/", "Charleston":"/med-spa-charleston-wv/"}
+def _area_tag(t):
+    return ('<a href="%s">%s</a>' % (CITY_LINKS[t], t)) if t in CITY_LINKS else ('<span>%s</span>' % t)
 AREA_SERVED = (
   [{"@type":"AdministrativeArea","name":n} for n in ["Cabell County, WV","Wayne County, WV","Lincoln County, WV","Putnam County, WV","Lawrence County, OH","Boyd County, KY","Greenup County, KY"]] +
   [{"@type":"City","name":t} for t in ["Barboursville, WV","Huntington, WV","Milton, WV","Hurricane, WV","Ona, WV","Teays Valley, WV","Proctorville, OH","Chesapeake, OH","South Point, OH","Ironton, OH","Ashland, KY","Catlettsburg, KY"]]
@@ -105,8 +108,8 @@ AREA_SERVED = (
 COUNTY_LINE = "Cabell, Wayne, Lincoln and Putnam counties in West Virginia, Lawrence County, Ohio, and Boyd &amp; Greenup counties in Kentucky"
 
 def areas_section(treatment="care"):
-    tags = "".join('<span>%s</span>' % t for t in AREA_TOWNS)
-    return '''<section class="areas">
+    tags = "".join(_area_tag(t) for t in AREA_TOWNS)
+    return '''<section class="areas" id="areas">
   <div class="wrap reveal" style="text-align:center">
     <div class="eyebrow" style="justify-content:center">Proudly Serving</div>
     <h2>Barboursville, Huntington &amp; the Tri-State</h2>
@@ -179,6 +182,7 @@ FOOTER = '''<footer>
         </ul>
       </div>
     </div>
+    <div class="foot-areas">Areas we serve: <a href="/med-spa-huntington-wv/">Huntington</a> &middot; <a href="/med-spa-ashland-ky/">Ashland, KY</a> &middot; <a href="/med-spa-ironton-oh/">Ironton, OH</a> &middot; <a href="/med-spa-charleston-wv/">Charleston</a></div>
     <div class="foot-bottom">&copy; 2026 Serene Med Spa, Barboursville WV. All rights reserved.</div>
   </div>
 </footer>''' % (LOGO, FOOTER_TREAT, PHONE_TEL, PHONE_DISPLAY, BOOK)
