@@ -14,7 +14,7 @@ CITY_SITE = {
  "hours_spec": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"}],
  "hero_img": "lobby.jpg",
  "ntreat": 39,
- "promo": '<div class="promo">&#10022; <strong>Tri-State Price Match:</strong> Botox $10/unit &amp; we&rsquo;ll match any published local price on injectables &mdash; <a href="/#price-match">see the guarantee</a></div>',
+ "promo": "",  # NAV already carries the price-match ribbon
  "steps": [
   ("Book online or call", "Choose a free consultation or a specific treatment on our live calendar. If you&rsquo;re driving in from Kentucky or Ohio, tell us and we&rsquo;ll group your visits."),
   ("Exit 20, park at the door", "We&rsquo;re at 1 Chateau Grove Ln, just off I-64 exit 20 (Barboursville / Huntington Mall) on the US-60 side, with free parking outside the door."),
