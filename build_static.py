@@ -45,6 +45,10 @@ for slug in ["botox","fillers","morpheus8","weight-loss"]:
     s=block(s,'<div class="finance">',"</div></div>",FINANCE_BAND)
     s=LOC_SECTION_RE.sub(BV_LOCATION,s,count=1)
     s=block(s,'<div class="mbar">',"</div>",STICKY_BAR)
+    # Allergan Platinum badge under the hero copy (botox / fillers)
+    _bd=device_badge(slug,{"botox":["botox-cosmetic","app-platinum"],"fillers":["juvederm","app-platinum"]})
+    if _bd and "device-badge" not in s:
+        _i=s.index('<div class="svc-hero-txt">'); _j=s.index("</p>",_i)+4; s=s[:_j]+"\n    "+_bd+s[_j:]
     # scripts: everything after the sticky bar up to </body>
     tail=s.rfind("</body>")
     head_end=s.find(STICKY_BAR)+len(STICKY_BAR)

@@ -190,7 +190,7 @@ STICKY_BAR = '''<div class="mbar">
 </div>''' % (PHONE_TEL, BOOK)
 
 exec(open("tech_logos.py").read())  # Alma device logos (tech_strip / device_badge / TECH_CSS)
-TECH_STRIP = tech_strip(["alma","harmony-bio-boost","alma-hybrid","soprano-ice-platinum","opus-plasma","alma-ted","alma-duo","sknlab"])
+TECH_STRIP = tech_strip(["alma","harmony-bio-boost","alma-hybrid","soprano-ice-platinum","opus-plasma","alma-ted","alma-duo","sknlab"]) + tech_strip(["botox-cosmetic","juvederm","skinvive","kybella","alle"], "Injectables &amp; Skin &middot; Allergan Platinum Partner")
 
 PARTNER_BADGES = '''<div class="partners reveal">
       <a href="/ultherapy/" title="Ultherapy PRIME provider"><img src="/img/badges/ultherapy-prime.png" alt="Ultherapy PRIME provider" class="badge-wide" loading="lazy"></a>
