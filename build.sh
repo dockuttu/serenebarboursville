@@ -13,7 +13,9 @@ python3 fix_blog_links.py
 echo "==> Ultherapy";           python3 build_ultherapy.py
 echo "==> Xperience+ rewards";  python3 build_rewards.py
 echo "==> SEO trim";            python3 seo_trim.py
-echo "==> Sitemap";             python3 build_sitemap.py
+echo "==> Sitemap";             python3 build_thankyou.py
+python3 patch_static_consult.py   # hand-built pages + popup.js -> Zoho form
+python3 build_sitemap.py
 echo "==> Cache-bust";          python3 cachebust.py
 if [ ! -s bundle/site/index.html ] || [ "$(wc -c < bundle/site/index.html)" -lt 2000 ]; then
   echo "!!! sanity check FAILED" >&2; exit 1; fi

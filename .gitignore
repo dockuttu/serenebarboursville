@@ -7,3 +7,6 @@ __pycache__/
 _preview.tgz
 ._*
 bundle/site/blog/
+
+# pre-Zoho backups (kept locally only)
+*.bak-hubspot
