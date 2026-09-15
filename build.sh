@@ -23,6 +23,7 @@ echo "==> Build complete: $(find bundle/site -type f | wc -l) files in bundle/si
 
 echo "==> Google Ads tag"
 python3 build_wl_ads.py bundle/site   # ads-only /medical-weight-loss/ (noindex, no drug names)
+python3 build_ads_pages.py bundle/site   # ads-only /lp/* pages (noindex, no drug names) for Google Ads
 python3 inject_gtag.py bundle/site
 python3 inject_meta_pixel.py bundle/site   # Meta pixel 475660982946848
 
