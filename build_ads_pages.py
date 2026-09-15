@@ -33,7 +33,7 @@ DRUG = (r"botox(?:\s*cosmetic)?|\w*botulinumtoxin\s*-?\s*a?|dysport|xeomin|jeuve
         r"juv(?:e|é|&eacute;)derm(?:\s*(?:voluma|volbella|vollure|volux|ultra)(?:\s*xc)?)?|restylane(?:\s*\w+)?|"
         r"\brha\b|belotero|revanesse|radiesse|sculptra|skinvive|kybella|deoxycholic\s*acid|kenalog|triamcinolone|"
         r"semaglutide|tirzepatide|wegovy|zepbound|ozempic|mounjaro|liraglutide|saxenda|\bglp-?1\b|"
-        r"testosterone|estradiol|bi(?:o|ö|&ouml;)te|latisse|tretinoin|hydroquinone|lidocaine|"
+        r"testosterone|estradiol|bi(?:o|ö|&ouml;)te|latisse|tretinoin|retin-?a\b|renova|hydroquinone|lidocaine|"
         r"sildenafil|tadalafil|viagra|cialis|ketamine|phentermine")
 DRUG_RX = re.compile(DRUG, re.I)
 
@@ -52,7 +52,8 @@ REPL = [
     (r"bi(?:o|ö|&ouml;)te", "hormone optimization"),
     (r"testosterone|estradiol", "hormone"),
     (r"latisse", "lash serum"),
-    (r"tretinoin|hydroquinone", "medical-grade skincare"),
+    (r"retinoids/retin-?a\b", "retinoid creams"),
+    (r"tretinoin|retin-?a\b|renova|hydroquinone", "prescription-strength skincare"),
     (r"lidocaine", "numbing"),
     (r"sildenafil|tadalafil|viagra|cialis|ketamine|phentermine", "treatment"),
 ]
