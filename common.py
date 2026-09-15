@@ -89,7 +89,7 @@ CATEGORIES = [
    ("prp-hair-restoration","Hair Restoration"), ("alma-ted","Alma TED Hair Restoration"),
  ]),
  ("Wellness", [
-   ("iv-therapy","IV Therapy"), ("hormone-optimization","Hormone Optimization"),
+   ("iv-therapy","IV Therapy"), ("longevity","Longevity &amp; NAD+"), ("hormone-optimization","Hormone Optimization"),
    ("alma-duo","Alma Duo Shockwave"), ("mens-sexual-wellness","Men's Sexual Wellness"), ("womens-sexual-wellness","Women's Sexual Wellness"),
    ("spider-veins","Spider Vein Treatment"), ("xperience-rewards","Xperience+ Rewards"),
  ]),
@@ -272,7 +272,7 @@ HERO_MAP = {
  "laser-nail-fungus":"laser","evolve-x":"morpheus8","bodytite":"morpheus8",
  "facetite":"morpheus8","forma":"morpheus8","liposuction":"dr-arora","weight-loss":"dr-arora",
  "microneedling":"morpheus8","thread-lift":"filler-inject","under-eye-prp":"filler-inject","kenalog":"botox-inject","sculptra-bbl":"dr-arora","prp-hair-restoration":"hair-ted","alma-ted":"hair-ted",
- "iv-therapy":"facial-room","hormone-optimization":"dr-arora",
+ "iv-therapy":"facial-room","longevity":"facial-room","hormone-optimization":"dr-arora",
  "mens-sexual-wellness":"dr-arora","alma-duo":"dr-arora","womens-sexual-wellness":"dr-arora","spider-veins":"laser",
 }
 def hero_for(slug): return HERO_MAP.get(slug, "facial-3")

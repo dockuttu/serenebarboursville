@@ -27,7 +27,7 @@ PAGES = {
 }
 
 # pages whose own name is a drug brand: links to them are dropped from ads pages
-DRUG_SLUGS = r"(?:botox|skinvive|kybella|sculptra|sculptra-bbl|kenalog|weight-loss|medical-weight-loss|hormone-optimization|mens-sexual-wellness|womens-sexual-wellness)"
+DRUG_SLUGS = r"(?:longevity|botox|skinvive|kybella|sculptra|sculptra-bbl|kenalog|weight-loss|medical-weight-loss|hormone-optimization|mens-sexual-wellness|womens-sexual-wellness)"
 
 DRUG = (r"botox(?:\s*cosmetic)?|\w*botulinumtoxin\s*-?\s*a?|dysport|xeomin|jeuveau|daxxify|letybo|"
         r"juv(?:e|é|&eacute;)derm(?:\s*(?:voluma|volbella|vollure|volux|ultra)(?:\s*xc)?)?|restylane(?:\s*\w+)?|"
