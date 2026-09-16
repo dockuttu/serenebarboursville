@@ -19,6 +19,7 @@ echo "==> SEO trim";            python3 seo_trim.py
 echo "==> Sitemap";             python3 build_thankyou.py
 python3 patch_static_consult.py   # hand-built pages + popup.js -> Zoho form
 python3 build_sitemap.py
+python3 complimentary_pass.py bundle/site   # "free consultation" -> "complimentary, no-commitment consultation"
 echo "==> Cache-bust";          python3 cachebust.py
 if [ ! -s bundle/site/index.html ] || [ "$(wc -c < bundle/site/index.html)" -lt 2000 ]; then
   echo "!!! sanity check FAILED" >&2; exit 1; fi
@@ -37,6 +38,7 @@ python3 home_badges.py bundle/site      # Biote badge on the homepage
 python3 tattoo_pricing.py bundle/site   # tattoo size guide + prices + 5+1 offer on /laser-tattoo-removal/
 python3 home_obagi.py bundle/site       # Obagi authorized-provider logo + skincare band on the homepage
 python3 home_merz.py bundle/site        # Merz Aesthetics ELITE+ provider status on the homepage
+python3 complimentary_pass.py bundle/site   # again, for pages injected after cache-bust
 python3 fix_charset.py bundle/site      # <meta charset> must be in the first 1024 bytes
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu (skips /lp/ ads pages)
 python3 seo_polish.py bundle/site
