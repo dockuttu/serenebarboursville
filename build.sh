@@ -13,6 +13,7 @@ python3 fix_blog_links.py
 echo "==> Ultherapy";           python3 build_ultherapy.py
 echo "==> Xperience+ rewards";  python3 build_rewards.py
 echo "==> Easy Pay";            python3 build_easypay.py
+python3 build_labs.py        # /labs/ test guide pages
 echo "==> SEO trim";            python3 seo_trim.py
 echo "==> Sitemap";             python3 build_thankyou.py
 python3 patch_static_consult.py   # hand-built pages + popup.js -> Zoho form
@@ -30,6 +31,7 @@ python3 inject_meta_pixel.py bundle/site   # Meta pixel 475660982946848
 
 echo "==> Page guard (nav <-> built pages <-> deep links)"
 python3 easypay_inject.py bundle/site   # Easy Pay band + nav/footer links on every page
+python3 home_badges.py bundle/site      # Biote badge on the homepage
 python3 fix_charset.py bundle/site      # <meta charset> must be in the first 1024 bytes
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu (skips /lp/ ads pages)
 python3 seo_polish.py bundle/site
