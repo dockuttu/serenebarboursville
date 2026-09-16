@@ -12,6 +12,7 @@ rm -rf bundle/site/blog 2>/dev/null || true
 python3 fix_blog_links.py
 echo "==> Ultherapy";           python3 build_ultherapy.py
 echo "==> Xperience+ rewards";  python3 build_rewards.py
+echo "==> Easy Pay";            python3 build_easypay.py
 echo "==> SEO trim";            python3 seo_trim.py
 echo "==> Sitemap";             python3 build_thankyou.py
 python3 patch_static_consult.py   # hand-built pages + popup.js -> Zoho form
@@ -28,6 +29,7 @@ python3 inject_gtag.py bundle/site
 python3 inject_meta_pixel.py bundle/site   # Meta pixel 475660982946848
 
 echo "==> Page guard (nav <-> built pages <-> deep links)"
+python3 easypay_inject.py bundle/site   # Easy Pay band + nav/footer links on every page
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu (skips /lp/ ads pages)
 python3 seo_polish.py bundle/site
 python3 check_pages.py
