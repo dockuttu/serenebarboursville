@@ -44,5 +44,6 @@ python3 fix_charset.py bundle/site      # <meta charset> must be in the first 10
 python3 nav_gallery.py bundle/site     # Gallery link in nav + footer (skips /lp/ ads pages)
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu (skips /lp/ ads pages)
 python3 seo_polish.py bundle/site
+python3 seo_tech.py bundle/site      # schema cleanup + founder entities, default og:image, branded 404
 python3 ultherapy_results.py bundle/site   # Ultherapy PRIME before/after (Merz photos)
 python3 check_pages.py
