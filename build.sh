@@ -12,6 +12,7 @@ rm -rf bundle/site/blog 2>/dev/null || true
 python3 fix_blog_links.py
 echo "==> Ultherapy";           python3 build_ultherapy.py
 echo "==> Xperience+ rewards";  python3 build_rewards.py
+echo "==> Before & After";      python3 build_gallery.py
 echo "==> Easy Pay";            python3 build_easypay.py
 python3 build_labs.py        # /labs/ test guide pages
 python3 build_obagi_shop.py   # Obagi store: /shop/, /shop/<product>/, /cart/, /obagi/, shop.js
@@ -40,6 +41,7 @@ python3 home_obagi.py bundle/site       # Obagi authorized-provider logo + skinc
 python3 home_merz.py bundle/site        # Merz Aesthetics ELITE+ provider status on the homepage
 python3 complimentary_pass.py bundle/site   # again, for pages injected after cache-bust
 python3 fix_charset.py bundle/site      # <meta charset> must be in the first 1024 bytes
+python3 nav_gallery.py bundle/site     # Gallery link in nav + footer (skips /lp/ ads pages)
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu (skips /lp/ ads pages)
 python3 seo_polish.py bundle/site
 python3 ultherapy_results.py bundle/site   # Ultherapy PRIME before/after (Merz photos)
