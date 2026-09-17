@@ -122,3 +122,18 @@ class _Overrides(dict):
     def __contains__(self, k): return True
     def __getitem__(self, k): return dict.get(self, k, _default)
 BV_OVERRIDES = _Overrides(BV_OVERRIDES)
+
+
+# ---------------- Barboursville-only copy for the top treatment pages (bv_unique.py) ----------------
+try:
+    from bv_unique import UNIQUE as _UNIQUE, apply_unique as _apply_unique
+    for _slug in _UNIQUE:
+        _prev = BV_OVERRIDES[_slug] if _slug in BV_OVERRIDES else None
+        def _mk(prev, slug):
+            def f(p):
+                if prev is not None: p = prev(p)
+                return _apply_unique(slug, p)
+            return f
+        BV_OVERRIDES[_slug] = _mk(_prev, _slug)
+except ImportError:
+    pass

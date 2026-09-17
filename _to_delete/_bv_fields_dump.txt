@@ -1,0 +1,153 @@
+common loaded (Barboursville): 47 services
+===== hydrafacial
+--title: HydraFacial in Barboursville, WV | Deep-Cleanse &amp; Glow | Serene Med Spa
+--desc: HydraFacial in Barboursville, West Virginia at Serene Med Spa. Cleanse, exfoliate, extract, and hydrate for an instant glow with no downtime. Book your HydraFacial today.
+--eyebrow: HydraFacial &middot; Barboursville, WV
+--h1: HydraFacial in Barboursville, West Virginia
+--hero: Cleanse, exfoliate, extract, and hydrate &mdash; all in one relaxing treatment that leaves your skin instantly glowing, with zero downtime.
+--trust: ['Instant Glow', 'No Downtime', 'All Skin Types', 'Perfect Before Events']
+--introh2: An instant glow, no downtime
+--introlead: HydraFacial is a gentle, multi-step facial that cleanses, exfoliates, extracts, and hydrates in one relaxing session &mdash; leaving your skin refreshed, smooth, and glowing.
+--intropara: At Serene Med Spa in Barboursville, HydraFacial is a favorite for a quick reset and a pre-event glow. It suits nearly every skin type, and there&rsquo;s no downtime &mdash; many people go right back to their day (or their evening out). We can tailor the serums and boosters to your skin&rsquo;s needs, and regular treatments help maintain results over time.
+--treyebrow: What&rsquo;s Included
+--treh2: The HydraFacial Steps
+--cards: [('Deep Cleanse', 'Lift away oil and impurities to prep the skin for a thorough treatment.'), ('Gentle Exfoliation', 'Resurface dull, dead skin cells to reveal a smoother, fresher surface.'), ('Painless Extractions', 'Clear congestion and debris from pores with gentle, comfortable suction.'), ('Hydration Boost', 'Flood the skin with nourishing, hydrating serums for a dewy finish.'), ('Targeted Boosters', 'Add condition-specific boosters for brightening, firming, or clarity.'), ('Event-Ready Glow', 'Walk out with an immediate, camera-ready radiance &mdash; no recovery needed.')]
+--steps: [('Consultation', 'We take a quick look at your skin and choose the serums and boosters best suited to your goals.'), ('Treatment', 'You relax while the HydraFacial device works through each step. Most treatments take about 30&ndash;45 minutes.'), ('Results', 'Skin looks instantly brighter, smoother, and more hydrated &mdash; with no downtime, so you can head straight out.'), ('Maintenance', 'Regular HydraFacials, often monthly, help keep your skin clear, hydrated, and glowing over time.')]
+--whyh2: Why choose Serene for your HydraFacial in Barboursville
+--whypara: A great facial is about more than a glow &mdash; it&rsquo;s about caring for your skin the right way. At Serene, your treatment happens in a calm, physician-led setting, and we can connect your skincare to the rest of your plan, from injectables to laser, all in one trusted Barboursville practice.
+--faqh2: HydraFacial FAQ
+--faqs: [('What is a HydraFacial?', 'It&rsquo;s a gentle, multi-step facial that cleanses, exfoliates, extracts, and hydrates the skin in one session &mdash; leaving you with an immediate glow.'), ('Is there any downtime?', 'None. Most people return to their normal day right away, and skin looks great immediately.'), ('How often should I get one?', 'Many people enjoy a HydraFacial monthly to maintain clear, hydrated, glowing skin, but we&rsquo;ll tailor a rhythm to your skin.'), ('Is it good for sensitive skin?', 'HydraFacial is gentle and suits most skin types. We&rsquo;ll customize the serums to keep it comfortable for you.'), ('Can I wear makeup afterward?', 'Yes &mdash; though many people love their fresh, bare glow and skip it. Your skin will be clean and primed.')]
+--ctah2: Ready for that fresh-facial glow?
+--ctapara: Book a HydraFacial with our Barboursville team and treat your skin to an instant reset.
+--pricing_html: None
+===== lip-filler
+--title: Lip Filler in Barboursville, WV | Natural Lip Enhancement | Serene Med Spa
+--desc: Physician-injected lip filler in Barboursville, West Virginia at Serene Med Spa. Add subtle volume, shape, and hydration with natural-looking results. Book your consultation today.
+--eyebrow: Lip Filler &middot; Barboursville, WV
+--h1: Lip Filler in Barboursville, West Virginia
+--hero: Soft, kissable volume and beautiful shape &mdash; never overdone. Physician-injected lip filler tailored to your natural features.
+--trust: ['Physician-Injected', 'Natural-Looking', 'Subtle or Bold', 'Reversible']
+--introh2: Enhance your lips, keep them yours
+--introlead: Lip filler uses smooth hyaluronic-acid gels to add volume, balance, and definition to the lips &mdash; with results that can be as subtle or as noticeable as you like.
+--intropara: At Serene Med Spa in Barboursville, your lips are treated by our board-certified physicians, who take an artful, conservative approach. We shape and hydrate rather than overfill, keeping your smile balanced and natural. Because hyaluronic-acid fillers are temporary and reversible, you stay in control of your look; results typically last several months and individual results vary.
+--treyebrow: What Lip Filler Can Do
+--treh2: Ways We Enhance
+--cards: [('Subtle Volume', 'Add soft fullness for lips that look naturally plump and hydrated.'), ('Better Definition', 'Refine the lip border and cupid&rsquo;s bow for a crisp, elegant shape.'), ('Balance &amp; Symmetry', 'Even out lips that are naturally uneven or thinning with age.'), ('Smooth Fine Lines', 'Soften the vertical lip lines that can form over time.'), ('Hydration &amp; Sheen', 'Filler draws in moisture for a healthy, dewy look.'), ('The &lsquo;Lip Flip&rsquo; Combo', 'Pair with a touch of Botox to gently roll the upper lip outward.')]
+--steps: [('Consultation', 'We talk through the shape and volume you want, and design a plan that suits your face and smile.'), ('Treatment', 'Filler is placed precisely, with numbing for comfort. Most appointments take about 30 minutes.'), ('Results', 'You&rsquo;ll see results right away, with final shape settling over a week or two as any minor swelling resolves.'), ('Maintenance', 'Hyaluronic-acid lip filler typically lasts several months. We&rsquo;ll help you plan simple touch-ups.')]
+--whyh2: Why choose Serene for lip filler in Barboursville
+--whypara: Beautiful lips are about proportion, not just volume. At Serene, your treatment is performed by board-certified physicians &mdash; Dr. Robin Arora and Dr. Shweta Arora &mdash; who prioritize natural, balanced results and your comfort, right here in Barboursville.
+--faqh2: Lip Filler FAQ
+--faqs: [('Will my lips look overdone?', 'No &mdash; our physicians take a conservative approach and can start subtle. We build gradually so your results look natural and balanced.'), ('Does lip filler hurt?', 'We use numbing to keep you comfortable, and most fillers contain a local anesthetic. Most patients tolerate it very well.'), ('How long does it last?', 'Hyaluronic-acid lip filler typically lasts several months, then gradually fades. Maintenance touch-ups keep your look consistent.'), ('Is it reversible?', 'Yes. Hyaluronic-acid fillers can be dissolved if needed, which is one reason they&rsquo;re so popular and safe.'), ('Is there downtime?', 'Expect some minor swelling or bruising for a few days. Most people return to normal activities right away.')]
+--ctah2: Ready for lips you&rsquo;ll love?
+--ctapara: Book a lip filler consultation with our Barboursville physicians and design your perfect, natural pout.
+--pricing_html: None
+===== microneedling
+--title: Microneedling &amp; PRP in Barboursville, WV | Collagen Renewal | Serene Med Spa
+--desc: Microneedling and microneedling with PRP (‘vampire facial’) in Barboursville, West Virginia at Serene Med Spa. Smooth texture, scars, and fine lines with collagen renewal. Book today.
+--eyebrow: Microneedling &amp; PRP &middot; Barboursville, WV
+--h1: Microneedling &amp; PRP in Barboursville, West Virginia
+--hero: Smoother texture, softer scars, and a fresh glow &mdash; microneedling that renews your skin, with the option to boost results using your own PRP.
+--trust: ['Collagen Renewal', 'Optional PRP Boost', 'Softens Scars', 'Physician-Led']
+--introh2: Renew your skin from within
+--introlead: Microneedling creates tiny, controlled micro-channels that switch on your skin&rsquo;s natural repair process &mdash; boosting collagen to smooth texture, soften scars, and refresh tone. Adding PRP from your own blood can take renewal even further.
+--intropara: At Serene Med Spa in Barboursville, we offer both microneedling and microneedling with PRP (often called a &lsquo;vampire facial&rsquo;), where we apply platelet-rich plasma drawn from your own blood to amplify healing and glow. Treatment is physician-led, comfortable, and has minimal downtime. A series delivers the best results, and individual results vary. For deeper remodeling we also offer SecretRF radio-frequency microneedling and Morpheus8 at our Barboursville location.
+--treyebrow: What It Improves
+--treh2: Concerns We Target
+--cards: [('Acne Scars', 'Soften the look of pitted and textured acne scarring over a series.'), ('Fine Lines', 'Smooth early fine lines by boosting collagen and elasticity.'), ('Texture &amp; Pores', 'Refine rough texture and the appearance of enlarged pores.'), ('Dullness', 'Reveal a fresh, healthy glow as the skin renews.'), ('Uneven Tone', 'Improve overall tone and clarity with regular treatments.'), ('PRP Boost', 'Add your own platelet-rich plasma to enhance healing and results.')]
+--steps: [('Consultation', 'We assess your skin and goals and decide whether microneedling alone or with PRP is right for you.'), ('Treatment', 'After numbing, the microneedling device is passed over the skin; if adding PRP, we draw a small sample and apply it.'), ('Results', 'Expect mild redness for a day or two, like a light sunburn, then a smoother, fresher look as skin renews.'), ('Maintenance', 'A series spaced a few weeks apart gives the best results. We&rsquo;ll plan a schedule and aftercare.')]
+--whyh2: Why choose Serene for microneedling in Barboursville
+--whypara: Microneedling &mdash; especially with PRP &mdash; should be done in a clean, physician-led setting for safety and results. At Serene, your treatment is overseen by board-certified physicians, right here in Barboursville.
+--faqh2: Microneedling &amp; PRP FAQ
+--faqs: [('What is microneedling with PRP?', 'It combines microneedling with platelet-rich plasma drawn from your own blood, applied to the skin to enhance healing, collagen, and glow.'), ('Does it hurt?', 'We numb the skin first, so most people are comfortable. You may feel light pressure or vibration during treatment.'), ('How many sessions will I need?', 'A series spaced a few weeks apart usually gives the best results, especially for scarring and texture. We&rsquo;ll tailor a plan.'), ('Is there downtime?', 'Expect mild redness for a day or two, similar to a light sunburn. Most people return to normal activities quickly.'), ('What is a &lsquo;vampire facial&rsquo;?', 'It&rsquo;s a nickname for microneedling with PRP, because it uses components from your own blood to boost your skin&rsquo;s renewal.')]
+--ctah2: Ready to renew your skin?
+--ctapara: Book a microneedling consultation with our Barboursville team, with or without a PRP boost.
+--pricing_html: None
+===== iv-therapy
+--title: IV Therapy in Barboursville, WV | Hydration &amp; Wellness Drips | Serene Med Spa
+--desc: IV nutrient therapy and hydration drips in Barboursville, West Virginia at Serene Med Spa. Replenish, recover, and feel your best with physician-supervised IV wellness. Book today.
+--eyebrow: IV Therapy &amp; Hydration &middot; Barboursville, WV
+--h1: IV Therapy in Barboursville, West Virginia
+--hero: Replenish, rehydrate, and feel your best &mdash; customized IV nutrient drips delivered in a calm, physician-supervised setting.
+--trust: ['Physician-Supervised', 'Customized Blends', 'Fast Hydration', 'Relaxing Setting']
+--introh2: Hydration and nutrients, delivered directly
+--introlead: IV therapy delivers fluids, vitamins, and nutrients straight into your bloodstream, so your body can use them efficiently &mdash; a popular way to rehydrate, recover, and support overall wellness.
+--intropara: At Serene Med Spa in Barboursville, our &lsquo;Serene IV Bar&rsquo; offers customized drips to support hydration, recovery, and everyday wellness. You relax in a comfortable setting while a physician-supervised team takes care of you. IV therapy supports general wellness and hydration; it is not a treatment for medical conditions, and we&rsquo;ll help you choose a blend that fits your goals.
+--treyebrow: Popular Goals
+--treh2: Ways People Use IV Therapy
+--cards: [('Hydration', 'Rehydrate quickly and efficiently after travel, heat, or a busy week.'), ('Recovery', 'Support recovery and help you bounce back and feel refreshed.'), ('Energy &amp; Wellness', 'Replenish key vitamins and nutrients to support everyday vitality.'), ('Immune Support', 'Popular blends to support your wellness during busy seasons.'), ('Beauty &amp; Glow', 'Nutrient blends chosen to support healthy skin, hair, and nails.'), ('Custom Blends', 'We tailor your drip to your goals and how you want to feel.')]
+--steps: [('Consultation', 'We talk through how you&rsquo;re feeling and your goals, and select or customize the right IV blend for you.'), ('Treatment', 'You relax in a comfortable chair while our team places the IV and your drip is delivered, usually in under an hour.'), ('Results', 'Many people feel refreshed and rehydrated soon after. We&rsquo;ll suggest how often to come based on your goals.'), ('Maintenance', 'IV therapy can be a one-time boost or part of a regular wellness routine &mdash; whatever suits you.')]
+--whyh2: Why choose Serene for IV therapy in Barboursville
+--whypara: IV therapy should be delivered in a clean, professional, physician-supervised setting. At Serene, our team takes care of you in a calm, welcoming space, with blends chosen to fit your wellness goals &mdash; right here in Barboursville.
+--faqh2: IV Therapy FAQ
+--faqs: [('What is IV therapy?', 'It delivers fluids, vitamins, and nutrients directly into your bloodstream via IV, for efficient hydration and replenishment to support general wellness.'), ('How long does a drip take?', 'Most IV drips take around 30&ndash;60 minutes. You&rsquo;ll relax comfortably while ours team takes care of you.'), ('How often should I get IV therapy?', 'That depends on your goals &mdash; some people come for a one-time boost, others make it part of a regular routine. We&rsquo;ll advise you.'), ('Is it safe?', 'IV therapy at Serene is physician-supervised. We&rsquo;ll review your health and goals to choose an appropriate blend for you.'), ('Can IV therapy treat medical conditions?', 'No &mdash; IV therapy supports general wellness and hydration and is not a treatment for medical conditions. We&rsquo;ll always be clear about what it can and can&rsquo;t do.')]
+--ctah2: Ready to replenish and refresh?
+--ctapara: Book an IV therapy visit at our Barboursville Serene IV Bar and choose a blend that fits your goals &mdash; or try our <a href="/iv-therapy/">Serene Hydration Bar</a> to find your best-match drip in seconds.
+--pricing_html: None
+===== hormone-optimization
+--title: Biote Hormone Optimization &amp; Lab Testing | Barboursville, WV
+--desc: Physician-led Biote hormone optimization in Barboursville, West Virginia, guided by Labcorp lab panels for hormones, thyroid, vitamins and blood counts. Book a consultation.
+--eyebrow: Hormone Optimization &middot; Barboursville, WV
+--h1: Hormone Optimization in Barboursville, West Virginia
+--hero: Feel more like yourself again &mdash; personalized, physician-led hormone and wellness care built around your labs, symptoms, and goals.
+--trust: ['Physician-Led', 'Biote Certified Provider', 'Labcorp Lab Panels', 'Ongoing Monitoring']
+--introh2: Balanced, personalized, physician-led
+--introlead: As hormones shift with age, many people notice changes in energy, mood, sleep, and overall wellbeing. Hormone optimization is a personalized, medically supervised approach to help you feel balanced and your best again.
+--intropara: At Serene Med Spa in Barboursville, hormone optimization begins with a thorough evaluation and appropriate lab testing, so your plan is guided by real data &mdash; not guesswork. Our board-certified physicians design and supervise your care, monitor your progress, and adjust as needed. This is individualized medical care; candidacy, approach, and results depend on your health and are determined with your physician.
+--treyebrow: What People Notice
+--treh2: Common Goals
+--cards: [('Energy &amp; Vitality', 'Many people seek support for low energy and everyday fatigue.'), ('Mood &amp; Focus', 'Address changes in mood, motivation, and mental clarity.'), ('Sleep', 'Support healthier, more restful sleep patterns.'), ('Body Composition', 'Support wellness goals alongside diet, exercise, and lifestyle.'), ('Libido &amp; Wellbeing', 'Address changes in libido and overall sense of wellbeing.'), ('Lab-Guided Care', 'Decisions are guided by testing and monitored over time.')]
+--steps: [('Consultation', 'We start with a thorough consultation and appropriate lab work to understand your symptoms and baseline.'), ('Treatment', 'Your physician reviews your results and builds a personalized, medically supervised plan &mdash; if appropriate for you.'), ('Results', 'We monitor how you feel and re-test as needed, adjusting your plan to keep it safe and effective.'), ('Maintenance', 'Hormone optimization is ongoing care. We provide regular follow-up and support along the way.')]
+--whyh2: Why choose Serene for hormone optimization in Barboursville
+--whypara: Hormone care should be individualized, lab-guided, and physician-supervised &mdash; never one-size-fits-all. At Serene, your care is led by board-certified physicians who take the time to understand your health and goals, right here in Barboursville.
+--faqh2: Hormone Optimization FAQ
+--faqs: [('Do you support men already on testosterone therapy?', 'Yes. For men on testosterone therapy, your physician may add a monthly medication that helps support your body&rsquo;s own hormone signaling, prescribed only after evaluation and lab review and shipped to your home by the pharmacy as your own prescription. See our <a href="/pricing/">pricing</a> for details.'), ('How do I know if hormone optimization is right for me?', 'It starts with a consultation and appropriate lab testing. Your physician will review your symptoms and results and advise whether it&rsquo;s appropriate for you.'), ('Is it physician-supervised?', 'Yes. At Serene, hormone optimization is designed, prescribed, and monitored by our board-certified physicians as individualized medical care.'), ('Will you run lab tests?', 'Yes &mdash; appropriate lab testing guides your plan and helps us monitor your progress and safety over time.'), ('How soon will I feel a difference?', 'It varies by person and plan. We set realistic expectations and adjust your care based on how you feel and your follow-up labs.'), ('What results can I expect?', 'Results are individual and depend on your health, labs, and plan. Your physician will discuss realistic, personalized expectations with you.'), ('What labs do you run before hormone therapy?', 'We start with a Biote baseline panel through Labcorp. Depending on the panel, it checks estradiol, testosterone, SHBG, FSH or LH, thyroid function, vitamin B12, vitamin D, a complete blood count and a metabolic panel, plus PSA for men and ferritin in the women&rsquo;s expanded panel.'), ('How often are labs repeated?', 'A shorter follow-up panel is drawn after treatment to see how your body responded, and then at intervals your physician sets. Guidelines for testosterone therapy recommend checking blood counts at 3&ndash;6 months and then yearly.'), ('Why do you check my blood count on hormone therapy?', 'Testosterone can raise red blood cell levels (hematocrit). Checking it before and during treatment lets your physician catch and manage that early.'), ('Do I have to pay separately for labs?', 'Lab fees are separate from your treatment and are reviewed with you at your consultation before anything is ordered.')]
+--ctah2: Ready to feel like yourself again?
+--ctapara: Book a hormone optimization consultation with our Barboursville physicians for personalized, lab-guided care.
+--pricing_html: <style>
+.bl{padding:70px 0;background:#fff}
+.bl .bl-lead{max-width:820px;margin:0 auto 26px;text-align:center;font-size:
+===== laser-tattoo-removal
+--title: Laser Tattoo Removal in Barboursville, WV | PICO Technology | Serene Med Spa
+--desc: PICO laser tattoo removal in Barboursville, WV from $125/session. Complimentary, no-commitment consultation; buy 5 sessions, get the 6th free.
+--eyebrow: Laser Tattoo Removal &middot; Barboursville, WV
+--h1: Laser Tattoo Removal in Barboursville, West Virginia
+--hero: Fade or fully remove unwanted ink with advanced PICO laser technology — safely and precisely, over a series of sessions.
+--trust: ['PICO Technology', 'For Most Ink Colors', 'Physician-Led', 'Gradual &amp; Safe']
+--introh2: Rethink that ink
+--introlead: Modern picosecond (PICO) lasers shatter tattoo ink into tiny particles your body clears naturally — fading unwanted tattoos more effectively and with fewer sessions than older lasers.
+--intropara: At Serene Med Spa in Barboursville, we use advanced Discovery Pico Plus technology to remove or fade tattoos of various sizes and colors. Because your body clears the ink gradually, removal happens over a series of sessions spaced several weeks apart. The number of sessions depends on the tattoo&rsquo;s size, age, colors, and ink depth; individual results vary.
+--treyebrow: What to Know
+--treh2: Tattoo Removal at Serene
+--cards: [('Full Removal or Fading', 'Erase a tattoo completely or fade it for a cover-up.'), ('Many Ink Colors', 'PICO technology addresses a range of colors, including stubborn ones.'), ('Priced by Size', 'Per session from $125 (micro) to $400 (large). Buy 5 sessions, get the 6th free.'), ('Gradual &amp; Controlled', 'Ink clears over a series for a safe, steady result.'), ('Complimentary Consultation', 'Every tattoo removal consultation is complimentary with no commitment &mdash; no need to wait to get a price.'), ('Aftercare Support', 'We guide your healing between every session.')]
+--steps: [('Consultation', 'We evaluate your tattoo&rsquo;s size, colors, and age, and estimate the number of sessions.'), ('Treatment', 'The PICO laser is passed over the tattoo with cooling and comfort measures; sessions are quick.'), ('Results', 'The area heals over the following days, and the ink fades gradually between sessions.'), ('Maintenance', 'Sessions are spaced several weeks apart to let your body clear the ink. We&rsquo;ll guide aftercare throughout.')]
+--whyh2: Why choose Serene for tattoo removal in Barboursville
+--whypara: Safe, effective tattoo removal depends on the right laser and settings for your skin and ink. At Serene, removal is physician-led with advanced PICO technology, for controlled, careful results — right here in Barboursville.
+--faqh2: Laser Tattoo Removal FAQ
+--faqs: [('How much does laser tattoo removal cost?', 'Pricing is per session and based on tattoo size: Micro (under 1 sq in) $125, Small (1&ndash;4 sq in) $150, Medium (5&ndash;9 sq in) $250, and Large (10&ndash;16 sq in) $400. Tattoos bigger than a dollar bill (over 16 sq in), such as sleeves and back pieces, are quoted at your complimentary, no-commitment consultation.'), ('How do you define micro, small, medium and large tattoos?', 'We measure the rectangle that fits around the whole design. Micro is under 1 square inch &mdash; it fits under a quarter. Small is 1&ndash;4 sq in &mdash; up to a 2&times;2 inch passport photo. Medium is 5&ndash;9 sq in &mdash; about a credit card or business card, up to a 3&times;3 inch Post-it note. Large is 10&ndash;16 sq in &mdash; up to the size of a dollar bill. Anything bigger than a dollar bill is quoted at your complimentary, no-commitment consultation.'), ('Is the tattoo removal consultation free?', 'Yes. Consultations are always complimentary with no commitment, so you don&rsquo;t have to wait to find out your tattoo&rsquo;s size, price, and estimated number of sessions.'), ('Do you offer tattoo removal packages?', 'Yes. Buy 5 sessions and get the 6th session free for the same tattoo: Micro $625, Small $750, Medium $1,250, or Large $2,000 for 6 sessions.'), ('How many sessions will it take?', 'It depends on the tattoo&rsquo;s size, age, colors, and ink depth — often several sessions spaced weeks apart. We&rsquo;ll give you an estimate at your consultation.'), ('Does it hurt?', 'Most people describe a snapping sensation. We use cooling and comfort measures, and the area is numbed as needed.'), ('Can all colors be removed?', 'PICO technology addresses many colors, including some that were historically difficult. We&rsquo;ll assess your specific ink.'), ('Is there downtime?', 'The area may be red, swollen, or blistered for several days after each session. We&rsquo;ll provide complete aftercare instructions.'), ('Will it leave a scar?', 'When performed properly with good aftercare, scarring is uncommon, though results vary. We prioritize safe, careful treatment.')]
+--ctah2: Ready to remove that tattoo?
+--ctapara: Book a laser tattoo removal consultation with our Barboursville team for a safe, PICO-powered plan.
+--pricing_html: None
+===== ultherapy
+--title: Ultherapy in Barboursville, WV | Ultrasound Skin Lifting | Serene Med Spa
+--desc: Ultherapy PRIME in Barboursville, West Virginia at Serene Med Spa — non-invasive ultrasound that lifts the brow, chin & neck and smooths the décolleté, with no downtime. Book today.
+--eyebrow: Ultherapy PRIME &middot; Barboursville, WV
+--h1: Ultherapy in Barboursville, West Virginia
+--hero: The FDA-cleared treatment that lifts and tightens the brow, chin, and neck using ultrasound &mdash; no surgery, no downtime, and results that build naturally over time.
+--trust: ['FDA-Cleared Lifting', 'No Surgery, No Downtime', 'Builds Your Own Collagen', 'Physician-Led']
+--introh2: Lift and tighten &mdash; without surgery
+--introlead: Ultherapy is the gold standard in non-invasive lifting. Using micro-focused ultrasound, it stimulates your body&rsquo;s own collagen deep beneath the surface to lift the brow, chin, and neck and smooth the décolleté.
+--intropara: Because Ultherapy uses ultrasound imaging, your provider can actually see the layers of tissue being treated &mdash; so energy goes precisely where it does the most good. Most people need just one session, with no downtime, and results that develop gradually over two to three months and can last a year or more.
+--treyebrow: Where It Works
+--treh2: What Ultherapy Lifts
+--cards: [('Brow', 'A subtle lift that opens and refreshes the eyes.'), ('Under the Chin', 'Tighten and define a softening jawline and submental area.'), ('Neck', 'Firm loose, crepey skin for a smoother, more lifted neck.'), ('Décolleté', 'Soften lines and wrinkles on the chest.')]
+--steps: [('Consultation', 'We assess your skin laxity and goals to confirm Ultherapy is right for you and map your treatment areas.'), ('Ultrasound Imaging', 'Real-time imaging lets your provider see beneath the skin and target the ideal depth precisely.'), ('Treatment', 'Focused ultrasound is delivered to stimulate collagen. Most sessions take 30&ndash;90 minutes depending on the area.'), ('Results', 'Skin lifts and tightens gradually over two to three months as new collagen forms &mdash; and can last a year or more.')]
+--whyh2: Why choose Serene for Ultherapy in Barboursville
+--whypara: Ultherapy at Serene is physician-led, performed by our medical team on the advanced Ultherapy PRIME platform &mdash; the newest evolution of the gold standard in non-invasive lifting. We take the time to confirm you&rsquo;re a good candidate, set honest expectations, and deliver a natural-looking lift tailored to your face.
+--faqh2: Ultherapy FAQ
+--faqs: [('Is Ultherapy surgery?', 'No. Ultherapy is completely non-invasive &mdash; no incisions and no downtime. It uses focused ultrasound to lift and tighten from within by stimulating your own collagen.'), ('Who is a good candidate?', 'Ultherapy works best for people with mild to moderate skin laxity who want a natural lift without surgery. At your consultation we&rsquo;ll assess your skin and tell you honestly whether it&rsquo;s right for you; more advanced laxity may need more than one session or a different approach.'), ('Does it hurt?', 'You may feel brief warmth or tingling as the energy is delivered &mdash; a sign that collagen-building has begun. Comfort is improved on the Ultherapy PRIME platform, and we take steps to keep you comfortable throughout.'), ('When will I see results?', 'Some lifting can appear early, but the full effect develops gradually over two to three months as your body builds new collagen. Results can last a year or more.'), ('How many treatments will I need?', 'Most people achieve their result in a single session. Depending on your skin we may suggest a touch-up, and an annual maintenance treatment helps preserve your lift.'), ('Is there any downtime?', 'No. Most people return to their day right away. You may have mild redness or slight swelling that settles quickly.')]
+--ctah2: Ready to lift and tighten &mdash; without surgery?
+--ctapara: Book an Ultherapy consultation with our Barboursville physicians and see if the gold standard in non-invasive lifting is right for you.
+--pricing_html: <section id="pricing" class="tint-blush">
+  <div class="wrap">
+    <div class="ult-cred reveal">
+      <img src="/img/ba
