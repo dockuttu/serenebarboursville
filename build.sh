@@ -5,6 +5,7 @@ cd "$(dirname "$0")"
 echo "==> Homepage";            python3 build_home.py
 echo "==> Service pages";       python3 gen_pages.py
 python3 build_cities.py
+python3 build_aftercare.py        # /aftercare/ hub + 25 per-treatment post-care pages
 python3 build_service_cities.py   # service+region landing pages (WV state-level + Huntington gaps)
 echo "==> Hand-built pages";    python3 build_static.py
 echo "==> Pricing";             python3 build_pricing.py
