@@ -30,7 +30,7 @@ TREATMENTS = [
  ("sknlab","SKNLAB Facial","$150","Six-handpiece customized facial &mdash; HydraFacial-style cleansing plus ultrasound, hot/cold, microcurrent and lymphatic drainage. No downtime."),
  ("hydrafacial","HydraFacial","$150","30-minute cleanse, extract and hydrate. Makeup-ready when you leave."),
  ("weight-loss","Medical Weight Loss","$149/visit","Physician-supervised semaglutide and tirzepatide with monthly check-ins."),
- ("alma-hybrid","Alma Hybrid Laser Resurfacing","Quote","CO2 + 1570 nm fractional resurfacing for texture, scars and sun damage with less downtime."),
+ ("alma-hybrid","Alma Hybrid CO&sup2; Resurfacing","From $600","CO2 + 1570 nm fractional resurfacing for texture, scars and sun damage with less downtime."),
  ("kybella","Kybella Double-Chin Treatment","$600/vial","The only FDA-approved injectable that permanently dissolves fat under the chin."),
  ("iv-therapy","IV Therapy &amp; NAD+","From $149","Hydration, immune, energy and NAD+ infusions."),
  ("lip-filler","Lip Filler","$500 (Mini Pout $300)","Natural, proportioned lips with Volbella, Ultra XC or Restylane Kysse."),

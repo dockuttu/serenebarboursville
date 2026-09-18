@@ -21,10 +21,20 @@ _HY_RESULTS = '''<section class="results" id="hybrid-results">
   <div class="wrap">
     <div class="section-head reveal"><div class="eyebrow">Pick Your Downtime</div><h2>Three Ways to Do Alma Hybrid</h2><p>Because the CO2 and 1570&nbsp;nm energies are adjustable, the same device delivers anything from a lunchtime glow to a true resurfacing. Your physician dials it to your goals and your calendar.</p></div>
     <div class="grid">
-      <div class="card reveal"><div class="ico">&#10022;</div><h3>SoftLift</h3><p>The lunchtime option. Mostly 1570&nbsp;nm with a light CO2 touch for glow, pores, and early lines. Expect a day or two of pinkness and swelling &mdash; makeup the next morning.</p></div>
-      <div class="card reveal"><div class="ico">&#10022;</div><h3>Hybrid Lift</h3><p>Balanced CO2 and 1570&nbsp;nm for sun damage, texture, acne scars, and moderate wrinkles. Plan on a long weekend: redness and light peeling for 3&ndash;5 days.</p></div>
-      <div class="card reveal"><div class="ico">&#10022;</div><h3>Deep Resurfacing</h3><p>CO2-forward for deep lines, etched scars, and heavily sun-damaged skin. About a week of crusting and redness, then the most dramatic change a single laser session can give.</p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>SoftLift <span style="color:#1f5c4a;font-weight:800">&mdash; $600</span></h3><p>The lunchtime option. Mostly 1570&nbsp;nm with a light CO2 touch for glow, pores, and early lines. Expect a day or two of pinkness and swelling &mdash; makeup the next morning.</p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Hybrid Lift <span style="color:#1f5c4a;font-weight:800">&mdash; $600</span></h3><p>Balanced CO2 and 1570&nbsp;nm for sun damage, texture, acne scars, and moderate wrinkles. Plan on a long weekend: redness and light peeling for 3&ndash;5 days.</p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Deep Resurfacing <span style="color:#1f5c4a;font-weight:800">&mdash; $1,000</span></h3><p>CO2-forward for deep lines, etched scars, and heavily sun-damaged skin. About a week of crusting and redness, then the most dramatic change a single laser session can give.</p></div>
     </div>
+  </div>
+</section>
+<section id="hybrid-pricing">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Pricing</div><h2>Alma Hybrid CO&sup2; Pricing</h2><p>Flat pricing per treatment session &mdash; no surprises at checkout.</p></div>
+    <div class="grid" style="grid-template-columns:repeat(2,1fr)">
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Fractional Resurfacing</h3><p style="font-size:34px;font-weight:800;color:#0f2f26;margin:6px 0 10px">$600</p><p style="font-size:18px;font-weight:500;color:#1a1a1a">SoftLift and Hybrid Lift settings. Early lines, texture, tone and mild scarring. About 5&ndash;7 days of downtime. Often done as a series.</p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Full Resurfacing &mdash; Maximum Strength</h3><p style="font-size:34px;font-weight:800;color:#0f2f26;margin:6px 0 10px">$1,000</p><p style="font-size:18px;font-weight:500;color:#1a1a1a">Deep CO&sup2;-forward resurfacing for etched wrinkles, heavy sun damage and acne scarring. About 7&ndash;14 days of downtime. Many patients need only one.</p></div>
+    </div>
+    <p class="rev-note" style="font-size:17px;font-weight:500;color:#222">Prices are per treatment session. A consultation is required before your first CO&sup2; treatment, and a $200 deposit is applied toward your treatment. Your physician will confirm which option is right for your skin.</p>
   </div>
 </section>'''
 
@@ -60,7 +70,8 @@ PAGES6 = [
  "whypara":"Resurfacing lasers reward experience. At Serene, Alma Hybrid treatments are performed by physicians, planned from your VISIA skin analysis and Fitzpatrick skin type, and dialed to your downtime &mdash; not a preset.",
  "faqh2":"Alma Hybrid FAQ",
  "faqs":[
-   ("What is Alma Hybrid?","It&rsquo;s a resurfacing laser that combines fractional CO2 (ablative) and 1570&nbsp;nm (non-ablative) energy in one handpiece. The two together treat scarring, acne, sun damage, wrinkles, texture, and laxity with better results and less downtime than either laser alone."),
+   ("How much does Alma Hybrid cost?","Fractional resurfacing (SoftLift or Hybrid Lift) is $600 per session and full, maximum-strength resurfacing is $1,000 per session. A consultation comes first, and a $200 deposit is applied toward your treatment."),
+  ("What is Alma Hybrid?","It&rsquo;s a resurfacing laser that combines fractional CO2 (ablative) and 1570&nbsp;nm (non-ablative) energy in one handpiece. The two together treat scarring, acne, sun damage, wrinkles, texture, and laxity with better results and less downtime than either laser alone."),
    ("How is it different from a traditional CO2 laser?","Traditional CO2 relies on aggressive ablation, so full-face treatments take 1.5&ndash;2 hours and redness can linger for weeks or months. Hybrid adds the 1570&nbsp;nm wavelength for deep dermal repair, so we can use gentler CO2 settings, finish in about 15 minutes, and cut healing time roughly in half."),
    ("Does it hurt?","All resurfacing involves some heat. We apply a strong topical numbing cream first and use cooling during treatment; most patients describe warmth and tingling. Deeper resurfacing may include additional comfort measures."),
    ("What is the downtime?","It depends on the level you choose. SoftLift: a day or two of pinkness and swelling. Hybrid Lift: redness and light peeling for 3&ndash;5 days. Deep resurfacing: about 5 days of crusting, then a week or so of fading redness."),
