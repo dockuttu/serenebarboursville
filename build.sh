@@ -49,5 +49,6 @@ python3 seo_tech.py bundle/site      # schema cleanup + founder entities, defaul
 python3 form_guard_inject.py bundle/site   # spam screening on lead forms + popup source tag
 python3 local_sections.py bundle/site     # location-specific block on the top treatment pages
 python3 bv_unique_static.py bundle/site   # Barboursville-only wording on the hand-built pages
+python3 review_cta_inject.py bundle/site   # Google review ask at the end of every aftercare block
 python3 ultherapy_results.py bundle/site   # Ultherapy PRIME before/after (Merz photos)
 python3 check_pages.py

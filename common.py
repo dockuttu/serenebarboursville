@@ -239,6 +239,19 @@ REVIEWS_SECTION = '''<section class="tint-blush" id="reviews">
 
 # ---- aftercare (shared content, WV phone) ----
 exec(open("aftercare_data.py").read())  # AFTERCARE, AC_ALIAS
+
+# ---- Google review CTA (injected at the end of the aftercare block by review_cta_inject.py) ----
+# Barboursville Business Profile review link, from Google Business Profile > Ask for reviews.
+GOOGLE_REVIEW_URL = "https://g.page/r/CXHpqD_ZeNBmEBM/review"
+REVIEW_CTA = ('    <div class="reveal serene-review-cta" style="margin:28px 0 4px;padding:24px 22px;border-radius:14px;'
+  'background:#f3f7f5;border:1px solid #cfe0d8;text-align:center">'
+  '<p style="font-size:23px;font-weight:800;color:#0f2f26;margin:0 0 6px">How was your visit?</p>'
+  '<p style="font-size:18px;font-weight:500;color:#1a1a1a;margin:0 0 16px">'
+  'If we took good care of you, a quick Google review helps other people in the Tri-State find us. It takes about thirty seconds.</p>'
+  '<p style="margin:0"><a href="%s" target="_blank" rel="noopener" '
+  'style="display:inline-block;padding:13px 28px;border-radius:999px;background:#1f5c4a;color:#fff;'
+  'font-weight:700;font-size:18px;text-decoration:none">Leave a Google review</a></p></div>') % GOOGLE_REVIEW_URL
+
 def aftercare_html(slug):
     key = AC_ALIAS.get(slug)
     if not key or key not in AFTERCARE: return ""
