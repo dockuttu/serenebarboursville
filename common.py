@@ -179,6 +179,9 @@ FOOTER = '''<footer>
           <li><a href="https://blog.serenemedspas.com/">Blog</a></li>
           <li style="margin-top:10px;font-weight:600">Also in Hudson, OH</li>
           <li><a href="https://hudson.serenemedspas.com/">Visit our OH location &rsaquo;</a></li>
+          <li style="margin-top:10px;font-weight:600">Telehealth with Dr. Arora</li>
+          <li><a href="tel:+13307752452">(330) 775-2452</a></li>
+          <li><a href="https://spruce.care/serene-telehealth" target="_blank" rel="noopener">Message Dr. Arora securely &rsaquo;</a></li>
         </ul>
       </div>
     </div>
