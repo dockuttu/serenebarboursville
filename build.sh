@@ -54,3 +54,6 @@ python3 review_cta_inject.py bundle/site   # Google review ask at the end of eve
 python3 ultherapy_results.py bundle/site   # Ultherapy PRIME before/after (Merz photos)
 python3 seo_targeting.py bundle/site # final titles/descriptions for search targeting (Huntington)
 python3 check_pages.py
+
+echo "==> ABIM board-certification badge in every footer"
+python3 abim_badge.py bundle/site
