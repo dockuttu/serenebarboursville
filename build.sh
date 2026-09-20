@@ -52,4 +52,5 @@ python3 local_sections.py bundle/site     # location-specific block on the top t
 python3 bv_unique_static.py bundle/site   # Barboursville-only wording on the hand-built pages
 python3 review_cta_inject.py bundle/site   # Google review ask at the end of every aftercare block
 python3 ultherapy_results.py bundle/site   # Ultherapy PRIME before/after (Merz photos)
+python3 seo_targeting.py bundle/site # final titles/descriptions for search targeting (Huntington)
 python3 check_pages.py
