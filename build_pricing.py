@@ -97,7 +97,7 @@ CATS.append(("Acne Clinic",
   row("Acne Consultation (new &amp; follow-up)",None)+row("Acne Peel","$100")+row("Acne Back Peel","$150")))
 
 CATS.append(("Hair, Face &amp; Body", sub("Hair Restoration")+
-  row("PRP Hair Restoration","$800","/tx")+row("Alma TED","$850","/tx")+
+  row("PRP Hair Restoration","$800","/tx")+row("Alma TED","$500","/tx")+row("Alma TED &mdash; series of 3, prepaid","$1,200")+
   sub("Facials")+row("HydraFacial","$150")+row("SKNLAB Facial","$150")+row("Microdermabrasion","Quote")+row("Facials &amp; Dermaplaning","$100+")+
   sub("Body Treatments")+row("Microneedling","$200")+row("Microneedling with PRP","$500")+
   row("Morpheus8 RF","$800","/tx")+row("Morpheus8 RF &mdash; Series of 3","$2,100")+
