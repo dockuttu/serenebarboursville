@@ -38,7 +38,7 @@ CATS.append(("Weight Loss &amp; Wellness",
   row("Medical Weight Loss Visit","$149","/month")+
   row("Bi&ouml;te Pellet Therapy &mdash; Female","$405")+row("Bi&ouml;te Pellet Therapy &mdash; Male T100","$465")+row("Bi&ouml;te Pellet Therapy &mdash; Male T200","$645")+
   row("Gonadorelin (Rx) &mdash; men on testosterone therapy","$109","/mo")+
-  row("IV Vitamin Infusions","$149")+
+  row("IV Vitamin Infusions","$99")+
   sub("Vitamin &amp; Lipo Shots")+row("Vitamin B12 Injection","$25")+row("Lipo-B Injection (MIC + B12)","$25")+row("Amino Blend Injection","$25")+row("Lipo Shot Pack (5)","$99")+
   row("Hyperhidrosis Treatment","$400")+row("Morpheus8 Hyperhidrosis","$600")+
   row("Teeth Grinding Treatment","$360+")+
@@ -116,11 +116,11 @@ _HIDDEN_PEPTIDES = (("Peptide Therapy", sub("Priced monthly unless noted")+
   row("NAD+","$250","/vial")+row("Glutathione","$50","IV add-on")+
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Semaglutide &amp; Tirzepatide priced under Weight Loss &amp; Wellness.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
-CATS.append(("IV Infusions", sub("$149 each")+
-  row("Serene Quench+","$149")+row("Serene Recovery &amp; Performance Pro","$149")+row("Serene Immune Armor","$149")+
-  row("Myer&rsquo;s Cocktail","$149")+
-  row("Serene Beauty Glow","$149")+row("Serene Reboot Relief","$149")+row("Serene Brain Boost","$149")+
-  row("Serene PMS Ease","$149")+row("Serene Get-Up-&amp;-Go","$149")))
+CATS.append(("IV Infusions", sub("$99 each")+
+  row("Serene Quench+","$99")+row("Serene Recovery &amp; Performance Pro","$99")+row("Serene Immune Armor","$99")+
+  row("Myer&rsquo;s Cocktail","$99")+
+  row("Serene Beauty Glow","$99")+row("Serene Reboot Relief","$99")+row("Serene Brain Boost","$99")+
+  row("Serene PMS Ease","$99")+row("Serene Get-Up-&amp;-Go","$99")))
 
 import re as _re
 def _slug(t): return "cat-"+_re.sub(r'[^a-z0-9]+','-', _re.sub(r'&[a-z]+;','',t).lower()).strip('-')
