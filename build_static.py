@@ -51,12 +51,14 @@ for slug in ["botox","fillers","morpheus8","weight-loss"]:
     if _seal and "hero-seal" not in s: s=s.replace('<div class="svc-hero-media">', '<div class="svc-hero-media">'+_seal,1)
     if _bd and "device-badge" not in s:
         _i=s.index('<div class="svc-hero-txt">'); _j=s.index("</p>",_i)+4; s=s[:_j]+"\n    "+_bd+s[_j:]
+    # remove the template's inline faq/reveal script above the mbar (SCRIPTS re-adds it below).
+    # NOTE: must run BEFORE inserting SCRIPTS — SCRIPTS starts with the same code, and running this
+    # afterwards stripped it too, leaving every .reveal section invisible (bug live Sep 12–22, 2026).
+    s=re.sub(r"<script>\s*document\.querySelectorAll\('\.faq button'\).*?</script>\s*","",s,flags=re.S)
     # scripts: everything after the sticky bar up to </body>
     tail=s.rfind("</body>")
     head_end=s.find(STICKY_BAR)+len(STICKY_BAR)
     s=s[:head_end]+"\n"+SCRIPTS+"\n"+s[tail:]
-    # remove any leftover inline faq/reveal script above the mbar (now in SCRIPTS)
-    s=re.sub(r"<script>\s*document\.querySelectorAll\('\.faq button'\).*?</script>\s*","",s,flags=re.S)
     # geo + booking + text
     s=s.replace('<meta name="geo.region" content="US-OH">','<meta name="geo.region" content="US-WV">')
     s=re.sub(r'content="41\.2401;-81\.4409"','content="38.4109;-82.2926"',s); s=re.sub(r'content="41\.2401, -81\.4409"','content="38.4109, -82.2926"',s)
