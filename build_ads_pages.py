@@ -106,7 +106,8 @@ def build(src_slug, dst_path):
     dst = os.path.join(SITE, dst_path, "index.html")
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     open(dst, "w", encoding="utf-8").write(s)
-    left = sorted(set(x.lower() for x in DRUG_RX.findall(re.sub(r'(?:src|href)="[^"]*"', "", s))))
+    # residual check ignores URLs and element ids/classes (e.g. id="botox-65-off" anchors) — not visible text
+    left = sorted(set(x.lower() for x in DRUG_RX.findall(re.sub(r'(?:src|href|id|class)="[^"]*"', "", s))))
     print("build_ads_pages: /%s/ <- /%s  residual drug terms: %s" % (dst_path, src_slug, left or "none"))
     return left
 
