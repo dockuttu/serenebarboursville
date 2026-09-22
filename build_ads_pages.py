@@ -23,6 +23,8 @@ PAGES = {
     "fillers":              "lp/dermal-fillers",
     "lip-filler":           "lp/lip-filler",
     "hydrafacial":          "lp/hydrafacial",
+    "botox":                "lp/wrinkle-relaxer",
+    "medical-weight-loss":  "lp/medical-weight-loss",
     "":                     "lp/med-spa",
 }
 
