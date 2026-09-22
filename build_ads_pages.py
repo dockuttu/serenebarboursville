@@ -43,7 +43,8 @@ DRUG_RX = re.compile(DRUG, re.I)
 REPL = [
     (r"Botox,\s*Dysport,\s*Xeomin\s*(?:&amp;|&|and)\s*Daxxify", "Wrinkle relaxers"),
     (r"Botox\s*(?:&amp;|&|and|/)\s*Dysport", "Wrinkle relaxers"),
-    (r"botox(?:\s*cosmetic)?|dysport|xeomin|jeuveau|daxxify|letybo", "wrinkle relaxer"),
+    (r"botox\s*(?:®|&reg;)?\s*cosmetic\.com", "the manufacturer's website"),
+    (r"botox\s*(?:®|&reg;)?\s*cosmetic|botox|dysport|xeomin|jeuveau|daxxify|letybo", "wrinkle relaxer"),
     (r"\(?\w*botulinumtoxin\s*-?\s*a?\)?", ""),
     (r"juv(?:e|é|&eacute;)derm(?:\s*(?:voluma|volbella|vollure|volux|ultra)(?:\s*xc)?)?|restylane(?:\s*(?:lyft|kysse|defyne|refyne|contour|silk|eyelight))?|\brha\b|belotero|revanesse", "hyaluronic filler"),
     (r"radiesse|sculptra", "collagen stimulator"),
@@ -67,8 +68,12 @@ def fix_text(t):
             s = m.group(0)
             return b[:1].upper() + b[1:] if (b and s[:1].isupper()) else b
         t = rx.sub(sub, t)
-    t = re.sub(r"hyaluronic filler(\s*(?:,|&amp;|&|and|/)\s*hyaluronic filler)+", "hyaluronic fillers", t, flags=re.I)
-    t = re.sub(r"wrinkle relaxer(\s*(?:,|&amp;|&|and|/)\s*wrinkle relaxer)+", "wrinkle relaxers", t, flags=re.I)
+    # drop ® left dangling after a generic name ("Wrinkle relaxer®"), then collapse "X & X" / "X, X and X" runs
+    t = re.sub(r"(wrinkle relaxer|hyaluronic filler|collagen stimulator)s?\s*(?:®|&reg;|&#174;)", r"\1", t, flags=re.I)
+    t = re.sub(r"wrinkle relaxers? along with wrinkle relaxers? and wrinkle relaxers?", "several FDA-approved wrinkle relaxers", t, flags=re.I)
+    t = re.sub(r"\bthe neurotoxin that\b", "the one that", t, flags=re.I)
+    t = re.sub(r"hyaluronic fillers?(\s*(?:,|&amp;|&|and|/|or)\s*hyaluronic fillers?)+", "hyaluronic fillers", t, flags=re.I)
+    t = re.sub(r"wrinkle relaxers?(\s*(?:,|&amp;|&|and|/|or)\s*wrinkle relaxers?)+", "wrinkle relaxers", t, flags=re.I)
     return t
 
 ATTR = re.compile(r'(\b(?:alt|title|content|placeholder|aria-label)=")([^"]*)(")', re.I)
