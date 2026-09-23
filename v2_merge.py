@@ -63,6 +63,8 @@ def prefix_html(s):
     s = CSSURL_RX.sub(lambda m: f'url({m.group(1)}{pre(m.group(2))}{m.group(1)})', s)
     s = SCRIPT_RX.sub(lambda m: m.group(1) + QUOTED_RX.sub(lambda q: f'{q.group(1)}{pre(q.group(2))}{q.group(1)}', m.group(2)) + m.group(3), s)
     s = s.replace(OLD_HOST + "/", NEW_HOST + "/").replace(OLD_HOST, NEW_HOST)
+    # pages cloned from the Hudson site (shop, labs, obagi, cart, easy-pay) still carried Hudson's canonical/og:url
+    s = s.replace("https://hudson.serenemedspas.com/", NEW_HOST + "/").replace("https://hudson.serenemedspas.com", NEW_HOST)
     return s
 
 def prefix_js(s):
