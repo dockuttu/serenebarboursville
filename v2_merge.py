@@ -173,12 +173,14 @@ def main():
         if ext == ".html":
             s = prefix_html(s)
             if "<header" in s or "<footer" in s: s = swap_shell(s, cssv, jsv)
+            for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
             if os.path.relpath(path, SITE) == "index.html": s = localize_home(s)
         elif ext == ".css":
             s = prefix_css(s)
             for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
         elif ext == ".js":
             s = prefix_js(s)
+            for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
         else:
             s = s.replace(OLD_HOST + "/", NEW_HOST + "/").replace(OLD_HOST, NEW_HOST)
         open(path, "w", encoding="utf-8").write(s); n += 1
