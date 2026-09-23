@@ -122,8 +122,8 @@ def build_v2_js():
     m = re.search(r"<script>\n\(function\(\)\{var LOC=.*?</script>", scr, re.S)
     loc = m.group(0)
     loc = loc.replace("<script>", "").replace("</script>", "")
-    # on a Barboursville page the default office is Barboursville
-    loc = loc.replace("apply(get());", "if(!get()){try{localStorage.setItem('serene_loc','barboursville');}catch(e){}}\napply(get()||'barboursville');")
+    # a Barboursville page always sets the visitor's office to Barboursville (page context wins over the remembered choice)
+    loc = loc.replace("apply(get());", "try{localStorage.setItem('serene_loc','barboursville');}catch(e){}\napply('barboursville');")
     m2 = re.search(r"document\.querySelectorAll\('\.nav ul li'\)\.forEach\(.*?\}\);\}\);", scr, re.S)
     menu = m2.group(0) if m2 else ""
     return loc + "\n(function(){" + menu + "})();\n"
