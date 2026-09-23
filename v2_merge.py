@@ -128,6 +128,19 @@ def build_v2_js():
     menu = m2.group(0) if m2 else ""
     return loc + "\n(function(){" + menu + "})();\n"
 
+# ------------------------------------------------------------------ office-specific home hero (so the two office pages are clearly different)
+HOME_H1 = "Barboursville&rsquo;s<br>physician-led med spa"
+HOME_LEDE = ("Botox, fillers, laser and wellness at 1 Chateau Grove Lane, minutes from I-64 &mdash; serving Huntington, Milton, Hurricane, "
+             "Ashland (KY) and Ironton (OH). Board-certified physicians, Tri-State price match, complimentary consultations.")
+HOME_IMG_SWAP = {}
+
+def localize_home(s):
+    s = re.sub(r'<h1>Glow that looks<br>effortlessly you</h1>', '<h1>' + HOME_H1 + '</h1>', s, count=1)
+    s = re.sub(r'<h1>Glow that looks\s*<br>\s*effortlessly you</h1>', '<h1>' + HOME_H1 + '</h1>', s, count=1)
+    s = re.sub(r'<p>Botox, dermal fillers, laser skin treatments, and advanced wellness[^<]*</p>', '<p>' + HOME_LEDE + '</p>', s, count=1)
+    for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
+    return s
+
 FONTS_RX = re.compile(r'<link href="https://fonts\.googleapis\.com/css2\?family=Cormorant[^"]*" rel="stylesheet">')
 V2_FONTS = '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Noto+Serif+Display:wght@400;500&family=Oooh+Baby&display=swap" rel="stylesheet">'
 
@@ -160,8 +173,10 @@ def main():
         if ext == ".html":
             s = prefix_html(s)
             if "<header" in s or "<footer" in s: s = swap_shell(s, cssv, jsv)
+            if os.path.relpath(path, SITE) == "index.html": s = localize_home(s)
         elif ext == ".css":
             s = prefix_css(s)
+            for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
         elif ext == ".js":
             s = prefix_js(s)
         else:
