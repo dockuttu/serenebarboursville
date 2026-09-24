@@ -56,7 +56,7 @@ CATS.append(("Longevity &amp; NAD+",
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Prepared by a licensed compounding pharmacy; compounded products are not FDA-approved. Items marked (Rx) are prescribed after your consultation and shipped to you by the pharmacy. Medical screening required. <a href="/longevity/">Learn more</a></span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
 # TATTOO_PRICING — per-session by size; 6-pack = buy 5, 6th free (same tattoo)
-TATTOO_HTML = ('<div class="sub">Laser Tattoo Removal (PICO) &mdash; per session / 6-session package (buy 5, 6th free, same tattoo)</div>'+
+TATTOO_HTML = ('<div class="sub"><a href="/laser-tattoo-removal/" class="price-link">Laser Tattoo Removal (PICO)</a> &mdash; per session / 6-session package (buy 5, 6th free, same tattoo)</div>'+
   """<table class="lhr-table"><thead><tr><th>Tattoo size</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
   <tr><td>Micro &mdash; under 1 sq in (fits under a quarter)</td><td>$125</td><td>$625</td></tr>
   <tr><td>Small &mdash; 1&ndash;4 sq in (up to a 2&times;2&Prime; passport photo)</td><td>$150</td><td>$750</td></tr>
@@ -70,7 +70,7 @@ CATS.append(("Laser &amp; Skin",
   row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
   row("VI Chemical Peels","$250+")+row("Sciton BBL Heroic","$400")+
   row("Sciton Moxi","$500")+row("Alma Hybrid CO&sup2; &mdash; Fractional Resurfacing","$600")+row("Alma Hybrid CO&sup2; &mdash; Full Resurfacing (Maximum Strength)","$1,000")+row("Opus Plasma","$400")+row("PICO Fractional Resurfacing","Quote")+row("Clear Lift","Quote")+sub("Ultherapy PRIME &mdash; Barboursville")+'<div class="price-row" style="border:0"><span class="price-name" style="font-size:.85rem;color:var(--ink)">&#9654; <a href="/ultherapy/#studio3" style="text-decoration:underline">Watch Dr. Arora&rsquo;s live demo on WSAZ Studio 3</a> &mdash; Studio 3 special: first 20 clients get 30% off through Oct 31, 2026.</span></div>'+row("Full Face + Neck","$2,900")+row("Full Face","$2,200")+row("Lower Face + Neck","$2,400")+row("Lower Face (Jowls)","$1,650")+row("Neck / Under-Chin","$1,400")+row("Brow Lift","$850")+row("D&eacute;collet&eacute; add-on","$500")+
-  '<div class="sub">Laser Hair Removal (Alma Soprano) &mdash; per session / 6-session package (buy 5, 6th free)</div>'+
+  '<div class="sub"><a href="/laser-hair-removal/" class="price-link">Laser Hair Removal (Alma Soprano)</a> &mdash; per session / 6-session package (buy 5, 6th free)</div>'+
   '''<table class="lhr-table"><thead><tr><th>Area</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
   <tr><td>Side Burns</td><td>$49</td><td>$245</td></tr>
   <tr><td>Areola</td><td>$49</td><td>$245</td></tr>
@@ -171,7 +171,7 @@ HTML=f'''<!DOCTYPE html>
 <script type="application/ld+json">
 {json.dumps(offer_schema)}
 </script>
-<style>.price-link{color:inherit;text-decoration:none;border-bottom:1px dotted rgba(0,0,0,.35)}.price-link:hover{color:var(--forest,#1f4f45);border-bottom-color:currentColor}.sub .price-link{border-bottom:0;text-decoration:underline;text-decoration-style:dotted}</style></head>
+<style>.price-link{{color:inherit;text-decoration:none;border-bottom:1px dotted rgba(0,0,0,.35)}}.price-link:hover{{color:var(--forest,#1f4f45);border-bottom-color:currentColor}}.sub .price-link{{border-bottom:0;text-decoration:underline;text-decoration-style:dotted}}</style></head>
 <body>
 
 
