@@ -303,3 +303,91 @@ SC_PAGES = [
 },
 
 ]
+
+# ---------- SEO pass 3 (Sep 2026): Huntington service pages for the treatments that convert ----------
+SC_PAGES += [
+
+# ---------- MORPHEUS8 — HUNTINGTON ----------
+{
+ "slug":"morpheus8-huntington-wv", "service":"Morpheus8", "service_url":"/morpheus8/",
+ "city":"Huntington", "city_state":"Huntington, WV", "also":["Barboursville, WV","Pea Ridge, WV","Milton, WV","Ashland, KY","Proctorville, OH"],
+ "title":"Morpheus8 in Huntington, WV | $800 or 3 for $2,100 | Serene",
+ "desc":"Morpheus8 RF microneedling for Huntington, WV &mdash; $800 a treatment or three for $2,100, performed by board-certified physicians in Barboursville, 15 minutes east off I-64 exit 20.",
+ "eyebrow":"Morpheus8 &middot; Serving Huntington, WV",
+ "h1":"Morpheus8 for Huntington, West Virginia",
+ "hero":"Radiofrequency microneedling that tightens and remodels from the inside out &mdash; face, neck, jawline and body. $800 a treatment, or three for $2,100, at the Tri-State&rsquo;s physician-owned med spa.",
+ "drive":"About 15 minutes from downtown Huntington",
+ "dir_h2":"Getting to Serene from Huntington", "visit_h2":"What to expect at your Morpheus8 visit", "cta_h2":"Tightening worth the 15-minute drive",
+ "introh2":"Tightening that reaches the layer that matters",
+ "introlead":"Ordinary microneedling injures the surface and lets healing do the rest. Morpheus8 adds radiofrequency energy delivered at a controlled depth, so the remodeling happens in the deeper dermis and the fibrous layer where laxity actually lives.",
+ "intro":"<p>That depth control is what makes it versatile. Set shallow, it addresses texture, pores and acne scarring. Set deeper, it contracts the fibrous layer under the skin &mdash; which is why it is used along the jawline and under the chin, and why it works on the abdomen, arms and knees as well as the face.</p><p>A treatment is <strong>$800</strong>, and a <strong>series of three is $2,100</strong>. Three is the usual recommendation, spaced about a month apart, with results continuing to build for several months afterward as collagen remodels. MorpheusV for intimate remodeling is $800, and Morpheus8 for underarm hyperhidrosis is $600. Every price is on our <a href=\"/pricing/\">price list</a>.</p><p>Downtime is modest &mdash; typically a sunburn-like redness and a faint grid-pattern texture for two to four days. Huntington patients commonly book Friday afternoons for that reason, and pair a series with Botox or filler so one trip covers both.</p>",
+ "price_rows":[("Morpheus8 RF","$800 /tx"),("Morpheus8 RF &mdash; Series of 3","$2,100"),("MorpheusV (Remodeling)","$800"),("Morpheus8 Hyperhidrosis","$600"),("Consultation","No charge")],
+ "directions":"<p><strong>From downtown Huntington (about 10 miles):</strong> take I-64 East to exit 20 (Barboursville / Huntington Mall) and follow US-60 toward the mall. We&rsquo;re at 1 Chateau Grove Ln with free parking outside the door &mdash; about 15 minutes.</p><p><strong>From Pea Ridge / Guyandotte:</strong> US-60 East straight into Barboursville, about 10 minutes. <strong>From Ashland, KY or Proctorville, OH:</strong> I-64 East to exit 20, 15&ndash;30 minutes.</p>",
+ "origin_q":"Huntington,+WV",
+ "faqs":[
+  ("How much is Morpheus8 in Huntington?","Morpheus8 is $800 per treatment at Serene Med Spa in Barboursville, or $2,100 for a series of three. MorpheusV is $800 and Morpheus8 for hyperhidrosis is $600. The consultation is free."),
+  ("How many treatments do I need?","Three, about a month apart, is the usual recommendation. Results continue developing for several months after the final session as collagen remodels. Individual results vary."),
+  ("What is the downtime?","Typically two to four days of redness resembling a sunburn, sometimes with a faint grid pattern and mild swelling. Most people are presentable with makeup the next day."),
+  ("Does it hurt?","Topical numbing is applied first, and most patients tolerate it well &mdash; described as heat and pressure. Deeper settings on the jawline and neck are more intense than facial settings."),
+  ("Is Morpheus8 the same as Ultherapy?","No. Morpheus8 uses radiofrequency through microneedles and is strongest for texture, scarring and mild-to-moderate laxity; Ultherapy uses focused ultrasound for deeper lifting of the brow, jowls and neck with no downtime. Many patients do both; your physician will tell you which fits your goals."),
+  ("Is it safe for darker skin tones?","Radiofrequency energy is not absorbed by pigment the way laser light is, which makes Morpheus8 a comparatively safe option across skin types. Your physician will confirm at your consultation."),
+ ],
+ "related":[("/morpheus8/","About Morpheus8"),("/ultherapy-huntington-wv/","Ultherapy in Huntington"),("/botox-huntington-wv/","Botox in Huntington"),("/ultherapy/","Ultherapy PRIME"),("/med-spa-huntington-wv/","Med Spa Near Huntington")],
+},
+
+# ---------- ULTHERAPY — HUNTINGTON ----------
+{
+ "slug":"ultherapy-huntington-wv", "service":"Ultherapy", "service_url":"/ultherapy/",
+ "city":"Huntington", "city_state":"Huntington, WV", "also":["Barboursville, WV","Charleston, WV","Teays Valley, WV","Ashland, KY","Ironton, OH"],
+ "title":"Ultherapy in Huntington, WV | PRIME Provider | From $850",
+ "desc":"Ultherapy PRIME non-surgical lift for Huntington, WV &mdash; brow $850, lower face $1,650, full face $2,200. Physician-owned Serene Med Spa in Barboursville, off I-64 exit 20.",
+ "eyebrow":"Ultherapy PRIME &middot; Serving Huntington, WV",
+ "h1":"Ultherapy for Huntington, West Virginia",
+ "hero":"The only FDA-cleared non-surgical lift for the brow, chin, neck and d&eacute;collet&eacute; &mdash; performed on the newest Ultherapy PRIME platform at the Tri-State&rsquo;s physician-owned med spa. No downtime, one session, results that build for months.",
+ "drive":"About 15 minutes from downtown Huntington",
+ "dir_h2":"Getting to Serene from Huntington", "visit_h2":"What to expect at your Ultherapy visit", "cta_h2":"A lift without surgery, 15 minutes from Huntington",
+ "introh2":"Lifting from the layer surgeons tighten",
+ "introlead":"Ultherapy delivers focused ultrasound to the SMAS &mdash; the same layer a facelift pulls &mdash; and lets your body build new collagen there over two to three months. Nothing is injected and nothing breaks the skin, so you leave and go back to your day.",
+ "intro":"<p>Serene is an <strong>Ultherapy PRIME provider</strong>, the current-generation platform with real-time imaging so energy is placed precisely where it will lift. It&rsquo;s the treatment we recommend to Huntington patients who want a noticeable lift in the brow, jowls or neck without a surgical recovery, and who are willing to wait a few months for the collagen to do its work.</p><p>Pricing is by area and published: brow lift <strong>$850</strong>, neck or under-chin $1,400, lower face (jowls) $1,650, lower face and neck $2,400, full face <strong>$2,200</strong>, full face and neck $2,900, d&eacute;collet&eacute; add-on $500. Compare that with the same treatment in Charleston or Lexington and it&rsquo;s usually several hundred dollars less &mdash; see the <a href=\"/pricing/\">price list</a>.</p><p>A full-face session takes 60&ndash;90 minutes. Most patients describe brief heat and tingling as energy is delivered; topical numbing keeps it comfortable for most patients. There is no downtime &mdash; occasional mild redness or tenderness settles within hours. Results build over 2&ndash;3 months and typically last a year or more.</p>",
+ "price_rows":[("Ultherapy &mdash; Brow Lift","$850"),("Neck / Under-Chin","$1,400"),("Lower Face (Jowls)","$1,650"),("Full Face","$2,200"),("Lower Face + Neck","$2,400"),("Full Face + Neck","$2,900"),("D&eacute;collet&eacute; add-on","$500"),("Consultation","No charge")],
+ "directions":"<p><strong>From downtown Huntington (about 10 miles):</strong> take I-64 East to exit 20 (Barboursville / Huntington Mall) and follow US-60 toward the mall. We&rsquo;re at 1 Chateau Grove Ln with free parking outside the door &mdash; about 15 minutes.</p><p><strong>From Charleston / Teays Valley:</strong> I-64 West to exit 20, 20&ndash;45 minutes. <strong>From Ashland, KY or Ironton, OH:</strong> I-64 East, 30&ndash;35 minutes.</p>",
+ "origin_q":"Huntington,+WV",
+ "faqs":[
+  ("How much does Ultherapy cost in Huntington?","At Serene Barboursville: brow lift $850, neck $1,400, lower face $1,650, full face $2,200, full face and neck $2,900. Prices are published and the consultation is free."),
+  ("How long do Ultherapy results last?","Collagen builds over two to three months and results typically last a year or more. Many patients repeat annually to maintain the lift. Individual results vary."),
+  ("Does Ultherapy hurt?","You feel brief heat and tingling as the ultrasound energy is delivered. Topical numbing is applied first, and most patients find a full-face session tolerable; ask about comfort options at your consultation."),
+  ("Is there any downtime?","No. You can return to work or errands immediately. Some patients notice mild redness, tenderness or slight swelling for a few hours."),
+  ("Ultherapy or Morpheus8 &mdash; which should I choose?","Ultherapy lifts from the deep SMAS layer with no downtime and is best for brow, jowl and neck laxity. Morpheus8 remodels the dermis and is stronger for texture, scarring and skin quality. Your physician will recommend one or a combination at the consultation."),
+  ("Is Serene a certified Ultherapy provider?","Yes. Serene is an Ultherapy PRIME provider, treating on the current platform with real-time imaging, and the practice is physician-owned."),
+ ],
+ "related":[("/ultherapy/","About Ultherapy PRIME"),("/morpheus8-huntington-wv/","Morpheus8 in Huntington"),("/botox-huntington-wv/","Botox in Huntington"),("/sculptra/","Sculptra"),("/med-spa-huntington-wv/","Med Spa Near Huntington")],
+},
+
+# ---------- MEDICAL WEIGHT LOSS — HUNTINGTON ----------
+{
+ "slug":"weight-loss-huntington-wv", "service":"Medical Weight Loss", "service_url":"/weight-loss/",
+ "city":"Huntington", "city_state":"Huntington, WV", "also":["Barboursville, WV","Milton, WV","Hurricane, WV","Ashland, KY","Ironton, OH"],
+ "title":"Medical Weight Loss in Huntington, WV | $149/Month | Serene",
+ "desc":"Physician-supervised medical weight loss for Huntington, WV &mdash; $149 a month with monthly check-ins, prescription options when appropriate, in Barboursville off I-64 exit 20 or by telehealth.",
+ "eyebrow":"Medical Weight Loss &middot; Serving Huntington, WV",
+ "h1":"Medical Weight Loss for Huntington, West Virginia",
+ "hero":"A weight-management program run by a board-certified internal medicine physician &mdash; not a franchise. $149 a month, monthly check-ins, prescription options when they&rsquo;re right for you, in person in Barboursville or by video visit anywhere in West Virginia.",
+ "drive":"About 15 minutes from downtown Huntington &mdash; or by telehealth",
+ "dir_h2":"Getting to Serene from Huntington", "visit_h2":"What to expect at your first weight-loss visit", "cta_h2":"Weight management is medicine",
+ "introh2":"Physician-led, not protocol-led",
+ "introlead":"Most weight-loss clinics hand every patient the same plan. At Serene, Dr. Robin Arora &mdash; board-certified in internal medicine and nephrology &mdash; reviews your history, labs and goals and builds a plan you can actually sustain.",
+ "intro":"<p>Your program may combine nutrition and lifestyle guidance with physician-prescribed medication, including GLP-1 class options, when it&rsquo;s clinically appropriate. Every plan is designed and monitored by a physician, with monthly check-ins to track progress and adjust dosing, and the wellness add-ons Huntington patients ask about &mdash; B-12, IV therapy, Bi&ouml;te hormone optimization &mdash; are available under the same roof.</p><p>The visit fee is <strong>$149 per month</strong>, published on our <a href=\"/pricing/\">price list</a>; medication is priced separately and discussed before anything is prescribed. Your first visit is in person at 1 Chateau Grove Ln in Barboursville; follow-ups can be in person or by <a href=\"https://serenemedspas.com/telehealth/\">telehealth</a> if a drive from Huntington, Milton or Ashland doesn&rsquo;t fit your month.</p><p>Because Serene is a full medical spa, we also help with the changes that come with losing weight &mdash; Morpheus8 and Evolve X for skin laxity, Sculptra for facial volume, and Kybella for under-chin fullness &mdash; so you have one clinical team from the first visit to the finish.</p>",
+ "price_rows":[("Medical Weight Loss Visit","$149 /month"),("Bi&ouml;te Pellet Therapy &mdash; Female","$405"),("Bi&ouml;te Pellet Therapy &mdash; Male","From $465"),("IV Therapy","From $149"),("Consultation","No charge")],
+ "directions":"<p><strong>From downtown Huntington (about 10 miles):</strong> take I-64 East to exit 20 (Barboursville / Huntington Mall) and follow US-60 toward the mall. We&rsquo;re at 1 Chateau Grove Ln with free parking outside the door &mdash; about 15 minutes.</p><p><strong>From Milton or Hurricane:</strong> US-60 or I-64 West, 15&ndash;20 minutes. <strong>From Ashland, KY or Ironton, OH:</strong> I-64 East, 30&ndash;35 minutes. Follow-up visits can also be done by video.</p>",
+ "origin_q":"Huntington,+WV",
+ "faqs":[
+  ("How much does medical weight loss cost in Huntington?","The physician visit is $149 per month at Serene Barboursville, with monthly check-ins included. Medication, when prescribed, is priced separately and explained before you commit. The initial consultation is free."),
+  ("Who runs the program?","Dr. Robin Arora, board-certified in internal medicine and nephrology, with Stephanie Welker, FNP-BC. Your plan is built and monitored by a physician, not a protocol."),
+  ("Do you prescribe weight-loss medication?","When it&rsquo;s clinically appropriate, yes &mdash; including GLP-1 class medications. Eligibility depends on your history, labs and goals, which we review at the first visit."),
+  ("Can I do follow-ups by telehealth?","Yes. After an in-person first visit, monthly check-ins can be done by video for patients anywhere in West Virginia, Ohio or Kentucky."),
+  ("How much weight can I expect to lose?","It depends on your starting point, the plan and whether medication is part of it. We set realistic monthly targets at your first visit and adjust as you go. Individual results vary."),
+  ("Do you help with loose skin after weight loss?","Yes. Morpheus8, Evolve X, Sculptra and Kybella are all available at the same office, and your physician can plan them alongside your weight-loss program."),
+ ],
+ "related":[("/weight-loss/","About Medical Weight Loss"),("https://serenemedspas.com/telehealth/","Telehealth Weight Loss"),("/hormone-optimization/","Bi&ouml;te Hormone Therapy"),("/morpheus8-huntington-wv/","Morpheus8 in Huntington"),("/med-spa-huntington-wv/","Med Spa Near Huntington")],
+},
+]
