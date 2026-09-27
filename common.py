@@ -80,7 +80,7 @@ CATEGORIES = [
    ("laser-nail-fungus","Laser Nail Fungus"),
  ]),
  ("Body &amp; Contouring", [
-   ("evolve-x","Evolve X"), ("bodytite","BodyTite"), ("facetite","FaceTite"),
+   ("evolve-x","EvolveX"), ("bodytite","BodyTite"), ("facetite","FaceTite"),
    ("forma","Forma Skin Tightening"), ("liposuction","Liposuction &amp; Fat Transfer"),
    ("weight-loss","Medical Weight Loss"), ("sculptra-bbl","Sculptra BBL"),
  ]),
