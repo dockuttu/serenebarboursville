@@ -40,6 +40,8 @@ for root, dirs, files in os.walk(SITE):
                   .replace("Merz Bronze Preferred Partner", "Merz Aesthetics ELITE+ Provider")
                   .replace("a Merz Bronze preferred practice", "a Merz Aesthetics ELITE+ provider"))
         slug = rel
+        if slug.startswith("morpheus8-") and slug not in STATIC_LOGOS:  # city landing pages (e.g. morpheus8-akron-oh)
+            STATIC_LOGOS[slug] = STATIC_LOGOS["morpheus8"]
         if not is_lp and slug in STATIC_LOGOS and fn == "index.html":
             seal, bd = hero_seal(slug, STATIC_LOGOS), device_badge(slug, STATIC_LOGOS)
             if seal and "hero-seal" not in s and '<div class="svc-hero-media">' in s:
