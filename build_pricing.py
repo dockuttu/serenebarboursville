@@ -67,7 +67,7 @@ TATTOO_HTML = ('<div class="sub"><a href="/laser-tattoo-removal/" class="price-l
   </tbody></table>""")
 
 CATS.append(("Laser &amp; Skin",
-  row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
+  row("Lumecca Peak IPL &mdash; Full Face","$400")+row("Lumecca Peak IPL &mdash; Series of 3","$1,050")+row("Lumecca Peak &mdash; Add Neck or Chest","$150")+row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
   row("VI Chemical Peels","$250+")+row("Sciton BBL Heroic","$400")+
   row("Sciton Moxi","$500")+row("Alma Hybrid CO&sup2; &mdash; Fractional Resurfacing","$600")+row("Alma Hybrid CO&sup2; &mdash; Full Resurfacing (Maximum Strength)","$1,000")+row("Opus Plasma","$400")+row("PICO Fractional Resurfacing","Quote")+row("Clear Lift","Quote")+sub("Ultherapy PRIME &mdash; Barboursville")+'<div class="price-row" style="border:0"><span class="price-name" style="font-size:.85rem;color:var(--ink)">&#9654; <a href="/ultherapy/#studio3" style="text-decoration:underline">Watch Dr. Arora&rsquo;s live demo on WSAZ Studio 3</a> &mdash; Studio 3 special: first 20 clients get 30% off through Oct 31, 2026.</span></div>'+row("Full Face + Neck","$2,900")+row("Full Face","$2,200")+row("Lower Face + Neck","$2,400")+row("Lower Face (Jowls)","$1,650")+row("Neck / Under-Chin","$1,400")+row("Brow Lift","$850")+row("D&eacute;collet&eacute; add-on","$500")+
   '<div class="sub"><a href="/laser-hair-removal/" class="price-link">Laser Hair Removal (Alma Soprano)</a> &mdash; per session / 6-session package (buy 5, 6th free)</div>'+
@@ -134,7 +134,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 # Offer schema (headline priced services)
 OFFERS=[("Botox",10),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",600),("Kybella",600),("PDO Thread Lift",300),("Kenalog Injection",75),
  ("Morpheus8 RF",800),("HydraFacial",150),("SKNLAB Facial",150),("Ultherapy PRIME",850),("Microneedling with PRP",500),
- ("Laser Hair Removal",49),("Laser Tattoo Removal",125),("EvolveX",149),("EvolveX — Series of 6",799),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),
+ ("Laser Hair Removal",49),("Laser Tattoo Removal",125),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",149),("EvolveX — Series of 6",799),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),
  ("Medical Weight Loss Visit",149),("PRP Hair Restoration",800)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Barboursville — Menu & Pricing","url":URL,
  "itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":n},"price":str(p),"priceCurrency":"USD"} for n,p in OFFERS]}

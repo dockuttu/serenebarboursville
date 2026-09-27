@@ -75,7 +75,7 @@ CATEGORIES = [
    ("hyperpigmentation","Hyperpigmentation &amp; Melasma"),
  ]),
  ("Laser", [
-   ("laser-skin","Laser Skin Resurfacing"), ("opus-plasma","Opus Plasma"), ("alma-hybrid","Alma Hybrid"), ("harmony-bio-boost","Harmony Bio-Boost"), ("photofacial","Photofacial (BBL &amp; IPL)"),
+   ("laser-skin","Laser Skin Resurfacing"), ("opus-plasma","Opus Plasma"), ("alma-hybrid","Alma Hybrid"), ("harmony-bio-boost","Harmony Bio-Boost"), ("photofacial","Photofacial (BBL &amp; IPL)"), ("lumecca","Lumecca Peak IPL"),
    ("laser-hair-removal","Laser Hair Removal"), ("laser-tattoo-removal","Laser Tattoo Removal"),
    ("laser-nail-fungus","Laser Nail Fungus"),
  ]),
@@ -198,7 +198,7 @@ STICKY_BAR = '''<div class="mbar">
 </div>''' % (PHONE_TEL, BOOK)
 
 exec(open("tech_logos.py").read())  # Alma device logos (tech_strip / device_badge / TECH_CSS)
-TECH_STRIP = tech_strip(["alma","harmony-bio-boost","alma-hybrid","soprano-ice-platinum","opus-plasma","alma-ted","alma-duo","sknlab"]) + tech_strip(["botox-cosmetic","juvederm","skinvive","kybella","alle"], "Injectables &amp; Skin &middot; Allergan Platinum Partner") + tech_strip(["evolvex","ignite","empowerrf","morpheus8","morpheus8-burst","morpheus8v","formav"], "InMode &middot; Morpheus8 Verified Provider") + tech_strip(["biote","obagi"], "Hormones &amp; Medical-Grade Skincare")
+TECH_STRIP = tech_strip(["alma","harmony-bio-boost","alma-hybrid","soprano-ice-platinum","opus-plasma","alma-ted","alma-duo","sknlab"]) + tech_strip(["botox-cosmetic","juvederm","skinvive","kybella","alle"], "Injectables &amp; Skin &middot; Allergan Platinum Partner") + tech_strip(["evolvex","ignite","optimasmax","lumecca-peak","fusion","empowerrf","morpheus8","morpheus8-burst","morpheus8v","formav"], "InMode &middot; Morpheus8 Verified Provider") + tech_strip(["biote","obagi"], "Hormones &amp; Medical-Grade Skincare")
 
 PARTNER_BADGES = '''<div class="partners reveal">
       <a href="/ultherapy/" title="Ultherapy PRIME provider"><img src="/img/badges/ultherapy-prime.png" alt="Ultherapy PRIME provider" class="badge-wide" loading="lazy"></a>
