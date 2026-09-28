@@ -59,5 +59,12 @@ PAGES = {'/': ('Med Spa in Huntington & Barboursville, WV | Serene', 'Physician-
  '/aftercare/dermal-filler/': (None, 'Dermal filler aftercare from Serene Med Spa Barboursville: swelling and bruising tips, activities to avoid, and warning signs that need a call.'),
  '/aftercare/o-shot/': (None, 'O-Shot aftercare from Serene Med Spa Barboursville: comfort tips, activity guidance, what is normal after treatment and when to contact us.')}
 
+# ---- Define + OptimasMAX + Forma (Sep 28, 2026) ----
+PAGES.update({
+ '/define/': ('Define by InMode in Huntington & Barboursville, WV', 'Define by InMode in Barboursville, WV, 15 minutes from Huntington: hands-free RF contouring for the jawline, jowls and double chin, with Forma. $179 or 6 for $899.'),
+ '/optimasmax/': ('OptimasMAX in Huntington & Barboursville, WV | Serene', 'InMode OptimasMAX in Barboursville, WV, near Huntington: Lumecca Peak IPL, Morpheus8 Burst, Forma and laser hair removal for every skin type on one platform.'),
+ '/forma/': (None, 'Forma radiofrequency skin tightening in Barboursville, WV, near Huntington. Firms the face and neck with no downtime, and finishes every Define session.'),
+})
+
 if __name__ == "__main__":
     run(PAGES)
