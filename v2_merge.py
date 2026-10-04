@@ -172,7 +172,7 @@ def bv_specials_block():
           "c.querySelector('h3').textContent=d.treatment;c.querySelector('.bvs-covers').textContent=d.covers;"
           "c.querySelector('s').textContent='$'+d.regular;c.querySelector('.bvs-price b').textContent='$'+d.price;c.style.display='';"
           "fetch('/api/deals/status',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(s){"
-          "if(s&&s.date===t&&s.barboursville&&s.barboursville.sold){c.querySelector('.bvs-left').textContent='Sold out today · a new deal drops at midnight';var b=c.querySelector('.bvs-buy');if(b)b.textContent='See tomorrow’s deal';}}).catch(function(){});"
+          "if(s&&s.date===t&&s.barboursville&&s.barboursville.sold){c.querySelector('.bvs-left').textContent='Sold out today · a new deal drops at midnight';var b=c.querySelector('.bvs-buy');if(b)b.textContent='See Deal of the Day';}}).catch(function(){});"
           "}catch(e){}})();</script>")
     return (BV_SPECIALS_MARK[0] +
         '<section id="bv-specials"><div class="wrap">'
