@@ -136,6 +136,85 @@ HOME_LEDE = ("Botox, fillers, laser and wellness at 1 Chateau Grove Lane, minute
              "Ashland (KY) and Ironton (OH). Board-certified physicians, Tri-State price match, complimentary consultations.")
 HOME_IMG_SWAP = {}
 
+# ------------------------------------------------------------------ Barboursville specials, right under the featured video (Robin, Oct 4)
+BV_SPECIALS_MARK = ("<!--bv-specials-->", "<!--/bv-specials-->")
+
+def bv_specials_block():
+    """This office's current offers: today's Deal of the Day (picked in the browser, Eastern time) + date-windowed cards.
+    Rebuilt on every merge so the embedded deal list stays current; each card hides itself outside its dates."""
+    import datetime as _d
+    deals = []
+    for f in sorted(glob.glob(os.path.join(MAIN, "deals_data", "deals_*.json"))):
+        try: deals += json.load(open(f, encoding="utf-8"))
+        except Exception: pass
+    cutoff = (_d.date.today() - _d.timedelta(days=2)).isoformat()
+    bv = [{k: d[k] for k in ("date", "treatment", "covers", "regular", "price")} for d in deals if d.get("office") == "barboursville" and d.get("date", "") >= cutoff]
+    data = json.dumps(bv, ensure_ascii=False).replace("</", "<\\/")
+    book = SL.BARB.get("book", "https://booking.mangomint.com/serenemedspa/Barboursville")
+    gift = "https://clients.mangomint.com/gift-cards/serenemedspa"
+    css = ('#bv-specials .bvs-grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));max-width:1100px;margin:0 auto}'
+           '#bv-specials .card{display:flex;flex-direction:column;border-top:4px solid var(--sage,#6F9A8F)}'
+           '#bv-specials .card h3{margin:6px 0 8px;color:var(--teal-900,#10322F)}'
+           '#bv-specials ul{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:10px}'
+           '#bv-specials li{padding-left:22px;position:relative}#bv-specials li::before{content:"";position:absolute;left:0;top:.5em;width:10px;height:10px;border-radius:50%;background:var(--sage,#6F9A8F)}'
+           '#bv-specials .bvs-price{display:flex;align-items:baseline;gap:10px;margin:4px 0 6px}#bv-specials .bvs-price s{color:#8a9296}'
+           '#bv-specials .bvs-price b{font-family:Poppins,sans-serif;font-size:2.1rem;color:var(--teal-900,#10322F);line-height:1}'
+           '#bv-specials .bvs-note{margin-top:auto;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal-500,#3E7F78);font-weight:600}'
+           '#bv-specials .bvs-actions{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}'
+           '#bv-specials .section-head{text-align:center}#bv-specials .bvs-more{text-align:center;margin-top:22px}')
+    js = ("<script>(function(){try{var S=document.getElementById('bv-specials');if(!S)return;"
+          "var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York'}).format(new Date());"
+          "var M=['January','February','March','April','May','June','July','August','September','October','November','December'];"
+          "var h=S.querySelector('[data-bvs-month]');if(h)h.textContent=M[+t.slice(5,7)-1]+' specials in Barboursville';"
+          "S.querySelectorAll('[data-from],[data-until]').forEach(function(c){var f=c.dataset.from||'0000',u=c.dataset.until||'9999';c.style.display=(t>=f&&t<=u)?'':'none';});"
+          "var D=JSON.parse(document.getElementById('bvs-data').textContent),d=null;D.forEach(function(x){if(x.date===t)d=x;});"
+          "var c=document.getElementById('bvs-dotd');if(!d){c.style.display='none';return;}"
+          "c.querySelector('h3').textContent=d.treatment;c.querySelector('.bvs-covers').textContent=d.covers;"
+          "c.querySelector('s').textContent='$'+d.regular;c.querySelector('.bvs-price b').textContent='$'+d.price;c.style.display='';"
+          "fetch('/api/deals/status',{cache:'no-store'}).then(function(r){return r.ok?r.json():null}).then(function(s){"
+          "if(s&&s.date===t&&s.barboursville&&s.barboursville.sold){c.querySelector('.bvs-left').textContent='Sold out today · a new deal drops at midnight';var b=c.querySelector('.bvs-buy');if(b)b.textContent='See tomorrow’s deal';}}).catch(function(){});"
+          "}catch(e){}})();</script>")
+    return (BV_SPECIALS_MARK[0] +
+        '<section id="bv-specials"><div class="wrap">'
+        '<div class="section-head reveal"><span class="eyebrow">This month at Serene Barboursville</span><h2 data-bvs-month>Specials in Barboursville</h2></div>'
+        '<div class="bvs-grid">'
+        # Deal of the Day (filled in by the script; hidden if there is no deal today)
+        '<div class="card" id="bvs-dotd" style="display:none"><span class="eyebrow">Deal of the Day &middot; today only</span><h3>Today&rsquo;s deal</h3>'
+        '<p class="bvs-covers" style="color:var(--ink-soft);margin:0 0 10px"></p><div class="bvs-price"><s></s><b></b></div>'
+        '<p class="bvs-left bvs-note" style="margin-top:6px">Only 1 available &middot; new deal every midnight</p>'
+        '<div class="bvs-actions"><a class="btn bvs-buy" href="/deal-of-the-day/">Get today&rsquo;s deal</a></div></div>'
+        # Fall Laser Season (Oct)
+        '<div class="card" data-from="2026-10-01" data-until="2026-10-31"><span class="eyebrow">Through October 31</span><h3>Fall Laser Season</h3><ul>'
+        '<li><strong>BBL + MOXI, same visit: $750</strong> <span style="color:var(--ink-soft)">(regularly $900)</span></li>'
+        '<li><strong>BBL HEROic:</strong> buy 3, get 1 free</li>'
+        '<li><strong>Laser hair removal:</strong> buy 5, get 2 free</li></ul>'
+        '<p class="bvs-note">Can&rsquo;t be combined with another discount</p>'
+        '<div class="bvs-actions"><a class="btn" href="' + book + '" target="_blank" rel="noopener">Book Now</a>'
+        '<a class="btn btn-outline" href="' + PREFIX + '/sciton-moxi/">About MOXI</a></div></div>'
+        # Holiday gift card bonus (Nov 1 - Dec 24)
+        '<div class="card" data-from="2026-11-01" data-until="2026-12-24"><span class="eyebrow">Through December 24</span><h3>Holiday gift card bonus</h3><ul>'
+        '<li><strong>$225 gift card for $200</strong></li><li><strong>$575 gift card for $500</strong></li></ul>'
+        '<p class="bvs-note">Black Friday weekend (Nov 27&ndash;30) the bonus doubles &middot; gift cards never expire</p>'
+        '<div class="bvs-actions"><a class="btn" href="' + gift + '" target="_blank" rel="noopener">Buy a gift card</a>'
+        '<a class="btn btn-outline" href="/specials/#holiday">Details</a></div></div>'
+        '</div>'
+        '<p class="bvs-more"><a class="btn btn-outline" href="/specials/">All specials</a> <a class="btn btn-outline" href="/deal-of-the-day/">Deal of the Day</a></p>'
+        '<script type="application/json" id="bvs-data">' + data + '</script>'
+        '<style>' + css + '</style>' + js +
+        '</div></section>' + BV_SPECIALS_MARK[1] + '\n')
+
+def inject_bv_specials(s):
+    """Idempotent: drop any previous copy, then place the block right after the featured video (or before the hero once the video retires)."""
+    s = re.sub(re.escape(BV_SPECIALS_MARK[0]) + r'.*?' + re.escape(BV_SPECIALS_MARK[1]) + r'\n?', "", s, flags=re.S)
+    blk = bv_specials_block()
+    i = s.find('id="studio3"')
+    if i != -1:
+        j = s.find('</section>', i)
+        if j != -1:
+            j += len('</section>')
+            return s[:j] + "\n" + blk + s[j:]
+    return s.replace('<section class="hero">', blk + '<section class="hero">', 1)
+
 def inject_home_videos(s):
     """Featured WSAZ video first thing on the home page; newest Vimeo video mid-page (shared blocks from site_lib)."""
     if 'id="studio3"' not in s and hasattr(SL, "featured_video_section"):
@@ -143,7 +222,7 @@ def inject_home_videos(s):
         s = s.replace('<section class="hero">', feat + '<section class="hero">', 1)
     if 'id="latest-video"' not in s and hasattr(SL, "latest_video_section"):
         s = s.replace('<section class="about" id="about">', SL.latest_video_section() + '<section class="about" id="about">', 1)
-    return s
+    return inject_bv_specials(s)
 
 def localize_home(s):
     s = re.sub(r'<h1>Glow that looks<br>effortlessly you</h1>', '<h1>' + HOME_H1 + '</h1>', s, count=1)
