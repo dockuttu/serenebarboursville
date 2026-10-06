@@ -62,3 +62,4 @@ python3 abim_badge.py bundle/site
 
 echo "==> Phase 2: prefix + v2 shell (serenemedspas.com/barboursville/)"
 python3 v2_merge.py bundle/site
+python3 lp_resanitize.py bundle/site || echo "lp_resanitize: WARNING residual drug terms on an /lp/ page (see above)"   # AFTER v2_merge: the main-site shell re-adds Botox/Dysport to /lp/ ad pages
