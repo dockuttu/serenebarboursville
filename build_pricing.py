@@ -103,7 +103,7 @@ CATS.append(("Hair, Face &amp; Body", sub("Hair Restoration")+
   sub("Facials")+row("HydraFacial","$150")+row("SKNLAB Facial","$150")+row("Microdermabrasion","Quote")+row("Facials &amp; Dermaplaning","$100+")+
   sub("Body Treatments")+row("Microneedling","$200")+row("Microneedling with PRP","$500")+
   row("Morpheus8 RF","$800","/tx")+row("Morpheus8 RF &mdash; Series of 3","$2,100")+
-  row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$149","/tx")+row("EvolveX &mdash; Series of 6","$799")+row("Define &mdash; Chin or Cheek (with Forma)","$179","/tx")+row("Define &mdash; Series of 6 (one zone)","$899")+row("Define &mdash; Chin + Cheek (with Forma)","$279","/tx")+row("Define &mdash; Series of 6 (chin + cheek)","$1,399")+row("AccuTite","From $1,500")+row("QuantumRF","From $2,500")+row("FaceTite","From $3,500")+row("BodyTite","From $4,000","/area")))
+  row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$149","/tx")+row("EvolveX &mdash; Series of 6","$799")+row("Define &mdash; Cheeks (with Forma)","$175","/tx")+row("Define &mdash; Chin / Jawline (with Forma)","$175","/tx")+row("Define &mdash; Cheek + Chin (with Forma)","$300","/tx")+row("Define &mdash; Cheek + Chin, Series of 3","$700")+row("Define &mdash; Cheek + Chin, Series of 6","$1,200")+row("AccuTite","From $1,500")+row("QuantumRF","From $2,500")+row("FaceTite","From $3,500")+row("BodyTite","From $4,000","/area")))
 
 CATS.append(("Sexual Wellness", sub("Female Wellness")+
   rowaka("V-Renew PRP","O-Shot&reg;","$800")+row("VTone (Muscle Strengthening)","$350","/tx")+row("VTone &mdash; Series of 6","$1,500")+
@@ -134,7 +134,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 # Offer schema (headline priced services)
 OFFERS=[("Botox",10),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",600),("Kybella",600),("PDO Thread Lift",300),("Kenalog Injection",75),
  ("Morpheus8 RF",800),("HydraFacial",150),("SKNLAB Facial",150),("Ultherapy PRIME",850),("Microneedling with PRP",500),
- ("Laser Hair Removal",49),("Laser Tattoo Removal",125),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",149),("EvolveX — Series of 6",799),("Define",179),("Define — Series of 6",899),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),
+ ("Laser Hair Removal",49),("Laser Tattoo Removal",125),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",149),("EvolveX — Series of 6",799),("Define",175),("Define — Cheek + Chin Series of 3",700),("Define — Cheek + Chin Series of 6",1200),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),
  ("Medical Weight Loss Visit",149),("PRP Hair Restoration",800)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Barboursville — Menu & Pricing","url":URL,
  "itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":n},"price":str(p),"priceCurrency":"USD"} for n,p in OFFERS]}

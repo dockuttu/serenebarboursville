@@ -61,7 +61,7 @@ PAGES = {'/': ('Med Spa in Huntington & Barboursville, WV | Serene', 'Physician-
 
 # ---- Define + OptimasMAX + Forma (Sep 28, 2026) ----
 PAGES.update({
- '/define/': ('Define by InMode in Huntington & Barboursville, WV', 'Define by InMode in Barboursville, WV, 15 minutes from Huntington: hands-free RF contouring for the jawline, jowls and double chin. $179 or 6 for $899.'),
+ '/define/': ('Define by InMode in Huntington & Barboursville, WV', 'Define by InMode in Barboursville, WV, 15 minutes from Huntington: hands-free RF contouring for the jawline, jowls and double chin. From $175; cheek + chin 6 for $1,200.'),
  '/optimasmax/': ('OptimasMAX in Huntington & Barboursville, WV | Serene', 'InMode OptimasMAX in Barboursville, WV, near Huntington: Lumecca Peak IPL, Morpheus8 Burst, Forma and laser hair removal for every skin type on one platform.'),
  '/forma/': (None, 'Forma radiofrequency skin tightening in Barboursville, WV, near Huntington. Firms the face and neck with no downtime, and finishes every Define session.'),
 })
