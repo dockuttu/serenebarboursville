@@ -28,7 +28,7 @@ TREATMENTS = [
  ("fillers","Dermal Fillers","$500/syringe","The full Juv&eacute;derm family, Restylane and Radiesse for lips, cheeks, jawline, chin and under-eyes. Three Juv&eacute;derm syringes $1,300."),
  ("laser-hair-removal","Laser Hair Removal","Per area","Alma Soprano Ice Platinum &mdash; virtually painless, safe for all skin tones, all year."),
  ("sknlab","SKNLAB Facial","$150","Six-handpiece customized facial &mdash; HydraFacial-style cleansing plus ultrasound, hot/cold, microcurrent and lymphatic drainage. No downtime."),
- ("hydrafacial","HydraFacial","$150","30-minute cleanse, extract and hydrate. Makeup-ready when you leave."),
+ ("hydrafacial","HydraFacial","$149","30-minute cleanse, extract and hydrate. Makeup-ready when you leave."),
  ("weight-loss","Medical Weight Loss","$149/visit","Physician-supervised semaglutide and tirzepatide with monthly check-ins."),
  ("alma-hybrid","Alma Hybrid CO&sup2; Resurfacing","From $600","CO2 + 1570 nm fractional resurfacing for texture, scars and sun damage with less downtime."),
  ("kybella","Kybella Double-Chin Treatment","$600/vial","The only FDA-approved injectable that permanently dissolves fat under the chin."),

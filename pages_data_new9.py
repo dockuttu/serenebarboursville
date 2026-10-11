@@ -32,7 +32,7 @@ _SKN_HTML = '''<section class="tint-mint" id="sknlab-handpieces">
 </section>
 <section class="tint-blush" id="sknlab-pricing">
   <div class="wrap">
-    <div class="section-head reveal"><div class="eyebrow">Pricing</div><h2>SKNLAB Facial &mdash; $150</h2><p>Same price as our HydraFacial, and it can be added to the front or back of a laser or microneedling visit. Ask about monthly facial packages at your consultation.</p><p style="margin-top:14px"><a class="btn btn-outline" href="/pricing/#cat-hair-face-body">See the full price list</a></p></div>
+    <div class="section-head reveal"><div class="eyebrow">Pricing</div><h2>SKNLAB Facial &mdash; $150</h2><p>About the same price as our HydraFacial ($149), and it can be added to the front or back of a laser or microneedling visit. Ask about monthly facial packages at your consultation.</p><p style="margin-top:14px"><a class="btn btn-outline" href="/pricing/#cat-hair-face-body">See the full price list</a></p></div>
   </div>
 </section>'''
 
