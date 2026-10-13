@@ -59,6 +59,7 @@ python3 check_pages.py
 
 echo "==> ABIM board-certification badge in every footer"
 python3 abim_badge.py bundle/site
+python3 hipaa_badge.py bundle/site /privacy-practices/ || echo "!!! hipaa_badge failed (continuing)" >&2   # HIPAA-compliant forms badge
 
 echo "==> Phase 2: prefix + v2 shell (serenemedspas.com/barboursville/)"
 python3 v2_merge.py bundle/site
