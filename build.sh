@@ -59,7 +59,6 @@ python3 check_pages.py
 
 echo "==> ABIM board-certification badge in every footer"
 python3 abim_badge.py bundle/site
-python3 hipaa_badge.py bundle/site /privacy-practices/ || echo "!!! hipaa_badge failed (continuing)" >&2   # HIPAA-compliant forms badge
 
 echo "==> Phase 2: prefix + v2 shell (serenemedspas.com/barboursville/)"
 python3 v2_merge.py bundle/site
@@ -67,6 +66,9 @@ python3 lp_resanitize.py bundle/site || echo "lp_resanitize: WARNING residual dr
 
 echo "==> Text option before every Call option (Mangomint texting numbers)"
 python3 add_text_links.py bundle/site || echo "add_text_links: WARNING (see above)"
+
+echo "==> HIPAA-compliant patient forms badge in every footer (after v2_merge, which rebuilds the shell)"
+python3 hipaa_badge.py bundle/site /privacy-practices/ || echo "!!! hipaa_badge failed (continuing)" >&2
 
 echo "==> Offer landing pages for Google Ads (stripped-down, noindex; must run LAST)"
 python3 build_offer_lp.py bundle/site barboursville
