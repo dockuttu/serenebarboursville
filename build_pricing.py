@@ -31,7 +31,7 @@ CATS.append(("Injectables", sub("Dermal Fillers &mdash; Juv&eacute;derm") +
   row("Botox","$10","/unit")+row("Xeomin","$10","/unit")+row("Dysport","$3.99","/unit")+row("Daxxify","$10","/unit")+
   row("Shoulder Slimming Botox","$10","/unit")+row("Baby Botox","$200","/ 20 units")+row("Lip Flip","$80","/ 8 units")+
   sub("Collagen &amp; Biostimulators")+
-  row("Sculptra","$600","/vial")+row("Skinvive","$400","/syringe")+row("Under-Eye PRP","$400")+row("Under-Eye PRF","$600")+
+  row("Sculptra","$650","/vial")+row("Sculptra &mdash; 6 vials (1 free)","$3,250")+row("Sculptra &mdash; 8 vials (2 free)","$3,900")+row("Skinvive","$400","/syringe")+row("Under-Eye PRP","$400")+row("Under-Eye PRF","$600")+
   row("Kybella Fat Dissolver","$600","/vial")+row("Filler Reversal","$150+")+row("Kenalog Steroid Injection (scar / cyst)","$75")+
   sub("PDO Threads &amp; Veins")+row("PDO Smooth Threads (collagen)","$275","/area")+row("PDO Lifting Threads &mdash; Small Area","$300")+row("PDO Lifting Threads &mdash; Large Area","$600")+row("Spider Vein Sclerotherapy","$300","/session")+
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)"><strong>Tri-State price match.</strong> Bring us any published local price on the same injectable treatment and we&rsquo;ll match it.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
@@ -74,35 +74,35 @@ CATS.append(("Laser &amp; Skin",
   '''<table class="lhr-table"><thead><tr><th>Area</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
   <tr><td>Side Burns</td><td>$49</td><td>$245</td></tr>
   <tr><td>Areola</td><td>$49</td><td>$245</td></tr>
-  <tr><td>Hands</td><td>$50</td><td>$250</td></tr>
-  <tr><td>Upper Lip</td><td>$75</td><td>$375</td></tr>
+  <tr><td>Hands</td><td>$60</td><td>$300</td></tr>
+  <tr><td>Upper Lip</td><td>$49</td><td>$245</td></tr>
   <tr><td>Underarms</td><td>$75</td><td>$375</td></tr>
-  <tr><td>Chin</td><td>$89</td><td>$445</td></tr>
-  <tr><td>Ears</td><td>$89</td><td>$445</td></tr>
+  <tr><td>Chin</td><td>$49</td><td>$245</td></tr>
+  <tr><td>Ears</td><td>$99</td><td>$495</td></tr>
   <tr><td>Bikini Line</td><td>$69</td><td>$345</td></tr>
   <tr><td>Brazilian</td><td>$89</td><td>$445</td></tr>
-  <tr><td>Full Face</td><td>$129</td><td>$645</td></tr>
-  <tr><td>Neck (+ Beard Line)</td><td>$160</td><td>$800</td></tr>
-  <tr><td>Stomach</td><td>$160</td><td>$800</td></tr>
-  <tr><td>Half Arms</td><td>$180</td><td>$900</td></tr>
-  <tr><td>Shoulders</td><td>$180</td><td>$900</td></tr>
-  <tr><td>Upper Legs</td><td>$240</td><td>$1,200</td></tr>
-  <tr><td>Lower Legs</td><td>$240</td><td>$1,200</td></tr>
-  <tr><td>Full Arms</td><td>$280</td><td>$1,400</td></tr>
-  <tr><td>Full Back</td><td>$310</td><td>$1,550</td></tr>
-  <tr><td>Chest + Abdomen</td><td>$310</td><td>$1,550</td></tr>
-  <tr><td>Full Legs</td><td>$360</td><td>$1,800</td></tr>
-  <tr><td>Full Body</td><td>$500</td><td>$2,500</td></tr>
+  <tr><td>Full Face</td><td>$99</td><td>$495</td></tr>
+  <tr><td>Neck (+ Beard Line)</td><td>$79</td><td>$395</td></tr>
+  <tr><td>Stomach</td><td>$129</td><td>$645</td></tr>
+  <tr><td>Half Arms</td><td>$129</td><td>$645</td></tr>
+  <tr><td>Shoulders</td><td>$79</td><td>$395</td></tr>
+  <tr><td>Upper Legs</td><td>$129</td><td>$645</td></tr>
+  <tr><td>Lower Legs</td><td>$129</td><td>$645</td></tr>
+  <tr><td>Full Arms</td><td>$199</td><td>$995</td></tr>
+  <tr><td>Full Back</td><td>$199</td><td>$995</td></tr>
+  <tr><td>Chest + Abdomen</td><td>$199</td><td>$995</td></tr>
+  <tr><td>Full Legs</td><td>$199</td><td>$995</td></tr>
+  <tr><td>Full Body</td><td>$510</td><td>$2,550</td></tr>
   </tbody></table>'''+TATTOO_HTML))
 
 CATS.append(("Acne Clinic",
   row("Acne Consultation (new &amp; follow-up)",None)+row("Acne Peel","$100")+row("Acne Back Peel","$150")))
 
 CATS.append(("Hair, Face &amp; Body", sub("Hair Restoration")+
-  row("PRP Hair Restoration","$500","/tx")+row("PRP Hair Restoration &mdash; series of 3, prepaid","$1,200")+row("Alma TED","$500","/tx")+row("Alma TED &mdash; series of 3, prepaid","$1,200")+
+  row("PRP Hair Restoration","$500","/tx")+row("PRP Hair Restoration &mdash; series of 3, prepaid","$1,200")+row("Alma TED","$300","/tx")+
   sub("Facials")+row("HydraFacial","$149")+row("SKNLAB Facial","$150")+row("Microdermabrasion","Quote")+row("Facials &amp; Dermaplaning","$100+")+
   sub("Body Treatments")+row("Microneedling","$200")+row("Microneedling with PRP","$500")+
-  row("Morpheus8 RF","$800","/tx")+row("Morpheus8 RF &mdash; Series of 3","$2,100")+
+  row("Morpheus8 RF","$600","/tx")+row("Morpheus8 RF &mdash; Series of 3","$1,700")+
   row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$149","/tx")+row("EvolveX &mdash; Series of 6","$799")+row("Define &mdash; Cheeks (with Forma)","$175","/tx")+row("Define &mdash; Chin / Jawline (with Forma)","$175","/tx")+row("Define &mdash; Cheek + Chin (with Forma)","$300","/tx")+row("Define &mdash; Cheek + Chin, Series of 3","$700")+row("Define &mdash; Cheek + Chin, Series of 6","$1,200")+row("AccuTite","From $1,500")+row("QuantumRF","From $2,500")+row("FaceTite","From $3,500")+row("BodyTite","From $4,000","/area")))
 
 CATS.append(("Sexual Wellness", sub("Female Wellness")+
@@ -132,9 +132,9 @@ cats_html="\n".join('<div class="price-cat reveal" id="%s"><h3>%s</h3>%s</div>'%
 jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slug(t),t) for t,_ in CATS)+'</div>'
 
 # Offer schema (headline priced services)
-OFFERS=[("Botox",10),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",600),("Kybella",600),("PDO Thread Lift",300),("Kenalog Injection",75),
- ("Morpheus8 RF",800),("HydraFacial",149),("SKNLAB Facial",150),("Ultherapy PRIME",850),("Microneedling with PRP",500),
- ("Laser Hair Removal",49),("Laser Tattoo Removal",125),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",149),("EvolveX — Series of 6",799),("Define",175),("Define — Cheek + Chin Series of 3",700),("Define — Cheek + Chin Series of 6",1200),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),
+OFFERS=[("Botox",10),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",650),("Kybella",600),("PDO Thread Lift",300),("Kenalog Injection",75),
+ ("Morpheus8 RF",600),("HydraFacial",149),("SKNLAB Facial",150),("Ultherapy PRIME",850),("Microneedling with PRP",500),
+ ("Laser Hair Removal",49),("Laser Tattoo Removal",125),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",149),("EvolveX — Series of 6",799),("Define",175),("Define — Cheek + Chin Series of 3",700),("Define — Cheek + Chin Series of 6",1200),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",99),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),
  ("Medical Weight Loss Visit",149),("PRP Hair Restoration",800)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Barboursville — Menu & Pricing","url":URL,
  "itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":n},"price":str(p),"priceCurrency":"USD"} for n,p in OFFERS]}
