@@ -34,7 +34,7 @@ TREATMENTS = [
  ("kybella","Kybella Double-Chin Treatment","$600/vial","The only FDA-approved injectable that permanently dissolves fat under the chin."),
  ("iv-therapy","IV Therapy &amp; NAD+","From $149","Hydration, immune, energy and NAD+ infusions."),
  ("lip-filler","Lip Filler","$500 (Mini Pout $300)","Natural, proportioned lips with Volbella, Ultra XC or Restylane Kysse."),
- ("sculptra","Sculptra","$600/vial","Collagen stimulator for gradual, natural volume in the face and body."),
+ ("sculptra","Sculptra","$650/vial","Collagen stimulator for gradual, natural volume in the face and body."),
  ("hormone-optimization","Bi&ouml;te Hormone Optimization","From $405","Pellet therapy for energy, sleep, mood and libido &mdash; certified Bi&ouml;te providers."),
  ("laser-tattoo-removal","Laser Tattoo Removal","By size","Discovery Pico Plus picosecond laser for full removal or fading before a cover-up."),
 ]

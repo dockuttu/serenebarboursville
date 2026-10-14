@@ -565,6 +565,9 @@ footer ul a:hover{color:var(--gold)}
 .zf-done-icon{width:56px;height:56px;border-radius:50%;background:var(--rose);color:#fff;font-size:1.6rem;line-height:56px;margin:0 auto 14px}
 .zf-done h3{margin:0 0 8px}
 @media (max-width:640px){.zf-grid{grid-template-columns:1fr}}
+/* InMode Morpheus8 Verified Provider seal (hexagon) */
+.svc-hero-media .hero-seal.hex{top:14px;height:150px;box-shadow:none;border-radius:0;object-fit:contain}
+@media(max-width:560px){.svc-hero-media .hero-seal.hex{height:92px;top:10px}}
 /* ---- Easy Pay (Cherry + CareCredit) ---- */
 .ep-band{background:#fff;border-top:1px solid rgba(63,43,61,.10);border-bottom:1px solid rgba(63,43,61,.10);padding:34px 0}
 .ep-inner{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
@@ -590,6 +593,3 @@ footer ul a:hover{color:var(--gold)}
 .ep-card li,.ep-card p{font-size:1.06rem;line-height:1.6;color:var(--ink,#2b2330);font-weight:500}
 .ep-fine{font-size:.9rem;color:var(--ink,#2b2330);opacity:.8;line-height:1.55;margin-top:18px}
 /* ---- /Easy Pay ---- */
-/* InMode Morpheus8 Verified Provider seal (hexagon) */
-.svc-hero-media .hero-seal.hex{top:14px;height:150px;box-shadow:none;border-radius:0;object-fit:contain}
-@media(max-width:560px){.svc-hero-media .hero-seal.hex{height:92px;top:10px}}

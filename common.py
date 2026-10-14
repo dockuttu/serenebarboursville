@@ -45,14 +45,14 @@ PRICE_MATCH_BAND = '''<section class="pmatch reveal" id="price-match">
       <div class="pm-txt">
         <div class="eyebrow">Barboursville Price Match Guarantee</div>
         <h2>We&rsquo;ll match any published Tri-State price on injectables</h2>
-        <p>Botox, Dysport, Xeomin &amp; Daxxify from <strong>$10/unit</strong>. Dermal filler from <strong>$500/syringe</strong>. Sculptra <strong>$600/vial</strong>. Every treatment performed by our physician-led team &mdash; and if you find a lower published price on the same treatment anywhere in the Tri-State, bring it in and we&rsquo;ll match it.</p>
+        <p>Botox, Dysport, Xeomin &amp; Daxxify from <strong>$10/unit</strong>. Dermal filler from <strong>$500/syringe</strong>. Sculptra <strong>$650/vial</strong>. Every treatment performed by our physician-led team &mdash; and if you find a lower published price on the same treatment anywhere in the Tri-State, bring it in and we&rsquo;ll match it.</p>
         <div class="pm-cta"><a class="btn" href="%s" target="_blank" rel="noopener">Book Botox &mdash; $10/unit</a><a class="btn btn-ghost" href="/pricing/#injectables">See Full Pricing</a></div>
         <p class="pm-fine">Match applies to the same product, treatment and quantity at a licensed medical provider within 30 miles of Barboursville, WV. Price must be currently published (website or printed menu). Not combinable with other offers or rewards.</p>
       </div>
       <div class="pm-stats">
         <div><b>$10</b><span>Botox / unit</span></div>
         <div><b>$500</b><span>Filler / syringe</span></div>
-        <div><b>$600</b><span>Sculptra / vial</span></div>
+        <div><b>$650</b><span>Sculptra / vial</span></div>
         <div><b>$300</b><span>PDO threads from</span></div>
       </div>
     </div>
