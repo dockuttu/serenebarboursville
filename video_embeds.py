@@ -14,6 +14,8 @@ SITE_URL = {"barboursville": "https://serenemedspas.com/barboursville",
             "hudson": "https://serenemedspas.com/hudson"}[LOC]
 
 V = {  # key: (vimeo id, unlisted hash, title, seconds, thumbnail id, upload date)
+ "studio3": ("1236722003", "", "Alma Hybrid live on WSAZ Studio 3 with Dr. Robin Arora and Stephanie Welker, NP", 266,
+             "2213306362-28c50eb179f0d08371f7a48bc85b18bdc25b76b563838191e0d5520b0483ba07", "2026-10-16T21:07:06-04:00"),
  "hybrid":  ("1230567201", "5e8f0817e7", "Alma Hybrid: how it works", 119,
              "2205496920-4fedb8c344507eec1ad229203f9f4010ef840648154e6183f1d5260d955852e4", "2026-09-26T17:05:50-04:00"),
  "soprano": ("1230567248", "d7900eb4e2", "Soprano laser hair removal", 60,
@@ -31,9 +33,9 @@ V = {  # key: (vimeo id, unlisted hash, title, seconds, thumbnail id, upload dat
 }
 
 PAGES = {  # slug: (eyebrow, h2, intro paragraph, [video keys], credit)
- "alma-hybrid": ("Watch", "See Alma Hybrid in action",
-   "Two lasers in one treatment: a gentle 1570 nm pass for tone and a CO&#8322; pass for texture, blended to your skin and your downtime. Here&rsquo;s a two-minute look at how it works.",
-   ["hybrid"], "Video courtesy of Alma Lasers."),
+ "alma-hybrid": ("As seen on WSAZ Studio 3", "See Alma Hybrid in action",
+   "Two lasers in one treatment: a gentle 1570 nm pass for tone and a CO&#8322; pass for texture, blended to your skin and your downtime. Watch Dr. Robin Arora and Stephanie Welker, NP demonstrate Alma Hybrid live on WSAZ&rsquo;s Studio 3 (October 15, 2026), plus a two-minute look at how the laser works.",
+   ["studio3", "hybrid"], "Studio 3 segment aired on WSAZ, October 15, 2026. Product video courtesy of Alma Lasers. Individual results vary."),
  "laser-hair-removal": ("Watch", "Soprano laser hair removal, up close",
    "Soprano uses SHR (Super Hair Removal): many quick, low-energy pulses that gradually heat the follicle, which is why most clients describe it as warm rather than snapping. See it in action, and how the technology works.",
    ["soprano", "shr"], "Videos courtesy of Alma Lasers."),
@@ -69,7 +71,7 @@ def block(slug, page_url):
     figs, schema = [], []
     for k in keys:
         vid, h, title, secs, thumb, up = V[k]
-        src = "https://player.vimeo.com/video/%s?h=%s&amp;dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" % (vid, h)
+        src = "https://player.vimeo.com/video/%s?%sdnt=1&amp;title=0&amp;byline=0&amp;portrait=0" % (vid, ("h=%s&amp;" % h) if h else "")
         figs.append('<figure class="vid-card reveal"><div class="vid-wrap"><iframe src="%s" title="%s" loading="lazy" '
                     'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>%s</figure>'
                     % (src, title, ("<figcaption>%s</figcaption>" % title) if len(keys) > 1 else ""))
@@ -77,7 +79,7 @@ def block(slug, page_url):
                        "description": "%s — %s" % (title, re.sub(r"&[a-z#0-9]+;", "", lead)[:200]),
                        "thumbnailUrl": ["https://i.vimeocdn.com/video/%s-d_1280" % thumb],
                        "uploadDate": up, "duration": iso_dur(secs),
-                       "embedUrl": "https://player.vimeo.com/video/%s?h=%s" % (vid, h),
+                       "embedUrl": "https://player.vimeo.com/video/%s%s" % (vid, ("?h=%s" % h) if h else ""),
                        "publisher": {"@type": "Organization", "name": "Serene Med Spa", "url": SITE_URL + "/"}})
     return ("<!--video-embeds-->\n<section id=\"watch\" class=\"tint-sand\"><div class=\"wrap\">\n"
             "  <div class=\"section-head reveal\"><div class=\"eyebrow\">%s</div><h2>%s</h2>\n"
