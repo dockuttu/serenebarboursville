@@ -98,7 +98,8 @@ ALL_SLUGS = [s for _,items in CATEGORIES for s,_ in items]
 
 # ---- local SEO: 30-mile radius around 1 Chateau Grove Ln, Barboursville ----
 AREA_TOWNS = ["Barboursville", "Proctorville, OH", "Ona", "Salt Rock", "Huntington", "Chesapeake, OH", "Milton", "Culloden", "Burlington, OH", "Ceredo", "Hurricane", "Kenova", "Wayne", "South Point, OH", "Catlettsburg, KY", "Ashland, KY", "Teays Valley", "Coal Grove, OH", "Ironton, OH", "Russell, KY", "Charleston"]
-CITY_LINKS = {"Huntington":"/med-spa-huntington-wv/", "Ashland, KY":"/med-spa-ashland-ky/", "Ironton, OH":"/med-spa-ironton-oh/", "Charleston":"/med-spa-charleston-wv/"}
+CITY_LINKS = {"Huntington":"/med-spa-huntington-wv/", "Ashland, KY":"/med-spa-ashland-ky/", "Ironton, OH":"/med-spa-ironton-oh/", "Charleston":"/med-spa-charleston-wv/",
+  "Teays Valley":"/med-spa-teays-valley-wv/", "Kenova":"/med-spa-kenova-wv/", "South Point, OH":"/med-spa-south-point-oh/", "Portsmouth, OH":"/med-spa-portsmouth-oh/", "Logan":"/med-spa-logan-wv/", "Point Pleasant":"/med-spa-point-pleasant-wv/"}
 def _area_tag(t):
     return ('<a href="%s">%s</a>' % (CITY_LINKS[t], t)) if t in CITY_LINKS else ('<span>%s</span>' % t)
 AREA_SERVED = (
@@ -186,7 +187,7 @@ FOOTER = '''<footer>
         </ul>
       </div>
     </div>
-    <div class="foot-areas">Areas we serve: <a href="/med-spa-huntington-wv/">Huntington</a> &middot; <a href="/med-spa-ashland-ky/">Ashland, KY</a> &middot; <a href="/med-spa-ironton-oh/">Ironton, OH</a> &middot; <a href="/med-spa-charleston-wv/">Charleston</a></div>
+    <div class="foot-areas">Areas we serve: <a href="/med-spa-huntington-wv/">Huntington</a> &middot; <a href="/med-spa-ashland-ky/">Ashland, KY</a> &middot; <a href="/med-spa-ironton-oh/">Ironton, OH</a> &middot; <a href="/med-spa-charleston-wv/">Charleston</a> &middot; <a href="/med-spa-teays-valley-wv/">Teays Valley</a> &middot; <a href="/med-spa-kenova-wv/">Kenova</a> &middot; <a href="/med-spa-south-point-oh/">South Point, OH</a> &middot; <a href="/med-spa-portsmouth-oh/">Portsmouth, OH</a> &middot; <a href="/med-spa-logan-wv/">Logan</a> &middot; <a href="/med-spa-point-pleasant-wv/">Point Pleasant</a></div>
     <div class="foot-bottom">&copy; 2026 Serene Med Spa, Barboursville WV. All rights reserved.</div>
   </div>
 </footer>''' % (LOGO, FOOTER_TREAT, PHONE_TEL, PHONE_DISPLAY, BOOK)
