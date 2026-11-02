@@ -56,7 +56,7 @@ UNIQUE = {
   "ctah2": "Find your microneedling plan",
   "ctapara": "Book a complimentary, no-commitment consultation in Barboursville and we&rsquo;ll compare microneedling, PRP, SecretRF and Morpheus8 for your goals.",
   "faqs_prepend": [
-   ("What does microneedling with PRP cost in Barboursville?", "Microneedling with PRP is $500 per session at our Barboursville office. Current pricing for every option is on our pricing page."),
+   ("What does microneedling with PRP cost in Barboursville?", "Microneedling with PRP (the vampire facial) is $299 per session at our Barboursville office, or $799 for a series of three. Microneedling with exosomes or PDRN is $199. Current pricing for every option is on our pricing page."),
    ("Do you offer RF microneedling in Barboursville?", "Yes. We offer SecretRF and Morpheus8 radiofrequency microneedling in addition to classic microneedling."),
   ],
  },
