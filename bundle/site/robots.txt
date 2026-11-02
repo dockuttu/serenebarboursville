@@ -1,3 +1,4 @@
+# served under https://serenemedspas.com/barboursville/ — see https://serenemedspas.com/robots.txt
 User-agent: *
 Allow: /
-Sitemap: https://barboursville.serenemedspas.com/sitemap.xml
+Sitemap: https://serenemedspas.com/barboursville/sitemap.xml
