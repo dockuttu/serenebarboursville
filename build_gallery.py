@@ -23,6 +23,11 @@ CATS = [
    ("ba-forehead.jpg", "Botox &mdash; Forehead &amp; Frown Lines",
     "Smoothed dynamic lines for a rested, natural expression.", "/botox/", "See treatment"),
  ]),
+ ("Laser &amp; Skin Resurfacing", "/laser-skin/", [
+   ("ba-skin-plan-laser.jpg", "Laser Skin Plan &mdash; 10 Months",
+    "PICO laser, Opus Plasma, MOXI laser and PRP microneedling facials over 10 months: smoother texture and a more even tone. Unretouched VISIA photos, December 2025 vs. October 2026. Eyes covered for privacy.",
+    "/laser-skin/", "See treatment"),
+ ]),
  ("Morpheus8", "/morpheus8/", [
    ("m8-result.jpg", "Morpheus8 &mdash; Skin Tightening",
     "Radiofrequency microneedling to firm skin and refine texture.", "/morpheus8/", "See treatment"),
@@ -59,7 +64,7 @@ HTML=f'''<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Before &amp; After Gallery &mdash; Serene Med Spa, Barboursville WV</title>
-<meta name="description" content="Real before and after results from Serene Med Spa in Barboursville, West Virginia — lip filler, dermal filler, Botox, and Morpheus8, organized by treatment. Physician-led, patient photos shared with consent.">
+<meta name="description" content="Real before and after results from Serene Med Spa in Barboursville, West Virginia — lip filler, dermal filler, Botox, laser skin treatments and Morpheus8, organized by treatment. Physician-led, patient photos shared with consent.">
 <link rel="canonical" href="{URL}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="geo.region" content="US-WV"><meta name="geo.placename" content="Barboursville, West Virginia">
