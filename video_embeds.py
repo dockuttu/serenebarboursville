@@ -14,6 +14,8 @@ SITE_URL = {"barboursville": "https://serenemedspas.com/barboursville",
             "hudson": "https://serenemedspas.com/hudson"}[LOC]
 
 V = {  # key: (vimeo id, unlisted hash, title, seconds, thumbnail id, upload date)
+ "m8studio3": ("1247335324", "", "Morpheus8 live on WSAZ Studio 3 with Stephanie Welker, FNP-BC", 293,
+             "2227075254-89b652f27a08abe36dd45607a5624809071383baa65cf32cf495df8253439726", "2026-11-16T12:25:19-05:00"),
  "studio3": ("1236722003", "", "Alma Hybrid live on WSAZ Studio 3 with Dr. Robin Arora and Stephanie Welker, NP", 266,
              "2213306362-28c50eb179f0d08371f7a48bc85b18bdc25b76b563838191e0d5520b0483ba07", "2026-10-16T21:07:06-04:00"),
  "hybrid":  ("1230567201", "5e8f0817e7", "Alma Hybrid: how it works", 119,
@@ -33,6 +35,9 @@ V = {  # key: (vimeo id, unlisted hash, title, seconds, thumbnail id, upload dat
 }
 
 PAGES = {  # slug: (eyebrow, h2, intro paragraph, [video keys], credit)
+ "morpheus8": ("As seen on WSAZ Studio 3", "Morpheus8, live on TV",
+   "Stephanie Welker, FNP-BC demonstrated Morpheus8 on WSAZ&rsquo;s Studio 3 (aired November 11, 2026): microneedling with radiofrequency heat for sun damage, fine lines and loose skin, with Michelle treated live on air. See how numbing, treatment time, downtime and the three-session plan work.",
+   ["m8studio3"], "Studio 3 segment aired on WSAZ, November 11, 2026. Individual results vary."),
  "alma-hybrid": ("As seen on WSAZ Studio 3", "See Alma Hybrid in action",
    "Two lasers in one treatment: a gentle 1570 nm pass for tone and a CO&#8322; pass for texture, blended to your skin and your downtime. Watch Dr. Robin Arora and Stephanie Welker, NP demonstrate Alma Hybrid live on WSAZ&rsquo;s Studio 3 (October 15, 2026), plus a two-minute look at how the laser works.",
    ["studio3", "hybrid"], "Studio 3 segment aired on WSAZ, October 15, 2026. Product video courtesy of Alma Lasers. Individual results vary."),
@@ -52,7 +57,7 @@ PAGES = {  # slug: (eyebrow, h2, intro paragraph, [video keys], credit)
    "A short look at Alma Duo: low-intensity shockwave sessions of about 15 minutes, no needles and no downtime.",
    ["duo"], "Video courtesy of Alma Lasers. Individual results vary."),
 }
-ONLY = {"barboursville": list(PAGES), "hudson": ["opus-plasma", "alma-ted", "alma-duo"]}[LOC]
+ONLY = {"barboursville": list(PAGES), "hudson": ["morpheus8", "opus-plasma", "alma-ted", "alma-duo"]}[LOC]
 
 CSS = """<style>
 .vid-grid{display:grid;gap:22px;max-width:960px;margin:0 auto}
