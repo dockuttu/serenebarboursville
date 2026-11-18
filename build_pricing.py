@@ -37,7 +37,7 @@ CATS.append(("Injectables", sub("Dermal Fillers &mdash; Juv&eacute;derm") +
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)"><strong>Tri-State price match.</strong> Bring us any published local price on the same injectable treatment and we&rsquo;ll match it.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
 CATS.append(("Weight Loss &amp; Wellness",
-  row("Medical Weight Loss Visit &mdash; Brand-Name Medication","$75","/month")+row("Compounded Semaglutide Program (medication included)","From $150","/month")+row("Compounded Tirzepatide Program (medication included)","From $300","/month")+
+  row("Medical Weight Loss Visit &mdash; Brand-Name Medication","$75","/month")+row("Compounded Semaglutide &mdash; 15 mg vial (medication included)","$249","/vial")+row("Compounded Tirzepatide &mdash; 72 mg vial (medication included)","$349","/vial")+
   row("Bi&ouml;te Pellet Therapy &mdash; Female","$405")+row("Bi&ouml;te Pellet Therapy &mdash; Male T100","$465")+row("Bi&ouml;te Pellet Therapy &mdash; Male T200","$645")+
   row("IV Vitamin Infusions","$99")+
   sub("Vitamin &amp; Lipo Shots")+row("Vitamin B12 Injection","$25")+row("Lipo-B Injection (MIC + B12)","$25")+row("Amino Blend Injection","$25")+row("Lipo Shot Pack (5)","$99")+
