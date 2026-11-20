@@ -10,7 +10,7 @@ _SKN_HTML = '''<section class="tint-mint" id="sknlab-handpieces">
       <div class="card reveal"><div class="ico">&#10022;</div><h3>Sonic</h3><p>Ultrasonic vibration preps the skin, loosens debris, and boosts circulation so every later step absorbs better.</p></div>
       <div class="card reveal"><div class="ico">&#10022;</div><h3>Aquis</h3><p>Aqua-delivery cleanses, exfoliates, and extracts with gentle suction while infusing three professional solutions &mdash; the hydrating heart of the treatment.</p></div>
       <div class="card reveal"><div class="ico">&#10022;</div><h3>Kelsius</h3><p>Hot and cold settings calm inflammation, promote circulation, and stimulate collagen. Cold is a favorite for redness-prone and post-laser skin.</p></div>
-      <div class="card reveal"><div class="ico">&#10022;</div><h3>N-Fuse</h3><p>Electroporation opens temporary micro-channels so exosomes, growth-factor serums, and other topicals get deeper than they ever could by hand.</p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>N-Fuse</h3><p>Electroporation opens temporary micro-channels so hydrating serums and other topicals get deeper than they ever could by hand.</p></div>
       <div class="card reveal"><div class="ico">&#10022;</div><h3>Level</h3><p>Microcurrent re-educates and tones facial muscles for a lifted, awake look &mdash; no needles, no downtime.</p></div>
       <div class="card reveal"><div class="ico">&#10022;</div><h3>Balance</h3><p>Enhanced lymphatic massage to de-puff, drain, and finish the facial with an even, rested glow.</p></div>
     </div>

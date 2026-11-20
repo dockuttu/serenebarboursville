@@ -66,7 +66,6 @@ RULES = [
     (r"^sknlab", ["sknlab"]),
     (r"^diamondglow", ["diamondglow"]),
     (r"^microdermabrasion|^facials", ["medical-facials"]),
-    (r"^microneedling with exosomes|^exosome", ["exosomes"]),
     (r"^microneedling with pdrn|^pdrn", ["pdrn"]),
     (r"^microneedling", ["microneedling"]),
     # body & intimate
