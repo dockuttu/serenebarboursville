@@ -195,6 +195,7 @@ def bv_specials_block():
         '<div class="card" data-from="2026-11-01" data-until="2026-12-24"><span class="eyebrow">Through December 24</span><h3>Holiday gift card bonus</h3><ul>'
         '<li><strong>$225 gift card for $200</strong></li><li><strong>$575 gift card for $500</strong></li></ul>'
         '<p class="bvs-note">Black Friday weekend (Nov 27&ndash;30) the bonus doubles &middot; gift cards never expire</p>'
+        '<p class="bvs-note" style="margin-top:6px">Gift cards can&rsquo;t be used toward our 50%-off laser special</p>'
         '<div class="bvs-actions"><a class="btn" href="' + gift + '" target="_blank" rel="noopener">Buy a gift card</a>'
         '<a class="btn btn-outline" href="/specials/#holiday">Details</a></div></div>'
         '</div>'
