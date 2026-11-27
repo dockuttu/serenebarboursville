@@ -148,7 +148,12 @@ def bv_specials_block():
         try: deals += json.load(open(f, encoding="utf-8"))
         except Exception: pass
     cutoff = (_d.date.today() - _d.timedelta(days=2)).isoformat()
-    bv = [{k: d[k] for k in ("date", "treatment", "covers", "regular", "price")} for d in deals if d.get("office") == "barboursville" and not d.get("slot") and d.get("date", "") >= cutoff]
+    live = [d for d in deals if d.get("office") == "barboursville" and not d.get("sold") and d.get("date", "") >= cutoff]
+    mains = {d["date"] for d in live if not d.get("slot")}
+    bv, seen = [], set()
+    for d in live:   # one card per day: the main deal, or the second (slot) deal once the main one is marked sold
+        if d["date"] in seen or (d.get("slot") and d["date"] in mains): continue
+        seen.add(d["date"]); bv.append({k: d[k] for k in ("date", "treatment", "covers", "regular", "price")})
     data = json.dumps(bv, ensure_ascii=False).replace("</", "<\\/")
     book = SL.BARB.get("book", "https://booking.mangomint.com/serenemedspa/Barboursville")
     gift = "https://clients.mangomint.com/gift-cards/serenemedspa"
