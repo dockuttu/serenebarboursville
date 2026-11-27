@@ -148,7 +148,7 @@ def bv_specials_block():
         try: deals += json.load(open(f, encoding="utf-8"))
         except Exception: pass
     cutoff = (_d.date.today() - _d.timedelta(days=2)).isoformat()
-    bv = [{k: d[k] for k in ("date", "treatment", "covers", "regular", "price")} for d in deals if d.get("office") == "barboursville" and d.get("date", "") >= cutoff]
+    bv = [{k: d[k] for k in ("date", "treatment", "covers", "regular", "price")} for d in deals if d.get("office") == "barboursville" and not d.get("slot") and d.get("date", "") >= cutoff]
     data = json.dumps(bv, ensure_ascii=False).replace("</", "<\\/")
     book = SL.BARB.get("book", "https://booking.mangomint.com/serenemedspa/Barboursville")
     gift = "https://clients.mangomint.com/gift-cards/serenemedspa"
